@@ -70,11 +70,13 @@ header {
     width: 100px;
 }
 .h-menu-humanpractices {
-    width: 220px !important;
+    width: 240px !important;
+    left: -1%;
+    position: relative;
 }
 #h-menu-dhumanpractices {
     width: 200px;
-    left: 0%;
+    left: 8%;
 }
 .h-menu-container1 {
     display: flex;
@@ -112,7 +114,7 @@ header {
 .h-burger {
     right: 6vw;
     width: 47px;
-    height: 29px;
+    height: 34px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -122,11 +124,18 @@ header {
 }
 .line {
     width: 100%;
-    height: 3px;
+    height: 6px;
+    border-radius: 2px;
     background-color: whitesmoke;
 }
-.line1, .line2 {
+.line1 {
     margin-bottom: 10px;
+}
+.line2 {
+    margin-bottom: 11px;
+}
+.line1, .line3 {
+    transform-origin: right;
 }
 .socials-container {
     position: absolute;
@@ -169,12 +178,21 @@ header {
 
 
 @media screen
-and (min-width: 1400px) {
+and (min-width: 1200px) {
     .h-menus {
         display: flex;
     }
     .h-burger {
         display: none;
+    }
+}
+@media screen
+and (max-width: 1400px) {
+    .h-menu-title {
+        font-size: 18px;
+    }
+    .h-menu-container1 > img {
+        top: 7px;
     }
 }
 
@@ -218,7 +236,7 @@ and (min-width: 1400px) {
 }
 @keyframes header-bigger {
     from {height: 60px;}
-    to {height: 110px;}
+    to {height: 110px;} 
 }
 
 

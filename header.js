@@ -121,3 +121,49 @@ const headerBodyScroll = () => {
 }
   oldScrollTop = ST;
 }
+
+
+$("#header-burger").click(function() {
+    console.log('s');
+    burgerAnimationOnClick();
+})
+
+var menuBurgerOpened = false;
+var line1 = document.getElementById("line1");
+var line2 = document.getElementById("line2");
+var line3 = document.getElementById("line3");
+const burgerAnimationOnClick = () => {
+    if(!menuBurgerOpened){
+        menuBurgerOpened = true;
+        line1.animate([
+            // keyframes
+            { transform: 'rotate(-40deg)' },
+          ], {
+            // timing options
+            duration: 200,
+            easing: 'linear',
+            fill: 'forwards'
+          });
+          line2.animate([
+            // keyframes
+            { transform: 'translateX(200px)' },
+          ], {
+            // timing options
+            duration: 200,
+            easing: 'linear',
+            fill: 'forwards'
+          });
+          line3.animate([
+            // keyframes
+            { transform: 'rotate(40deg)' },
+          ], {
+            // timing options
+            duration: 200,
+            easing: 'linear',
+            fill: 'forwards'
+          });
+    } else {
+        menuBurgerOpened = false;
+        
+    }
+}
