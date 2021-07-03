@@ -156,6 +156,21 @@ header {
     top: 2px;
     position: relative;
 }
+.h-menuD {
+    position: fixed;
+    top: 60px;
+    width: 100vw;
+    background-color: #b6c0be;
+    z-index: -5;
+    height: 1px;
+    transition: height .5s;
+}
+.h-menuDvisible {
+    height: 100vh;
+}
+.h-menuDinvisible {
+    height: 1px;
+}
 
 
 
@@ -274,30 +289,30 @@ and (max-width: 1400px) {
 
 
 .line1-rotate {
-    animation: line1-rotate .12s ease-out forwards 1;
+    animation: line1-rotate .250s cubic-bezier(.75,.35,.29,.7) forwards 1;
 }
 @keyframes line1-rotate { 100% { -webkit-transform: rotate(-40deg); transform:rotate(-40deg); } }
-.line3-rotate {
-    animation: line3-rotate .120s ease-out forwards 1;
+.line3-rotate { 
+    animation: line3-rotate .250s cubic-bezier(.75,.35,.29,.7) forwards 1;
 }
 @keyframes line3-rotate { 100% { -webkit-transform: rotate(40deg); transform:rotate(40deg); } }
 
 .line1-unrotate {
-    animation: line1-unrotate .12s ease-out forwards 1;
+    animation: line1-unrotate .25s ease-out forwards 1;
 }
 @keyframes line1-unrotate { 
     from{transform: rotate(-40deg);}
     to {transform: rotate(0deg);;}} 
 .line3-unrotate {
-    animation: line3-unrotate .120s ease-out forwards 1;
+    animation: line3-unrotate .25s ease-out forwards 1;
 }
 @keyframes line3-unrotate { 
     from{transform: rotate(40deg);}
     to {transform: rotate(0deg);;}}
 
 .line2-translateX {
-    transition: ease-out 1s;
-    transform: translateX(200px);
+    transition: ease-in .3s;
+    transform: translateX(150px);
 }
 @keyframes line1-unrotate { 
     from{transform: rotate(-40deg);}

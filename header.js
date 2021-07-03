@@ -63,7 +63,9 @@ $( ".h-menu-humanpractices" ).mouseleave(function() {
   });
 
 $(window).scroll(function() {
-  setDidScrollTrue();
+    if(!didScroll) {
+         setDidScrollTrue();
+    }
 })
 
 var socials = [document.getElementById('fb'), document.getElementById('ig'), document.getElementById('mail')];
@@ -124,17 +126,21 @@ const headerBodyScroll = () => {
 
 
 $("#header-burger").click(function() {
-    console.log('s');
     burgerAnimationOnClick();
 })
 
 var menuBurgerOpened = false;
+var menuD = document.getElementById("h-menuD");
 var line1 = document.getElementById("line1");
 var line2 = document.getElementById("line2");
 var line3 = document.getElementById("line3");
 const burgerAnimationOnClick = () => {
     if(!menuBurgerOpened){
         menuBurgerOpened = true;
+
+        menuD.classList.add("h-menuDvisible");
+        menuD.classList.remove("h-menuDinvisible");
+
         line1.classList.add("line1-rotate");
         line1.classList.remove("line1-unrotate");
 
@@ -145,6 +151,10 @@ const burgerAnimationOnClick = () => {
         line2.classList.remove("line2-untranslateX");
     } else {
         menuBurgerOpened = false;
+
+        menuD.classList.add("h-menuDinvisible");
+        menuD.classList.remove("h-menuDvisible");
+
         line1.classList.add("line1-unrotate");
         line1.classList.remove("line1-rotate");
 

@@ -15,5 +15,116 @@
     height: 100vh;
     width: 100vw;
     background-color: #f3decb;
+    position: relative;
+    top: 0;
 }
 
+.c1-flex {
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-around
+}
+
+.c1-flex-img{
+    width: 200px;
+    height: 200px;
+}
+.c1-flex-h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.c1-flex-scroll2 {
+    padding-top: 20px;
+    display: flex;
+    height: 70px;
+    width: 40px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: scroll-arrow 2s linear infinite;
+}
+.c1-flex-scroll1 {
+    display: flex;
+    height: 70px;
+    width: 40px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: scroll-arrow 2s linear infinite;
+}
+.vertical-line {
+    height: 50%;
+    width: 1px;
+    background-color: black;
+}
+
+.RL {
+    height: 1px;
+    background-color: black;
+    border-radius: 2px;
+}
+.rotated-line1 {
+    width: 30%;
+    transform-origin: left;
+    transform: rotate(-45deg);
+    left: 16%;
+    position: relative;
+    top: 0px;
+}
+.rotated-line2 {
+    width: 30%;
+    transform-origin: right;
+    transform: rotate(44deg);
+    right: 15%;
+    position: relative;
+}
+
+
+
+
+@media only screen
+and (max-height: 568px) {
+    .container1 {
+        height: 568px;
+    }
+}
+@media only screen
+and (min-width: 0px)
+and (max-width: 699px) {
+    .c1-flex-scroll2 {
+        display: none;
+    }
+}
+@media only screen
+and (min-width: 700px) {
+    .c1-flex {
+        flex-direction: row;
+    }
+    .c1-flex-scroll1 {
+        display: none;
+    }
+    #c1-flex-scroll2 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+@keyframes scroll-arrow {
+    0% {top: 0px;}
+    50% {top: 15px;}
+    100% {top: 0px;}
+}
