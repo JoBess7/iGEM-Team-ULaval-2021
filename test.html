@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1, user-scalable=0, initial-scale=1;"/>
     <link rel="stylesheet" href="./headerstyle.css">
+    <link rel="stylesheet" href="./homepagestyle.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
@@ -15,16 +15,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+    <script src="mobile.js"></script>
 
     <title>iGEM ULaval</title>
 </head>
 <body>
     <div class="main-container">
         <header class="header">
-            <div class="header-top-container">
+            <div class="header-top-container" id="header">
                 <div class="h-flex">
-                    <img class="h-logo" src="./assets/logo.png" alt="" srcset="">
+                    <div class="socials-container" id="socials-container">
+                        <a href="https://www.facebook.com/equipeiGEMULaval/">
+                            <img src="./assets/header-fb-icon.png" id="fb" class="fb-icon" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/igem_ulaval/">
+                            <img src="./assets/header-ig-icon.png" id="ig" class="ig-icon" alt="">
+                        </a>
+                        <a href="mailto:igem@bcm.ulaval.ca">
+                            <img src="./assets/header-mail-icon.png" id="mail" class="mail-icon" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="logo-container" id="header-logo"><img class="h-logo" src="./assets/logo.png" alt="" srcset=""></a>
                     <ul class="h-menus">
+                        <div class="h-empty-item">
+                        </div>
                         <div class="h-menu-item h-menu-project">
                             <div class="h-menu-container1">
                                 <div class="h-menu-title" id="h-menu-tproject">
@@ -136,15 +150,20 @@
                                 <a href="" class="HL h-link-humanpractices5">d</a>
                             </div>
                         </div>
-                        <div class="h-menu-item">
-                        </div>
                     </ul>
-                    <div class="h-burger">
-
+                    <div class="h-burger" id="header-burger">
+                        <div class="line1 line"></div>
+                        <div class="line2 line"></div>
+                        <div class="line3 line"></div>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="containers">
+            <div class="container1">
+
+            </div>
+        </div>
     </div>
     <script src="./header.js"></script>
 </body>

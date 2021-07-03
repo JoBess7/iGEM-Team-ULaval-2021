@@ -24,6 +24,7 @@ a {
 
 header {
     position: fixed;
+    z-index: 1000;
 }
 .header-top-container {
     width: 100vw;
@@ -38,18 +39,26 @@ header {
     align-items: center;
 }
 .h-logo {
-    width: 130px;
-    height: 120px;
-    left: 50px;
+    width: 135px;
+    height: 110px;
     position: relative;
-    margin-right: 70px;
+    margin-right: 90px;
+}
+.logo-container {
+    width: 135px;
+    height: 110px;
+    position: relative;
+    left: 8vw;
+    z-index: 5;
+    top: 0;
 }
 .h-menus {
     width: 80%;
     height: 300px;
     top: 135px;
+    left: 120px;
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-evenly;
 
@@ -58,6 +67,14 @@ header {
     text-align: center;
     display: flex;
     flex-direction: column;
+    width: 100px;
+}
+.h-menu-humanpractices {
+    width: 220px !important;
+}
+#h-menu-dhumanpractices {
+    width: 200px;
+    left: 0%;
 }
 .h-menu-container1 {
     display: flex;
@@ -68,11 +85,12 @@ header {
     color: white;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-    font-size: 20px;}
+    font-size: 23px;
+    font-weight: 600;}
 .h-menu-container1 > img {
     width: 13px;
     height: 10px;
-    top: 5px;
+    top: 10px;
     margin-left: 2px;
     position: relative;
 }
@@ -87,13 +105,90 @@ header {
     overflow: hidden;
     border-radius: 5px;
 }
-.h-menu-humanpractices {
-
-}
 .HL {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
+.h-burger {
+    right: 6vw;
+    width: 47px;
+    height: 29px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: whitesmoke;
+}
+.line1, .line2 {
+    margin-bottom: 10px;
+}
+.socials-container {
+    position: absolute;
+    left: 8vw;
+    top: 5px;
+    opacity: 0;
+}
+.ig-icon, .fb-icon {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+
+}
+.mail-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    top: 2px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen
+and (min-width: 1400px) {
+    .h-menus {
+        display: flex;
+    }
+    .h-burger {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .h-C2-expand-200 {
     animation: h-C2-expand-200 .4s ease-out forwards 1; 
@@ -109,3 +204,54 @@ header {
     from {height: 200px;}
     to {height: 0px;}
 }
+
+
+.header-smaller {
+    animation: header-smaller .3s ease-out forwards 1;
+}
+@keyframes header-smaller {
+    from {height: 110px;}
+    to {height: 60px;}
+}
+.header-bigger {
+    animation: header-bigger .3s ease-out forwards 1;
+}
+@keyframes header-bigger {
+    from {height: 60px;}
+    to {height: 110px;}
+}
+
+
+.header-logo-smaller {
+    animation: header-logo-smaller .5s ease-out forwards 1;
+}
+@keyframes header-logo-smaller {
+    from {top: 0;}
+    to {top: -130px}
+}
+.header-logo-bigger {
+    animation: header-logo-bigger .5s ease-out forwards 1;
+}
+@keyframes header-logo-bigger {
+    from {top: -130px;}
+    to {top: 0px;}
+}
+
+
+.fadeTo1 {
+    animation: fadeTo1 1s linear forwards 1;
+}
+@keyframes fadeTo1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.fadeTo0 {
+    animation: fadeTo0 .3s linear forwards 1;
+}
+@keyframes fadeTo0 {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+
+
