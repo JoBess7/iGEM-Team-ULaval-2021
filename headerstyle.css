@@ -114,7 +114,7 @@ header {
 .h-burger {
     right: 6vw;
     width: 47px;
-    height: 34px;
+    height: 40px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -124,12 +124,12 @@ header {
 }
 .line {
     width: 100%;
-    height: 6px;
+    height: 4px;
     border-radius: 2px;
     background-color: whitesmoke;
 }
 .line1 {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 .line2 {
     margin-bottom: 11px;
@@ -272,4 +272,41 @@ and (max-width: 1400px) {
 }
 
 
+
+.line1-rotate {
+    animation: line1-rotate .12s ease-out forwards 1;
+}
+@keyframes line1-rotate { 100% { -webkit-transform: rotate(-40deg); transform:rotate(-40deg); } }
+.line3-rotate {
+    animation: line3-rotate .120s ease-out forwards 1;
+}
+@keyframes line3-rotate { 100% { -webkit-transform: rotate(40deg); transform:rotate(40deg); } }
+
+.line1-unrotate {
+    animation: line1-unrotate .12s ease-out forwards 1;
+}
+@keyframes line1-unrotate { 
+    from{transform: rotate(-40deg);}
+    to {transform: rotate(0deg);;}} 
+.line3-unrotate {
+    animation: line3-unrotate .120s ease-out forwards 1;
+}
+@keyframes line3-unrotate { 
+    from{transform: rotate(40deg);}
+    to {transform: rotate(0deg);;}}
+
+.line2-translateX {
+    transition: ease-out 1s;
+    transform: translateX(200px);
+}
+@keyframes line1-unrotate { 
+    from{transform: rotate(-40deg);}
+    to {transform: rotate(0deg);;}} 
+.line2-untranslateX {
+    transform: translateX(0px);
+    transition: ease-in .15s;
+}
+@keyframes line3-unrotate { 
+    from{transform: rotate(40deg);}
+    to {transform: rotate(0deg);;}}
 

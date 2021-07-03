@@ -135,35 +135,23 @@ var line3 = document.getElementById("line3");
 const burgerAnimationOnClick = () => {
     if(!menuBurgerOpened){
         menuBurgerOpened = true;
-        line1.animate([
-            // keyframes
-            { transform: 'rotate(-40deg)' },
-          ], {
-            // timing options
-            duration: 200,
-            easing: 'linear',
-            fill: 'forwards'
-          });
-          line2.animate([
-            // keyframes
-            { transform: 'translateX(200px)' },
-          ], {
-            // timing options
-            duration: 200,
-            easing: 'linear',
-            fill: 'forwards'
-          });
-          line3.animate([
-            // keyframes
-            { transform: 'rotate(40deg)' },
-          ], {
-            // timing options
-            duration: 200,
-            easing: 'linear',
-            fill: 'forwards'
-          });
+        line1.classList.add("line1-rotate");
+        line1.classList.remove("line1-unrotate");
+
+        line3.classList.add("line3-rotate");
+        line3.classList.remove("line3-unrotate");
+
+        line2.classList.add("line2-translateX");
+        line2.classList.remove("line2-untranslateX");
     } else {
         menuBurgerOpened = false;
-        
+        line1.classList.add("line1-unrotate");
+        line1.classList.remove("line1-rotate");
+
+        line3.classList.add("line3-unrotate");
+        line3.classList.remove("line3-rotate");
+
+        line2.classList.add("line2-untranslateX");
+        line2.classList.remove("line2-translateX");
     }
 }
