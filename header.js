@@ -81,7 +81,6 @@ var oldScrollTop = 0;
 var didScroll;
 function setDidScrollTrue() {
   didScroll = true;
-  console.log("s");
 }
 setInterval(function() {
   if (didScroll) {

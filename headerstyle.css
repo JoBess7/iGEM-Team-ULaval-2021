@@ -97,19 +97,26 @@ header {
     position: relative;
 }
 .h-menu-container2 {
-    background-color: red;
+    background-color: rgba(247, 119, 45, 0.76);
     position: relative;
-    width: 140%;
+    width: 160%;
     height: 0px;
-    left: -20%;
+    left: -35%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 5px;
+    justify-content: space-around;
 }
 .HL {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
+}
+.HL:visited {
+    color: white;
+}
+.HL:hover {
+    color: rgb(68, 68, 68);
 }
 .h-burger {
     right: 6vw;
@@ -171,7 +178,14 @@ header {
 .h-menuDinvisible {
     height: 1px;
 }
-
+.leaves-C2 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: -100px;
+    top: calc(100vh - 200px);
+    transform: rotate(45deg);
+}
 
 
 
@@ -193,7 +207,7 @@ header {
 
 
 @media screen
-and (min-width: 1200px) {
+and (min-width: 1600px) {
     .h-menus {
         display: flex;
     }
