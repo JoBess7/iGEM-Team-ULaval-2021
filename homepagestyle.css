@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@700&display=swap');
 
-
+* {
+    font-weight: 500;
+}
 .containers {
     width: 100vw;
     height: 3000px;
@@ -41,6 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 300px;
 }
 .c1-flex-scroll2 {
     padding-top: 20px;
@@ -102,7 +106,7 @@
     top: 200px;
     position: relative;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #fca35a, #fc7d16, #fda35a);
+    background-color: #ff9d4d;
     float: right;
     display: flex;
     flex-direction: row;
@@ -119,7 +123,7 @@
 }
 .info-text1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     opacity: 0;
 }
 .info-text-million {
@@ -144,26 +148,28 @@
     justify-content: space-evenly;
 }
 .circle1 {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     top: 200px;
     position: relative;    
-    background-color: #6d827d;
-    border: 1px solid rgb(245, 125, 78);
+    background-color: #09251e;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
+    box-shadow: 2px 5px #284f45,
+    3px 6px #284f45,
+    5px 10px #284f45,
+    7px 12px #284f45;
 }
 .circle2 {
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
     border-radius: 50%;
-    background-color: #6d827d;
-    border: 1px solid rgb(245, 125, 78);
+    background-color: #09251e;
     top: -120px;
     position: relative;
     display: flex;
@@ -171,26 +177,26 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+    box-shadow: 2px 5px #284f45,
+    3px 6px #284f45,
+    5px 10px #284f45,
+    7px 12px #284f45;
 }
 .text-container-circle {
     width: 80%;
     font-size: 27px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-
-    color: black;
+    font-weight: bolder;
+    color: #fdf8f5;
+    
 }
 .circle-pourcentage {
     font-size: 180px;
-    background: -webkit-linear-gradient(rgb(255, 159, 80), rgb(255, 60, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 .circle-million {
     font-size: 120px;
-    background: -webkit-linear-gradient(rgb(255, 159, 80), rgb(255, 60, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 700;
 }
 
 .linee {
@@ -202,6 +208,10 @@
     animation: line-rotate 5s linear forwards infinite;
     z-index: -2;
 }
+.leaves-C2 {
+    right: -200px;
+}
+
 @keyframes line-rotate {
     from {transform: rotate(0deg);}
     to {
@@ -227,6 +237,7 @@ and (max-height: 568px) {
 and (min-width: 700px) {
     .c1-flex-h1 {
         font-size: 45px;
+        width: 400px;
     }
     .c1-flex > img {
         width: 240px;
@@ -323,15 +334,67 @@ and (max-width: 400px) {
     
 }
 
+@media screen
+and (min-width: 1001px)
+and (max-width: 1250px) {
+    .circle1 {
+        width: 380px;
+        height: 380px;
+        top: 200px;
+    }
+    .circle2 {
+        width: 550px;
+        height: 550px;
+    }
+    .text-container-circle {
+        font-size: 24px;
+        
+    }
+    .circle-pourcentage {
+        font-size: 140px;
+        font-weight: 700;
+    }
+    .circle-million {
+        font-size: 80px;
+        font-weight: 700;
+    }
+}
+@media screen
+and (min-width: 0px)
+and (max-width: 1000px) {
+    .circle1 {
+        width: 380px;
+        height: 380px;
+        top: 200px;
+    }
+    .circle2 {
+        width: 550px;
+        height: 550px;
+    }
+    .text-container-circle {
+        font-size: 24px;
+        
+    }
+    .circle-pourcentage {
+        font-size: 140px;
+        font-weight: 700;
+    }
+    .circle-million {
+        font-size: 80px;
+        font-weight: 700;
+    }
+}
 
 
 
 
 
-beige en bas
-gradient 
-txt en noi 
-txt plus petit 
+/*
+beige en bas            XXX
+gradient                XXX
+txt en noi              XXX
+txt plus petit          
 txt sur 4 lignes
 icons vs goutte
-background-gradienttt
+background-gradienttt   XXX
+*/

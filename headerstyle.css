@@ -84,7 +84,7 @@ header {
     justify-content: center;
 }
 .h-menu-title {
-    color: white;
+    color: #fdf8f5;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     font-size: 23px;
@@ -113,7 +113,7 @@ header {
     font-size: 17px;
 }
 .HL:visited {
-    color: white;
+    color: #fdf8f5;
 }
 .HL:hover {
     color: rgb(68, 68, 68);

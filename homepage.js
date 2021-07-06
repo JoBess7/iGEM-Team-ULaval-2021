@@ -45,7 +45,7 @@ const checkPagePosition = () => {
             setTimeout(() => {
                 PourcentageHasLaunched = true;
                 pourcentageCounterUp(); 
-            }, 300);
+            }, 700);
         }
     }
 }
