@@ -45,7 +45,7 @@ const checkPagePosition = () => {
             setTimeout(() => {
                 PourcentageHasLaunched = true;
                 pourcentageCounterUp(); 
-            }, 700);
+            }, 2000);
         }
     }
 }
@@ -56,7 +56,7 @@ const pourcentageCounterUp = () => {
     if(currentPourcentage < 73) {
         setTimeout(() => {
             requestAnimationFrame(pourcentageCounterUp);
-        }, 30);
+        }, 40);
     }
     else {
         pourcentage.innerHTML = "73%";
