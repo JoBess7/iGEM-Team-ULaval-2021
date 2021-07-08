@@ -317,7 +317,7 @@ and (max-width: 400px) {
 
 @media screen
 and (min-width: 1001px)
-and (max-width: 1250px) {
+and (max-width: 1450px) {
     .circle1 {
         width: 380px;
         height: 380px;
