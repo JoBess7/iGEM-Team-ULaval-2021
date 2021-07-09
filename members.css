@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+body, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+body {
+    overflow-x: hidden;
+}
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
 }
 
 .containers {
@@ -81,16 +96,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
-.meet-text-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    top: 120px;
-    height: 400px;
+.meet-container {
     position: relative;
-    width: 97vw;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .meet-text {
@@ -98,15 +112,106 @@
     font-weight: 500;
     padding: 30px;
     font-size: 23px;
-    width: 50%;
+    width: 70%;
+    position: relative;
     text-align: justify;
     background-color: #ff9d4d;
+    box-shadow: 2px 5px rgb(243, 184, 107),
+                3px 6px rgb(243, 184, 107),
+                5px 10px rgb(243, 184, 107),
+                7px 12px rgb(243, 184, 107);
+    line-height: 35px;
 }
 
-.meet-image {
-    width: 300px;
-    height: 300px;
-    background-color: violet;
+.team-member {
+    width: 280px;
+    position: relative;
+    height: 500px;
+    background-color: #3c5851;
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.grid-container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: 100px;
+}
+.team-member-picture {
+    width: 270px;
+    height: 400px;
+    margin-top: 5px;
+    background-color: rgb(223, 55, 55);
+    border-radius: 5px;
+}
+.meet-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    color: #fdf8f5;
+    bottom: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    border-radius: 8px;
+    background-color: rgb(250, 176, 78);
+    box-shadow: 2px 5px #e7bc96,
+            3px 6px #e7bc96;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.meet-icon:hover {
+    height: 53px;
+    width: 204px;
+}
+.meet-icon > h1 {
+    font-weight: 500;
+}
+.TM-about {
+    color: #fdf8f5;
+    bottom: 47px;
+    position: relative;
+    width: 270px;
+    background-color: rgba(17, 17, 17, 0.753);
+}
+.TM-name {
+    font-size: 23px;
+    left: 2px;
+    position: relative;
+}
+.TM-program {
+    color: #d9d9d9;
+    left: 2px;
+    position: relative;
+}
+
+
+@media screen
+and (min-width: 600px)
+and (max-width: 1035px) {
+    .meet-text {
+        font-size: 20px;
+        width: 90%;
+        line-height: 30px;
+    }
+}
+@media screen
+and (min-width: 0px)
+and (max-width: 599px) {
+    .meet-text {
+        font-size: 14px;
+        width: 70%;
+        height: max-content;
+        line-height: 20px;
+        box-shadow: none;
+    }
 }
 
 @media screen
