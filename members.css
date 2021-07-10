@@ -36,59 +36,6 @@ a {
     top: 0;
 }
 
-.c1-flex {
-    display: flex;
-    flex-direction: column;
-    top: 20%;
-    position: relative;
-    width: 100%;
-    height: 70%;
-    align-items: center;
-    justify-content: space-around
-}
-
-.c1-flex-img{
-    width: 250px;
-    height: 250px;
-}
-.c1-flex-h1 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-}
-.c1-flex-scroll2 {
-    padding-top: 20px;
-    display: flex;
-    height: 70px;
-    width: 40px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    animation: scroll-arrow 2s linear infinite;
-    opacity: 1;
-}
-.c1-flex-scroll1 {
-    display: flex;
-    height: 70px;
-    width: 40px;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    animation: scroll-arrow 2s linear infinite;
-    opacity: 1;
-}
-
-.animated-line {
-    width: 40px;
-    padding-top: 20px;
-    animation: scroll-arrow 2s linear infinite;
-    position: relative;
-}
-
 .container2 {
     width: 100vw;
     height: 3000px;
@@ -107,12 +54,21 @@ a {
     align-items: center;
 }
 
+.meet-text-container {
+    width: 100vw;
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .meet-text {
     border-radius: 20px;
     font-weight: 500;
     padding: 30px;
     font-size: 23px;
-    width: 70%;
+    width: 90%;
     position: relative;
     text-align: justify;
     background-color: #ff9d4d;
@@ -164,7 +120,7 @@ a {
     box-shadow: 2px 5px #e7bc96,
             3px 6px #e7bc96;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
 }
 .meet-icon:hover {
@@ -192,6 +148,36 @@ a {
     position: relative;
 }
 
+.team-picture {
+    width: 87%;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+.team-picture-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    background-color: #ff9d4d;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.meet-our-team {
+    margin-bottom: 50px;
+    font-size: 40px;
+    display: none;
+}
+
+.about-section {
+    position: absolute;
+    width: 270px;
+    height: 400px;
+    margin-top: 5px;
+    background-color: #ffc290;
+    transform: rotate3d(0,1,0,-90deg);
+}
+
 
 @media screen
 and (min-width: 600px)
@@ -206,79 +192,23 @@ and (max-width: 1035px) {
 and (min-width: 0px)
 and (max-width: 599px) {
     .meet-text {
-        font-size: 14px;
-        width: 70%;
-        height: max-content;
+        font-size: 17px;
+        width: 90%;
         line-height: 20px;
         box-shadow: none;
     }
+    .meet-our-team {
+        display: unset;
+    }
 }
+@media screen
+and (min-width: 1035px) {
 
+}
 @media screen
 and (max-height: 568px) {
     .container1 {
         height: 568px;
-    }
-}
-
-@media screen
-and (min-width: 700px) {
-    .c1-flex-h1 {
-        font-size: 45px;
-        width: 400px;
-    }
-    .c1-flex > img {
-        width: 240px;
-        height: 240px;
-    }
-
-}
-
-@media screen
-and (min-width: 800px) {
-    .container1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .c1-flex {
-        flex-direction: row;
-        width: 80%;
-    }
-    .c1-flex > img {
-        width: 300px;
-        height: 300px;
-    }
-    .c1-flex-h1 {
-        margin-left: 70px;
-    }
-}
-
-@media screen
-and (min-width: 1100px) {
-    .c1-flex {
-        width: 80%;
-    }
-    .c1-flex > img {
-        width: 350px;
-        height: 350px;
-    }
-    .c1-flex-h1 {
-        font-size: 47px;
-    }
-}
-
-@media screen
-and (min-width: 1250px) {
-    .c1-flex {
-        width: 80%;
-    }
-    .c1-flex > img {
-        width: 500px;
-        height: 500px;
-    }
-    .c1-flex-h1 {
-        font-size: 60px;
     }
 }
 
@@ -287,3 +217,39 @@ and (min-width: 1250px) {
     50% {top: 15px;}
     100% {top: 0px;}
 }
+
+.MPRotate {
+    animation: picture-rotate .3s linear forwards 1;
+}
+
+@keyframes picture-rotate {
+    from {transform: rotate3d(0,1,0,0deg)}
+    to {transform: rotate3d(0,1,0,-90deg);}
+}
+
+.ASRotate {
+    animation: about-section-rotate .3s linear forwards 1;
+}
+
+@keyframes about-section-rotate {
+    from {transform: rotate3d(0,1,0,-90deg)}
+    to {transform: rotate3d(0,1,0,0deg);}
+}
+.MPRotateBack {
+    animation: picture-rotate-back .3s linear forwards 1;
+}
+
+@keyframes picture-rotate-back {
+    from {transform: rotate3d(0,1,0,90deg)}
+    to {transform: rotate3d(0,1,0,0deg);}
+}
+
+.ASRotateBack {
+    animation: about-section-rotate-back .3s linear forwards 1;
+}
+
+@keyframes about-section-rotate-back {
+    from {transform: rotate3d(0,1,0,0deg)}
+    to {transform: rotate3d(0,1,0,-90deg);}
+}
+
