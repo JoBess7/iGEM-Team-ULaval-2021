@@ -1,5 +1,8 @@
 var emilieAboutIsOn = false;
 var marianneAboutIsOn = false;
+var catherineAboutIsOn = false;
+var benjaminAboutIsOn = false;
+var luigiAboutIsOn = false;
 var isAnimating = false;
 
 $('#meet-emilie').click(function() {
@@ -7,22 +10,18 @@ $('#meet-emilie').click(function() {
         isAnimating = true;
         setTimeout(() => {
             isAnimating = false;
-        }, 500);
+        }, 300);
         switch(emilieAboutIsOn) {
             case(false):
                 emilieAboutIsOn = true;
-                $('#emilie-picture').removeClass('MPRotateBack');
                 $('#emilie-about').removeClass('ASRotateBack');
             
-                $('#emilie-picture').addClass('MPRotate');
                 $('#emilie-about').addClass('ASRotate');
                 break;
             case(true):
                 emilieAboutIsOn = false;
-                $('#emilie-picture').addClass('MPRotateBack');
                 $('#emilie-about').addClass('ASRotateBack');
             
-                $('#emilie-picture').removeClass('MPRotate');
                 $('#emilie-about').removeClass('ASRotate');
                 break;
         }
@@ -34,23 +33,88 @@ $('#meet-marianne').click(function() {
         isAnimating = true;
         setTimeout(() => {
             isAnimating = false;
-        }, 500);
+        }, 300);
         switch(marianneAboutIsOn) {
             case(false):
                 marianneAboutIsOn = true;
-                $('#marianne-picture').removeClass('MPRotateBack');
                 $('#marianne-about').removeClass('ASRotateBack');
             
-                $('#marianne-picture').addClass('MPRotate');
                 $('#marianne-about').addClass('ASRotate');
                 break;
             case(true):
                 marianneAboutIsOn = false;
-                $('#marianne-picture').addClass('MPRotateBack');
                 $('#marianne-about').addClass('ASRotateBack');
             
-                $('#marianne-picture').removeClass('MPRotate');
                 $('#marianne-about').removeClass('ASRotate');
+                break;
+        }
+    }
+})
+
+$('#meet-catherine').click(function() {
+    if(isAnimating === false) {
+        isAnimating = true;
+        setTimeout(() => {
+            isAnimating = false;
+        }, 300);
+        switch(catherineAboutIsOn) {
+            case(false):
+                catherineAboutIsOn = true;
+                $('#catherine-about').removeClass('ASRotateBack');
+            
+                $('#catherine-about').addClass('ASRotate');
+                break;
+            case(true):
+                catherineAboutIsOn = false;
+                $('#catherine-about').addClass('ASRotateBack');
+            
+                $('#catherine-about').removeClass('ASRotate');
+                break;
+        }
+    }
+})
+
+$('#meet-benjamin').click(function() {
+    if(isAnimating === false) {
+        isAnimating = true;
+        setTimeout(() => {
+            isAnimating = false;
+        }, 300);
+        switch(benjaminAboutIsOn) {
+            case(false):
+                benjaminAboutIsOn = true;
+                $('#benjamin-about').removeClass('ASRotateBack');
+            
+                $('#benjamin-about').addClass('ASRotate');
+                break;
+            case(true):
+                benjaminAboutIsOn = false;
+                $('#benjamin-about').addClass('ASRotateBack');
+            
+                $('#benjamin-about').removeClass('ASRotate');
+                break;
+        }
+    }
+})
+
+$('#meet-luigi').click(function() {
+    if(isAnimating === false) {
+        isAnimating = true;
+        setTimeout(() => {
+            isAnimating = false;
+        }, 300);
+        switch(luigiAboutIsOn) {
+            case(false):
+                luigiAboutIsOn = true;
+                $('#luigi-about').removeClass('ASRotateBack');
+            
+                $('#luigi-about').addClass('ASRotate');
+                break;
+            case(true):
+                luigiAboutIsOn = false;
+                $('#luigi-about').addClass('ASRotateBack');
+            
+                $('#luigi-about').removeClass('ASRotate');
                 break;
         }
     }
