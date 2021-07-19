@@ -62,6 +62,78 @@ $( ".h-menu-humanpractices" ).mouseleave(function() {
     $('#h-menu-dhumanpractices').addClass("h-C2-dexpand-200");
   });
 
+
+  $( "#burger-project" )
+    .mouseleave(function() {
+    $('#burger-project').removeClass("burger-item-slide");
+    $('#burger-project').addClass("burger-item-slideout");
+    })
+    .mouseenter(function() {
+      $('#burger-project').addClass("burger-item-slide");
+      $('#burger-project').removeClass("burger-item-slideout");
+  });
+
+    $( "#burger-team" )
+    .mouseleave(function() {
+    $('#burger-team').removeClass("burger-item-slide");
+    $('#burger-team').addClass("burger-item-slideout");
+    })
+    .mouseenter(function() {
+      $('#burger-team').addClass("burger-item-slide");
+      $('#burger-team').removeClass("burger-item-slideout");
+  });
+
+  $( "#burger-parts" )
+  .mouseleave(function() {
+  $('#burger-parts').removeClass("burger-item-slide");
+  $('#burger-parts').addClass("burger-item-slideout");
+  })
+  .mouseenter(function() {
+    $('#burger-parts').addClass("burger-item-slide");
+    $('#burger-parts').removeClass("burger-item-slideout");
+  });
+
+  $( "#burger-awards" )
+  .mouseleave(function() {
+  $('#burger-awards').removeClass("burger-item-slide");
+  $('#burger-awards').addClass("burger-item-slideout");
+  })
+  .mouseenter(function() {
+    $('#burger-awards').addClass("burger-item-slide");
+    $('#burger-awards').removeClass("burger-item-slideout");
+  });
+
+  $( "#burger-safety" )
+  .mouseleave(function() {
+  $('#burger-safety').removeClass("burger-item-slide");
+  $('#burger-safety').addClass("burger-item-slideout");
+  })
+  .mouseenter(function() {
+    $('#burger-safety').addClass("burger-item-slide");
+    $('#burger-safety').removeClass("burger-item-slideout");
+  });
+
+  $( "#burger-poster" )
+  .mouseleave(function() {
+  $('#burger-poster').removeClass("burger-item-slide");
+  $('#burger-poster').addClass("burger-item-slideout");
+  })
+  .mouseenter(function() {
+    $('#burger-poster').addClass("burger-item-slide");
+    $('#burger-poster').removeClass("burger-item-slideout");
+  });
+
+  $( "#burger-humanpractices" )
+  .mouseleave(function() {
+  $('#burger-humanpractices').removeClass("burger-item-slide");
+  $('#burger-humanpractices').addClass("burger-item-slideout");
+  })
+  .mouseenter(function() {
+    $('#burger-humanpractices').addClass("burger-item-slide");
+    $('#burger-humanpractices').removeClass("burger-item-slideout");
+  });
+
+
 $(window).scroll(function() {
     if(!didScroll) {
          setDidScrollTrue();

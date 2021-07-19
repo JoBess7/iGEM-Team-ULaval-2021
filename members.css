@@ -24,7 +24,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 4000px;
+    height: 10000px;
 }
 
 
@@ -38,12 +38,21 @@ a {
 
 .container2 {
     width: 100vw;
-    height: 3000px;
+    height: 8000px;
     background-color: #9daba8;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+}
+
+.team-icon {
+    position: relative;
+    width: 70px;
+    border-radius: 50%;
+    top: 20px;
+    right: -20px;
+    animation: team-icon-rotate 2.5s linear infinite;
 }
 
 .meet-container {
@@ -52,6 +61,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .meet-text-container {
@@ -61,8 +71,17 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     top: 110px;
     height: calc(100% - 110px);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -80px;
+    z-index: 10;
 }
 
 .meet-text {
@@ -95,11 +114,13 @@ a {
 }
 
 .grid-container {
-    width: 70%;
+    width: 100%;
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
     margin-top: 100px;
+    position: relative;
+    top: -100px;
 }
 .team-member-picture {
     width: 270px;
@@ -135,13 +156,13 @@ a {
 }
 
 .igem-crew {
+    text-align: center;
     color: black;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 2px solid #af441a;
     border-top: 2px solid #af441a;
-    position: relative;
-    top: 140px;
+    margin-top: 50px;
 }
 
 .TM-about {
@@ -151,6 +172,9 @@ a {
     width: 270px;
     background-color: rgba(17, 17, 17, 0.753);
     z-index: 10;
+}
+.TM-about-higher {
+    bottom: 75px !important;
 }
 .TM-name {
     font-size: 23px;
@@ -177,9 +201,25 @@ a {
     font-size: 40px;
     position: relative;
     top: 25px;
-    border-bottom: 2px solid #af441a;;
 }
-
+.meet-our-team:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 310px;  /* or 100px */
+    border-bottom: 2px solid #af441a;
+  }
+.bold {
+    font-weight: 900;
+    position: relative;
+    left: 10px;
+}
+.spacing {
+    position: relative;
+    left: 10px;
+}
 .about-section {
     position: absolute;
     width: 270px;
@@ -189,42 +229,59 @@ a {
     z-index: 2;
     opacity: 0;
 }
+.about-section-text {
+    width: 95%;
+}
 
 
 @media screen
 and (min-width: 0px)
 and (max-width: 398px) {
     .meet-text {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 21px;
-        box-shadow: none;
+       
     }
 }
 @media screen
 and (min-width: 399px)
-and (max-width: 599px) {
+and (max-width: 999px) {
     .meet-text {
         font-size: 19px;
         line-height: 22px;
-        box-shadow: none;
+     
     }
 }
 @media screen
-and (min-width: 1000px){
+and (min-width: 1300px){
     .meet-text {
-        font-size: 30px;
-        line-height: 40px;
-        position: relative;
-        top: 100px;
-    }
-    .meet-our-team {
-        top: 80px;
+        font-size: 25px;
+        line-height: 30px;
     }
 }
 @media screen
 and (max-height: 568px) {
     .container1 {
         height: 568px;
+    }
+}
+
+@media screen
+and (min-width: 700px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen
+and (min-width: 1100px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen
+and (min-width: 1500px) {
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
     }
 }
 
@@ -253,3 +310,22 @@ and (max-height: 568px) {
     100% {opacity:0;}
 }
 
+@keyframes team-icon-rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-20deg);}
+    30% {transform: rotate(-23deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(20deg);}
+    80% {transform: rotate(23deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@media screen 
+and (max-width: 480px){
+    .meet-our-team {
+        font-size: 25px;
+    }
+    .meet-our-team:before {
+       display: none;
+      }
+}

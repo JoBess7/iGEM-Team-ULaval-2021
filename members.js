@@ -3,6 +3,7 @@ var marianneAboutIsOn = false;
 var catherineAboutIsOn = false;
 var benjaminAboutIsOn = false;
 var luigiAboutIsOn = false;
+var joanaAboutIsOn = false;
 var isAnimating = false;
 
 $('#meet-emilie').click(function() {
@@ -115,6 +116,30 @@ $('#meet-luigi').click(function() {
                 $('#luigi-about').addClass('ASRotateBack');
             
                 $('#luigi-about').removeClass('ASRotate');
+                break;
+        }
+    }
+})
+
+
+$('#meet-joana').click(function() {
+    if(isAnimating === false) {
+        isAnimating = true;
+        setTimeout(() => {
+            isAnimating = false;
+        }, 300);
+        switch(joanaAboutIsOn) {
+            case(false):
+                joanaAboutIsOn = true;
+                $('#joana-about').removeClass('ASRotateBack');
+            
+                $('#joana-about').addClass('ASRotate');
+                break;
+            case(true):
+                joanaAboutIsOn = false;
+                $('#joana-about').addClass('ASRotateBack');
+            
+                $('#joana-about').removeClass('ASRotate');
                 break;
         }
     }
