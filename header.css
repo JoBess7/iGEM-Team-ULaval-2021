@@ -197,7 +197,7 @@ header {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 40px;
+    left: 15vw;
     width: 250px;
 }
 .burger-item {
@@ -208,6 +208,7 @@ header {
     font-weight: 600;
     position: relative;
     width: min-content;
+    cursor: pointer;
 }
 .burger-item:visited {
     color: black;
@@ -225,7 +226,7 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 50%;
+    left: 40%;
     top: -100vh;
     animation: burger-view-in 1s ease-out forwards 1;
     border-radius: 50%;
@@ -234,43 +235,20 @@ header {
     height: 200px;
     justify-content: center;
     background-color: #09251e;
+    box-shadow: 2px 5px #284f45,
+    3px 6px #284f45,
+    5px 10px #284f45,
+    7px 12px #284f45;
 }
 .burger-view-item {
     padding-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     color: #fdf8f5;
+    font-size: 15px;
 }
 .burger-view-item:visited {
-    font-size: 18px;
+    color: #fdf8f5;
 }
-
-@keyframes burger-view-in {
-    from {
-        top: -100vh;
-    }
-    to {
-        top: 0px;
-    }
-}
-@keyframes burger-item-slide {
-    from {
-        left: 0;
-    }
-    to {
-        left: 10px;
-    }
-}
-@keyframes burger-item-slideout {
-    from {
-        left: 10px;
-    }
-    to {
-        left: 0px;
-    }
-}
-
-
-
 
 
 
@@ -289,7 +267,59 @@ header {
 
 
 @media screen
+and (min-width: 650px) {
+    .burger-view {
+        width: 400px;
+        height: 400px;
+    }
+    .burger-view-item {
+        font-size: 25px;
+    }
+    .h-menuD-flex1 {
+        top: 0px;
+    }
+    .burger-item {
+        font-size: 32px;
+    }
+}
+@media screen
+and (min-width: 1000px) {
+    .burger-view {
+        width: 500px;
+        height: 500px;
+    }
+    .burger-view-item {
+        font-size: 35px;
+    }
+    .h-menuD-flex1 {
+        top: 0px;
+    }
+    .burger-item {
+        font-size: 40px;
+    }
+}
+@media screen
+and (min-width: 650px)
+and (max-height: 800px) {
+    .burger-view {
+        width: 300px;
+        height: 300px;
+    }
+    .burger-view-item {
+        font-size: 20px;
+    }
+    .h-menuD-flex1 {
+        top: -30px;
+    }
+    .burger-item {
+        font-size: 30px;
+    }
+}
+@media screen
 and (min-width: 1600px) {
+    .h-menuD {
+        display: none;
+    }
     .h-menus {
         display: flex;
     }
@@ -316,9 +346,30 @@ and (max-width: 1400px) {
 
 
 
-
-
-
+@keyframes burger-view-in {
+    from {
+        top: -100vh;
+    }
+    to {
+        top: 0px;
+    }
+}
+@keyframes burger-item-slide {
+    from {
+        left: 0;
+    }
+    to {
+        left: 10px;
+    }
+}
+@keyframes burger-item-slideout {
+    from {
+        left: 10px;
+    }
+    to {
+        left: 0px;
+    }
+}
 .h-C2-expand-200 {
     animation: h-C2-expand-200 .4s ease-out forwards 1; 
 }

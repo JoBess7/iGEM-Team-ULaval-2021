@@ -63,6 +63,8 @@ $( ".h-menu-humanpractices" ).mouseleave(function() {
   });
 
 
+var burgerView = document.getElementById("burger-view-project");
+  
   $( "#burger-project" )
     .mouseleave(function() {
     $('#burger-project').removeClass("burger-item-slide");
@@ -71,8 +73,9 @@ $( ".h-menu-humanpractices" ).mouseleave(function() {
     .mouseenter(function() {
       $('#burger-project').addClass("burger-item-slide");
       $('#burger-project').removeClass("burger-item-slideout");
-  });
 
+      burgerView.innerHTML = "<a href='' class='burger-view-item' id=''>Description</a><a href='' class='burger-view-item' id=''>Contribution</a><a href='' class='burger-view-item' id=''>Project Modeling</a><a href='' class='burger-view-item' id=''>Engineering Success</a><a href='' class='burger-view-item' id=''>Implementation</a>";
+});
     $( "#burger-team" )
     .mouseleave(function() {
     $('#burger-team').removeClass("burger-item-slide");
@@ -81,6 +84,8 @@ $( ".h-menu-humanpractices" ).mouseleave(function() {
     .mouseenter(function() {
       $('#burger-team').addClass("burger-item-slide");
       $('#burger-team').removeClass("burger-item-slideout");
+
+      burgerView.innerHTML = "<a href='' class='burger-view-item' id=''>Team Members</a><a href='' class='burger-view-item' id=''>Attribution</a><a href='' class='burger-view-item' id=''>Collaborations</a><a href='' class='burger-view-item' id=''>Engineering Success</a><a href='' class='burger-view-item' id=''>Science Communications</a>";
   });
 
   $( "#burger-parts" )
@@ -132,7 +137,6 @@ $( ".h-menu-humanpractices" ).mouseleave(function() {
     $('#burger-humanpractices').addClass("burger-item-slide");
     $('#burger-humanpractices').removeClass("burger-item-slideout");
   });
-
 
 $(window).scroll(function() {
     if(!didScroll) {
