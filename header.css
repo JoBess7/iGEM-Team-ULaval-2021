@@ -82,12 +82,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 30px;
 }
 .h-menu-title {
     color: #fdf8f5;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-    font-size: 23px;
+    font-size: 17px;
     font-weight: 600;}
 .h-menu-container1 > img {
     width: 13px;
@@ -167,7 +168,7 @@ header {
     position: fixed;
     top: 60px;
     width: 100vw;
-    background-color: #b6c0be;
+    background-color: #ca8266;
     z-index: -5;
     height: 1px;
     transition: height .5s;
@@ -316,7 +317,7 @@ and (max-height: 800px) {
     }
 }
 @media screen
-and (min-width: 1600px) {
+and (min-width: 1200px) {
     .h-menuD {
         display: none;
     }

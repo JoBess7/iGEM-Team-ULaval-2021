@@ -1,0 +1,19 @@
+footer {
+    height: 250px;
+    width: 100vw;
+    background-color: #6b6b6b;
+}
+
+.separator {
+    height: 3px;
+    width: 100vw;
+    background-color: rgb(18, 18, 18);
+}
+
+.button-container {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
