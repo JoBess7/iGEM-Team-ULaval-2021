@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./description.css">
+    <link rel="stylesheet" href="./footer.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -16,25 +17,7 @@
             <div class="header-top-container" id="header">
                 <div class="h-menuD" id="h-menuD">
                     <div class="h-menuD-flex">
-
                         <div class="h-menuD-flex1">
-                            <div class="BM-project BM">
-                                <div id='BM-project-back' class="BM-item BACK BM-project-i">Back to main menu</div>
-                                <a id='BM-project-desc' href="" class="BM-item BM-project-i">Description</a>
-                                <a id='BM-project-cont' href="" class="BM-item BM-project-i">Contribution</a>
-                                <a id='BM-project-mod' href="" class="BM-item BM-project-i">Modeling</a>
-                                <a id='BM-project-eng' href="" class="BM-item BM-project-i">Engineering</a>
-                                <a id='BM-project-hp' href="" class="BM-item BM-project-i">Implementation</a>
-                            </div>
-
-                            <div class="BM-team BM">
-                                <div id='BM-team-back' class="BM-item BACK BM-project-i">Back to main menu</div>
-                                <a id='BM-team-teammembers' href="" class="BM-item BM-project-i">Team Members</a>
-                                <a id='BM-team-attributions' href="" class="BM-item BM-project-i">Attribution</a>
-                                <a id='BM-team-collaborations' href="" class="BM-item BM-project-i">Collaborations</a>
-                                <a id='BM-team-sciencecoms' href="" class="BM-item BM-project-i">Science Communications</a>
-                            </div>
-                            
                             <div href="" class="burger-project burger-item" id='burger-project'>Project</div>
                             <div href="" class="burger-team burger-item" id='burger-team'>Team</div>
                             <div href="" class="burger-parts burger-item" id='burger-parts'>Parts</div>
@@ -42,6 +25,13 @@
                             <div href="" class="burger-safety burger-item" id='burger-safety'>Safety</div>
                             <div href="" class="burger-poster burger-item" id='burger-poster'>Poster</div>
                             <div href="" class="burger-humanpractices burger-item" id='burger-humanpractices'>Human Practices</div>
+                        </div>
+                        <div class="h-menuD-project burger-view" id='burger-view-project'>
+                            <a href="" class="burger-view-item" id=''>Description</a>
+                            <a href="" class="burger-view-item" id=''>Contribution</a>
+                            <a href="" class="burger-view-item" id=''>Project Modeling</a>
+                            <a href="" class="burger-view-item" id=''>Engineering Success</a>
+                            <a href="" class="burger-view-item" id=''>Implementation</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +56,7 @@
                                 <div class="h-menu-title" id="h-menu-tproject">
                                     Project
                                 </div>
-                                <img src="./assets/header-itemslide-icon.png" id='rect-project' alt="">
+                                <img src="./assets/header-itemslide-icon.png" alt="">
                             </div>
                             <div class="h-menu-container2" id="h-menu-dproject">
                                 <a href="" class="HL h-link-project1">Description</a>
@@ -182,53 +172,88 @@
         </header>
         <div class="containers">
             <div class="container1">
-                <div class="c1-flex">
-                    <img class="c1-flex-img" src="./assets/roundlogo.png" alt="" srcset="">
-                    <h1 class='c1-flex-h1'>
-                        A Solution Against maple Polymers
-                        <img class="animated-line" src="./assets/arrow.svg" alt="">
+                <div class="meet-text-container">
+                    <h1 class="meet-our-team">
+                        Description
+                        <img src="./assets/T--ULaval--description.png" class='team-icon' alt="" srcset="">
+                    </h1>
+                    <h1 class="meet-text">
+                        Maple syrup has a great cultural and economic importance for Canada. However, several issues can lower the quality of the final product. We engaged in conversations with experts to identify potential solutions to these problems, ultimately targeting ropy maple syrup. Ropy syrup has a very high viscosity, is not marketable, and damages maple syrup production equipment, which results in important economic losses, particularly for smaller producers. It is caused by the presence of dextrans produced by specific types of bacteria in the sap. aSAP, by team iGEM ULaval 2020-2021, will aim to develop an enzymatic treatment to degrade dextran and turn ropy maple syrup into a marketable product. Since maple syrup is stored at room temperatures, we are planning to use a dextranase from a psychrophile (cold-adapted) bacteria. In 2020, we have validated our candidate enzyme in silico, planned experiments to characterize and optimize it, and designed our implementation proposal.
                     </h1>
                 </div>
             </div>
 
             <div class="container2">
-                <img class="leaves-C2" src="./assets/autumn-leaves.png" alt="">
-                <div class="c2-info-box1">
-                    <div class="text-container">
-                        <h1 class="info-text1" id="info-text1">
-                            In 2021 alone, Canada produced  
-                            <span class="info-text-million">
-                                45 million liters
-                            </span>
-                             of maple Syrup.
-                            <br>
-                            <span class="info-text-thatmeans" id="thatmeans">
-                                That means
-                            </span>
-                        </h1>
-                    </div>
-                </div>
-                <div class="c2-info-box2">
-                    <div class="circle-container">
-                        <div class="circle1">
-                            <div class="text-container-circle">
-                                <span class="circle-million">600M</span>
-                                <h1>Canadian dollars</h1>
-                            </div>
+                <div class="attr-flex">
+                    <div class="attr-title-flex">
+                        <h1 class="attr-title">Inspiration</h1>
+                        <div class="attr-text-flex">
+                            <div class="attr-text">Maple trees (genus Acer) are cultural, ecological, and economical symbols of Canada. There are over 150 species of maple trees, out of which 10 are native to Canada (Turner, 2009). These trees are well-known because of their leaves’ stunning autumn colors and the sweet syrup we can produce from their sap.
+                                <br><br>
+                                Canada and the north of the United States have been producing maple syrup for many centuries. Several First Nations communities would cut slits in tree trunks to obtain the sap and then boil it with heating stones to produce maple syrup (Tuinman, 2014). They taught these techniques to European settlers, which perpetuated the tradition in the region. Today, maple products have become a strong market in North America, with potential for exports to several European countries.
+                                <br><br>
+                                The province of Québec is the epicenter of the maple industry. In 2018, it accounted for 91% of the total Canadian production and 67.2% of the total worldwide maple products. Québec’s maple products have an estimated worth of $ 345 million CAD (~$255 million USD) (Producteurs et Productrices Acéricoles du Québec, 2018). 
+                                <br><br>
+                                The current methods used to produce maple syrup are not so different from the original ones. Briefly, sap is collected through holes in maple trees that are connected through a network of tubes that are connected to vacuum pumps. Sap is then directed towards reverse osmosis filters that allow concentrating the sugars in the sap by removing water. Finally, it is boiled until the desired sugar concentration (66° Brix, or 66 grams of sugar per 100 grams of syrup).</div>
                         </div>
-                        <div class="circle2">
-                            <div class="linee"></div>
-                            <div class="text-container-circle">
-                                <span id="pourcentage" class="circle-pourcentage">0% </span>
-                                <h1>of global maple syrup production</h1>
-                            </div>
+                        <img src="./assets/T--ULaval--test_figure2.png" alt="" class="inspiration-img">
+                        <div class="figure-img">
+                            <span class='figure-bold'>Figure 1:</span>
+                            Diagram showing how maple syrup is produced.
                         </div>
                     </div>
                 </div>
-            </div> 
+                
+                <div class="arrow-container">
+                    <div class="arrow arrow1"></div>
+                </div>
+
+                <div class="attr-flex">
+                    <div class="attr-title-flex light">
+                        <h1 class="attr-title">The Problem</h1>
+                        <div class="attr-text-flex">
+                            <div class="attr-text">Each year, the maple industry discards millions of pounds of maple syrup because of taste, color, or texture defects. These include microbial contamination, ropy syrup, and buddy taste (PPAQ, 2018). These two last examples - ropy and buddy syrup - are the two of the biggest causes of maple syrup retention. In particular, ropy maple syrup is a problem for which there is no solution. It is produced whenever certain microorganisms inhabit biofilms in the tubes used to collect sap from the maple trees. These bacteria, presumably including Leuconostoc mesenteroides, produce a series of polysaccharides that increase the viscosity of maple syrup. While the percentage of ropy syrup produced is rather low, it led to economic losses of around $5.5 million CAD between 2008 and 2017 (Lagacé, et al., 2018). Moreover, it damages the equipment used by maple producers and causes them to stop their production, leading to further economic losses that are especially harmful for smaller producers.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow-container">
+                    <div class="arrow arrow2"></div>
+                </div>
+
+                <div class="attr-flex">
+                    <div class="attr-title-flex">
+                        <h1 class="attr-title">How and why we selected this project</h1>
+                        <div class="attr-text-flex">
+                            <div class="attr-text">We decided to work on a project related to the maple industry because of its cultural and economic importance for our province. However, settling on a project was not straightforward. At first, we set out to find ways to prevent the growth of biofilms in the tubes used to collect maple sap. However, by reaching out to professionals in the field, we soon learned that these biofilms are not very well characterized and that maple syrup producers may not be too willing to add components to their tubes. Afterwards, we shifted our interest towards revaluing ropy syrup, that is, transforming it into a new product that could be used for different purposes. We considered using it as a substrate for the production of alcoholic drinks, but we finally settled on trying to reduce its viscosity so that it would resemble maple syrup again. We learned that regulations would prevent us from calling this product maple syrup, but we believe it could be put to a wide variety of uses, such as maple-flavored alcoholic drinks, vinegars, animal feed, etc.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow-container">
+                    <div class="arrow arrow3"></div>
+                </div>
+
+                <div class="attr-flex">
+                    <div class="attr-title-flex light">
+                        <h1 class="attr-title">Goals for 2021</h1>
+                        <div class="attr-text-flex">
+                            <div class="attr-text">We decided to embark on this project for both the 2020 and 2021 iGEM competitions. As such, the main goal for the 2020 season was to plan our project. This includes several aspects that we intend to present at the 2020 Giant Jamboree: ...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <footer>
+            <div class='separator'></div>
+
+            <div class="button-container">
+                
+            </div>
+        </footer>
     <script src="./header.js"></script>
-    <script src="./homepage.js"></script>
+    <script src="./description.js"></script>
+    <script src="./footer.js"></script>
 </body>
 </html>

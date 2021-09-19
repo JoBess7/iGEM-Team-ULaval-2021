@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+body {
+    overflow-x: hidden;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+
+.container1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f3decb;
+    position: relative;
+    top: 0;
+}
+
+.team-icon {
+    position: absolute;
+    width: 140px;
+    border-radius: 50%;
+    top: -40px;
+    right: -130px;
+    animation: team-icon-rotate 2.5s linear infinite;
+}
+
+.meet-container {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet-text-container {
+    width: 100vw;
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 110px;
+    height: calc(100% - 110px);
+}
+
+.meet-text {
+    border-radius: 20px;
+    font-weight: 100;
+    padding: 30px;
+    font-size: 23px;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    background-color: #ff9d4d;
+    box-shadow: 2px 5px rgb(243, 184, 107),
+                3px 6px rgb(243, 184, 107),
+                5px 10px rgb(243, 184, 107),
+                7px 12px rgb(243, 184, 107);
+    line-height: 35px;
+}
+
+
+.meet-our-team {
+    margin-bottom: 50px;
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+}
+.meet-our-team:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height  : 1px;
+    width   : 220px;  /* or 100px */
+    border-bottom: 2px solid #af441a;
+  }
+  
+
+.container2 {
+    width: 100vw;
+    background-color: #0b2e26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.item-view {
+    box-shadow: 2px 5px #969797,
+            3px 6px #969797,
+            5px 10px #969797,
+            7px 12px #969797;;
+    animation-name: toWhite;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    width: 90%;
+    height: 70px;
+    background-color: #ccd3d1;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.item-view:hover {
+    animation-name: toRed;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+.item-title-flex {
+    cursor: pointer;
+    width: 90%;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.item-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+.horizontal-line {
+    border-radius: 5px;
+    top: 8px;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(45, 45, 45);
+}
+.vertical-line {
+    border-radius: 5px;
+    left: 8px;
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: black;
+}
+.icon-rotate {
+    animation: rotate .6s ease-out forwards 1;
+}
+.icon-unrotate {
+    animation: unrotate .6s ease-out forwards 1;
+}
+.timeline {
+    top: 70px;
+    position: absolute;
+    width: 90%;
+    height: 70px;
+}
+.timeline-element {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-top: 1px solid white;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timeline-element-title {
+    font-size: 20px;
+    font-weight: 300;
+    border: 2px solid #ffc290;
+    background-color: rgb(255, 245, 190);
+}
+.timeline-text {
+    width: 95%;
+}
+@media screen
+and (min-width: 0px)
+and (max-width: 398px) {
+    .meet-text {
+        font-size: 13px;
+        line-height: 21px;
+       
+    }
+}
+@media screen
+and (min-width: 399px)
+and (max-width: 999px) {
+    .meet-text {
+        font-size: 19px;
+        line-height: 22px;
+     
+    }
+}
+@media screen
+and (min-width: 1300px){
+    .meet-text {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+@media screen
+and (max-height: 568px) {
+    .container1 {
+        height: 568px;
+    }
+}
+@media screen 
+and (max-width: 480px){
+    .meet-our-team {
+        font-size: 25px;
+    }
+    .meet-our-team:before {
+       display: none;
+      }
+}
+
+@keyframes team-icon-rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-20deg);}
+    30% {transform: rotate(-23deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(20deg);}
+    80% {transform: rotate(23deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes toWhite {
+    from {
+        background-color: #ccd3d1;
+    }
+    to {
+        background-color:#b1b1b1;
+    }
+}
+@keyframes toRed {
+    from {
+        background-color: #b1b1b1;
+    }
+    to {
+        background-color: #ccd3d1;
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(225deg);
+    }
+}
+@keyframes unrotate {
+    from {
+        transform: rotate(225deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

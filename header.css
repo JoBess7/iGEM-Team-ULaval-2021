@@ -93,12 +93,12 @@ header {
 .h-menu-container1 > img {
     width: 13px;
     height: 10px;
-    top: 10px;
+    top: 0px;
     margin-left: 2px;
     position: relative;
 }
 .h-menu-container2 {
-    background-color: rgba(247, 119, 45, 0.76);
+    background-color: #ca8266;
     position: relative;
     width: 160%;
     height: 0px;
@@ -166,13 +166,14 @@ header {
 }
 .h-menuD {
     position: fixed;
-    top: 60px;
+    top: 25px;
     width: 100vw;
     background-color: #ca8266;
     z-index: -5;
     height: 1px;
     transition: height .5s;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .h-menuDvisible {
     height: 100vh;
@@ -191,25 +192,37 @@ header {
 .h-menuD-flex {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     top: 25%;
     position: relative;
 }
 .h-menuD-flex1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
-    left: 15vw;
-    width: 250px;
 }
 .burger-item {
+    animation-name: toBlack;
+    animation-duration: .3s;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
     margin-bottom: 15px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    color: black;
     font-weight: 600;
     position: relative;
     width: min-content;
     cursor: pointer;
+    transition: all 0.7 ease-in;
+    color: black;
+}
+.burger-item:hover {
+    animation-name: toOrange;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 .burger-item:visited {
     color: black;
@@ -250,9 +263,51 @@ header {
 .burger-view-item:visited {
     color: #fdf8f5;
 }
-
-
-
+.BM {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.BM-item {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 300;
+    position: relative;
+    width: min-content;
+    cursor: pointer;
+    opacity: 0;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.BACK {
+    font-weight: 700;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+}
+.BM-project-i {
+    left: -350%;
+    animation-name: toBlack;
+    animation-duration: .3s;
+}
+.BM-project-i:hover {
+    animation-name: toOrange;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+.toOrange {
+    animation: toOrange .3s ease-out forwards 1;
+}
+.toBlack {
+    animation: toBlack .3s ease-out forwards 1;
+}
 
 
 
@@ -282,6 +337,9 @@ and (min-width: 650px) {
     .burger-item {
         font-size: 32px;
     }
+    .BM-item {
+        font-size: 32px;
+    }
 }
 @media screen
 and (min-width: 1000px) {
@@ -296,6 +354,9 @@ and (min-width: 1000px) {
         top: 0px;
     }
     .burger-item {
+        font-size: 40px;
+    }
+    .BM-item {
         font-size: 40px;
     }
 }
@@ -315,6 +376,9 @@ and (max-height: 800px) {
     .burger-item {
         font-size: 30px;
     }
+    .BM-item {
+        font-size: 30px;
+    }
 }
 @media screen
 and (min-width: 1200px) {
@@ -327,6 +391,9 @@ and (min-width: 1200px) {
     .h-burger {
         display: none;
     }
+}
+.h-menu-container1 > img {
+    top: 7px;
 }
 @media screen
 and (max-width: 1400px) {
@@ -345,8 +412,22 @@ and (max-width: 1400px) {
 
 
 
-
-
+@keyframes toOrange {
+    from {
+        color: black;
+    }
+    to {
+        color: #a62f00;
+    }
+}
+@keyframes toBlack {
+    from {
+        color: #a62f00;
+    }
+    to {
+        color: black;
+    }
+}
 @keyframes burger-view-in {
     from {
         top: -100vh;

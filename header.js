@@ -77,87 +77,6 @@ $( ".h-menu-humanpractices" ).mouseleave(function() {
   });
 
 
-var burgerView = document.getElementById("burger-view-project");
-  
-  $( "#burger-project" )
-    .mouseleave(function() {
-    $('#burger-project').removeClass("burger-item-slide");
-    $('#burger-project').addClass("burger-item-slideout");
-    })
-    .mouseenter(function() {
-      $('#burger-project').addClass("burger-item-slide");
-      $('#burger-project').removeClass("burger-item-slideout");
-
-      burgerView.innerHTML = "<a href='' class='burger-view-item' id=''>Description</a><a href='' class='burger-view-item' id=''>Contribution</a><a href='' class='burger-view-item' id=''>Project Modeling</a><a href='' class='burger-view-item' id=''>Engineering Success</a><a href='' class='burger-view-item' id=''>Implementation</a>";
-});
-    $( "#burger-team" )
-    .mouseleave(function() {
-    $('#burger-team').removeClass("burger-item-slide");
-    $('#burger-team').addClass("burger-item-slideout");
-    })
-    .mouseenter(function() {
-      $('#burger-team').addClass("burger-item-slide");
-      $('#burger-team').removeClass("burger-item-slideout");
-
-      burgerView.innerHTML = "<a href='' class='burger-view-item' id=''>Team Members</a><a href='' class='burger-view-item' id=''>Attribution</a><a href='' class='burger-view-item' id=''>Collaborations</a><a href='' class='burger-view-item' id=''>Engineering Success</a><a href='' class='burger-view-item' id=''>Science Communications</a>";
-  });
-
-  $( "#burger-parts" )
-  .mouseleave(function() {
-  $('#burger-parts').removeClass("burger-item-slide");
-  $('#burger-parts').addClass("burger-item-slideout");
-  })
-  .mouseenter(function() {
-    $('#burger-parts').addClass("burger-item-slide");
-    $('#burger-parts').removeClass("burger-item-slideout");
-  });
-
-  $( "#burger-awards" )
-  .mouseleave(function() {
-  $('#burger-awards').removeClass("burger-item-slide");
-  $('#burger-awards').addClass("burger-item-slideout");
-  })
-  .mouseenter(function() {
-    $('#burger-awards').addClass("burger-item-slide");
-    $('#burger-awards').removeClass("burger-item-slideout");
-  });
-
-  $( "#burger-safety" )
-  .mouseleave(function() {
-  $('#burger-safety').removeClass("burger-item-slide");
-  $('#burger-safety').addClass("burger-item-slideout");
-  })
-  .mouseenter(function() {
-    $('#burger-safety').addClass("burger-item-slide");
-    $('#burger-safety').removeClass("burger-item-slideout");
-  });
-
-  $( "#burger-poster" )
-  .mouseleave(function() {
-  $('#burger-poster').removeClass("burger-item-slide");
-  $('#burger-poster').addClass("burger-item-slideout");
-  })
-  .mouseenter(function() {
-    $('#burger-poster').addClass("burger-item-slide");
-    $('#burger-poster').removeClass("burger-item-slideout");
-  });
-
-  $( "#burger-humanpractices" )
-  .mouseleave(function() {
-  $('#burger-humanpractices').removeClass("burger-item-slide");
-  $('#burger-humanpractices').addClass("burger-item-slideout");
-  })
-  .mouseenter(function() {
-    $('#burger-humanpractices').addClass("burger-item-slide");
-    $('#burger-humanpractices').removeClass("burger-item-slideout");
-  });
-
-$(window).scroll(function() {
-    if(!didScroll) {
-         setDidScrollTrue();
-    }
-})
-
 var socials = [document.getElementById('fb'), document.getElementById('ig'), document.getElementById('mail')];
 var socialsContainer = document.getElementById("socials-container");
 var headerIsDown;
@@ -169,12 +88,17 @@ var ST;
 var deltaHeader = 120;
 var oldScrollTop = 0;
 var didScroll;
+$(window).scroll(function() {
+  if(!didScroll) {
+    setDidScrollTrue();
+  }
+})
 function setDidScrollTrue() {
   didScroll = true;
 }
 setInterval(function() {
   if (didScroll) {
-    headerBodyScroll();
+    headerBodyScroll(); 
     didScroll = false;
   }
 }, 250);
@@ -254,3 +178,129 @@ const burgerAnimationOnClick = () => {
         line2.classList.remove("line2-translateX");
     }
 }
+
+var width;
+var isAnimatingProject = false;
+var isAnimatingTeam = false;
+var main_menu = [
+          '#burger-project', 
+          '#burger-team',
+          '#burger-parts',
+          '#burger-awards',
+          '#burger-safety',
+          '#burger-poster',
+          '#burger-humanpractices'
+  ]
+
+var project_menu = [
+        '#BM-project-back',
+        '#BM-project-desc',
+        '#BM-project-cont',
+        '#BM-project-mod',
+        '#BM-project-eng',
+        '#BM-project-hp'
+]  
+$('#burger-project').click(function() {
+  if(!isAnimatingProject) {
+    isAnimatingProject = true;
+    $('.BM-project').css('zIndex', '10');
+    width = $(window).width();
+    main_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: width, opacity: 0}, {
+          duration: 800,
+      })
+    })
+
+    project_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: 0, opacity: 1}, {
+          duration: 800,
+      })
+    })
+    setTimeout(() => {
+      isAnimatingProject = false;
+    }, 800);
+  }
+})
+
+$('#BM-project-back').click(function() {
+  if(!isAnimatingProject) {
+    isAnimatingProject = true;
+    $('.BM-project').css('zIndex', '0');
+    width = $(window).width();
+    main_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: 0, opacity: 1}, {
+          duration: 800,
+      })
+    })
+
+    project_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: -width, opacity: 0}, {
+          duration: 800,
+      })
+    })
+  }
+  setTimeout(() => {
+    isAnimatingProject = false;
+  }, 800);
+})
+
+
+var team_menu = [
+  '#BM-team-back',
+  '#BM-team-teammembers',
+  '#BM-team-attributions',
+  '#BM-team-collaborations',
+  '#BM-team-sciencecoms'
+]
+
+$('#burger-team').click(function() {
+  if(!isAnimatingTeam) {
+    $('.BM-team').css('zIndex', '10');
+    isAnimatingTeam = true;
+    width = $(window).width();
+    main_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: width, opacity: 0}, {
+          duration: 800,
+      })
+    })
+
+    team_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: 0, opacity: 1}, {
+          duration: 800,
+      })
+    })
+    setTimeout(() => {
+      isAnimatingTeam = false;
+    }, 800);
+  }
+})
+
+$('#BM-team-back').click(function() {
+  if(!isAnimatingTeam) {
+    isAnimatingTeam = true;
+    $('.BM-team').css('zIndex', '0');
+    width = $(window).width();
+    main_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: 0, opacity: 1}, {
+          duration: 800,
+      })
+    })
+
+    team_menu.map((item, index) => {
+      $(item).delay(index * 40).animate({
+        left: -width, opacity: 0}, {
+          duration: 800,
+      })
+    })
+  }
+  setTimeout(() => {
+    isAnimatingTeam = false;
+  }, 800);
+})

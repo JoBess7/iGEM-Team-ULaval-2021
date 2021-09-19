@@ -31,8 +31,6 @@ var PourcentageHasLaunched = false;
 var Text1OpacityHasLaunched = false;
 var ST;
 const checkPagePosition = () => {
-    console.log("offset: " + window.pageYOffset);
-    console.log("height: " + window.innerHeight);
     ST = window.pageYOffset;
     if(Text1OpacityHasLaunched === false) {
         if(window.pageYOffset + 500 > window.innerHeight) {
