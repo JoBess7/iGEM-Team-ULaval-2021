@@ -1,0 +1,307 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: #f8ebe0;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.folders {
+    width: 85%;
+    position: relative;
+    top: 200px;
+}
+.folder-cuts-flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.separator-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 17px;
+}
+.separator-cut {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.separator-left {
+    margin-right: 18px;
+    background-color: #0b2e26;
+    box-shadow: 0px 1px #284f45,
+    1px 2px #284f45,
+    2px 3px #284f45,
+    3px 4px #284f45,
+    4px 5px #284f45;
+}
+.separator-right {
+    background-color: #ff9d4d;
+    box-shadow: 0px 1px rgb(243, 184, 107),
+    1px 2px rgb(243, 184, 107),
+    2px 3px rgb(243, 184, 107),
+    3px 4px rgb(243, 184, 107),
+    4px 5px rgb(243, 184, 107);
+    opacity: 0;
+}
+.cut-element {
+    width: 50%;
+    background-color: cadetblue;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    align-items: center;
+    font-size: 25px;
+}
+.cut-left {
+    margin-right: 18px;
+    background-color: #0b2e26;
+    box-shadow: 0px 1px #284f45,
+    1px 2px #284f45,
+    2px 3px #284f45,
+    3px 4px #284f45,
+    4px 5px #284f45;
+    color: #fdf8f5;
+}
+.cut-right {
+    background-color: #ff9d4d;
+    box-shadow: 0px 1px rgb(243, 184, 107),
+    1px 2px rgb(243, 184, 107),
+    2px 3px rgb(243, 184, 107),
+    3px 4px rgb(243, 184, 107),
+    4px 5px rgb(243, 184, 107);
+    color: #160c07;
+}
+.title-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.title-collabs {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.folders-container {
+    width: 100%;
+    position: relative;
+}
+.folder {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.folder-organized {
+    background-color: #0b2e26;
+    box-shadow: 0px 1px #284f45,
+    1px 2px #284f45,
+    2px 3px #284f45,
+    3px 4px #284f45,
+    4px 5px #284f45;
+}
+.folder-participated {
+    display: none;
+    background-color: #ff9d4d;
+    box-shadow: 0px 1px rgb(243, 184, 107),
+    1px 2px rgb(243, 184, 107),
+    2px 3px rgb(243, 184, 107),
+    3px 4px rgb(243, 184, 107),
+    4px 5px rgb(243, 184, 107);
+}
+.folder-title {
+    margin-top: 50px;
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: #d9d9d9;
+}
+.folder-main-title {
+    font-size: 39px;
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+.folder-subtitle {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.folder-left-text {
+    width: 90%;
+    color: #d9d9d9;
+    font-size: 20px;
+    text-align: justify;
+}
+.pic {
+    width: 400px;
+    height: 400px;
+}
+.float-right {
+    margin-left: 35px;
+    margin-bottom: 20px;
+    float: right;
+}
+.float-left {
+    margin-right: 35px;
+    margin-bottom: 20px;
+    float: left;
+}
+.folder-video {
+    width: 90%;
+    height: 200px;
+    margin-top: 50px;
+}
+.empty-element {
+    height: 100px;
+    width: 100px;
+}
+.fp-flex {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.fp-margin {
+    margin-top: 50px;
+}
+.flex-title {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.fp-main-title {
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 34px;
+    border-bottom: 1px solid rgb(129, 129, 129);
+}
+.fp-subtitle {
+    font-size: 25px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+}
+.fp-text-flex {
+    font-size: 23px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.fp-text {
+    text-align: justify;
+}
+.fp-img {
+    margin-left: 35px;
+    float: right;
+    height: 400px;
+    width: 400px;
+}
+
+
+@media screen 
+and (max-width: 1200px) {
+    .cut-element {
+        font-size: 13px;
+    } 
+    .fp-text-flex {
+        font-size: 21px;
+    }
+    .folder-main-title {
+        font-size: 31px;
+    }
+    .folder-subtitle {
+        font-size: 14px;
+    }
+    .fp-main-title {
+        font-size: 31px;
+    }
+    .fp-subtitle {
+        font-size: 15px;
+    }
+}
+@media screen 
+and (max-width: 800px) {
+    .cut-element {
+        font-size: 15px;
+    }
+    .pic, .fp-img {
+        width: 200px;
+        height: 200px;
+    }
+    .folder-left-text {
+        font-size: 15px;
+    }
+    .folder-main-title {
+        font-size: 29px;
+    }
+    .folder-subtitle {
+        font-size: 10px;
+    }
+    .fp-main-title {
+        font-size: 27px;
+    }
+    .fp-subtitle {
+        font-size: 13px;
+    }
+    
+}
+@media screen 
+and (max-width: 500px) {
+    .title-collabs {
+        font-size: 20px;
+    }
+    .cut-element {
+        font-size: 13px;
+    }
+    .folder-main-title {
+        font-size: 23px;
+    }
+    .folder-subtitle {
+        font-size: 9px;
+    }
+    .pic {
+        display: none;
+    }
+    .fp-img {
+        display: none;
+    }
+    .fp-main-title {
+        font-size: 25px;
+    }
+    .fp-subtitle {
+        font-size: 11px;
+    }
+}
+@media screen 
+and (max-width: 450px) {
+    .cut-element {
+        font-size: 10px;
+    }
+}
