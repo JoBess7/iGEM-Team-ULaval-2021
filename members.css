@@ -27,14 +27,6 @@ a {
 }
 
 
-.container1 {
-    height: 100vh;
-    width: 100vw;
-    background-color: #f3decb;
-    position: relative;
-    top: 0;
-}
-
 .container2 {
     width: 100vw;
     background-color: #9daba8;
@@ -44,35 +36,6 @@ a {
     overflow: hidden;
 }
 
-.team-icon {
-    position: relative;
-    width: 70px;
-    border-radius: 50%;
-    top: 20px;
-    right: -20px;
-    animation: team-icon-rotate 2.5s linear infinite;
-}
-
-.meet-container {
-    position: relative;
-    top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.meet-text-container {
-    width: 100vw;
-    position: absolute;
-    bottom: 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 110px;
-    height: calc(100% - 110px);
-}
 
 .logo {
     width: 100px;
@@ -82,21 +45,7 @@ a {
     z-index: 10;
 }
 
-.meet-text {
-    border-radius: 20px;
-    font-weight: 100;
-    padding: 30px;
-    font-size: 23px;
-    width: 90%;
-    position: relative;
-    text-align: justify;
-    background-color: #ff9d4d;
-    box-shadow: 2px 5px rgb(243, 184, 107),
-                3px 6px rgb(243, 184, 107),
-                5px 10px rgb(243, 184, 107),
-                7px 12px rgb(243, 184, 107);
-    line-height: 35px;
-}
+
 
 .team-member {
     width: 280px;
@@ -210,21 +159,6 @@ a {
     border-top-right-radius: 10px;
 }
 
-.meet-our-team {
-    margin-bottom: 50px;
-    font-size: 40px;
-    position: relative;
-    top: 25px;
-}
-.meet-our-team:before {
-    content : "";
-    position: absolute;
-    left    : 0;
-    bottom  : 0;
-    height  : 1px;
-    width   : 320px;  /* or 100px */
-    border-bottom: 2px solid #af441a;
-  }
 .bold {
     font-weight: 900;
     position: relative;
@@ -249,39 +183,69 @@ a {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
+.container1 {
+
+    width: 100vw;
+    background-color: #f3decb;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.meet-title-flex {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.meet-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.leafgroup {
+    height: auto;
+    position: absolute;
+}
+.leafgroup1 {
+    width: 300px;
+    bottom: 10px;
+}
+.leafgroup2 {
+    transform: rotate(90deg);
+    width: 600px;
+    right: 0px;
+    bottom: 150px;
+}
+.meet-txt-flex {
+    font-size: 20px;
+    width: 90%;
+    text-align: justify;
+    padding: 15px;
+    background-color: #0b2e26;
+    box-shadow: 0px 1px #284f45,
+    1px 2px #284f45,
+    2px 3px #284f45,
+    3px 4px #284f45,
+    4px 5px #284f45;
+    border-radius: 15px;
+    color: #fdf8f5;
+    margin-bottom: 15px;
+}
+.meet-img {
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 100px;
+}
 
 
-@media screen
-and (min-width: 0px)
-and (max-width: 398px) {
-    .meet-text {
-        font-size: 13px;
-        line-height: 21px;
-       
-    }
-}
-@media screen
-and (min-width: 399px)
-and (max-width: 999px) {
-    .meet-text {
-        font-size: 19px;
-        line-height: 22px;
-     
-    }
-}
-@media screen
-and (min-width: 1300px){
-    .meet-text {
-        font-size: 25px;
-        line-height: 30px;
-    }
-}
-@media screen
-and (max-height: 568px) {
-    .container1 {
-        height: 568px;
-    }
-}
 
 @media screen
 and (min-width: 700px) {
@@ -301,12 +265,6 @@ and (min-width: 1000px) {
 and (min-width: 1100px) {
     .grid-container {
         grid-template-columns: auto auto auto;
-    }
-}
-@media screen
-and (min-width: 1500px) {
-    .grid-container {
-        grid-template-columns: auto auto auto auto;
     }
 }
 
@@ -347,10 +305,19 @@ and (min-width: 1500px) {
 
 @media screen 
 and (max-width: 480px){
-    .meet-our-team {
+    .meet-title-flex {
         font-size: 25px;
     }
-    .meet-our-team:before {
-       display: none;
-      }
+}
+@media screen 
+and (max-width: 1600px){
+    .leafgroup {
+        display: none;
+    }
+}
+@media screen 
+and (max-height: 1600px){
+    .container1{
+ 
+    }
 }

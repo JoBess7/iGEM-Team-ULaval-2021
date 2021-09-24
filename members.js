@@ -8,6 +8,12 @@ var mathieuAboutIsOn = false;
 var jonathanAboutIsOn = false;
 var eloiseAboutIsOn = false;
 var etienneAboutIsOn = false;
+var olivierAboutIsOn = false;
+var pascaleAboutIsOn = false;
+var florenceAboutIsOn = false;
+var mireilleAboutIsOn = false;
+var etienneAboutIsOn = false;
+var eloiseAboutIsOn = false;
 var isAnimating = false;
 
 var god = [
@@ -60,6 +66,31 @@ var god = [
         trigger: '#meet-etienne',
         visibility: etienneAboutIsOn,
         element: '#etienne-about',
+    },
+    {
+        trigger: '#meet-olivier',
+        visibility: olivierAboutIsOn,
+        element: '#olivier-about',
+    },
+    {
+        trigger: '#meet-pascale',
+        visibility: pascaleAboutIsOn,
+        element: '#pascale-about',
+    },
+    {
+        trigger: '#meet-florence',
+        visibility: florenceAboutIsOn,
+        element: '#florence-about',
+    },
+    {
+        trigger: '#meet-mireille',
+        visibility: mireilleAboutIsOn,
+        element: '#mireille-about',
+    },
+    {
+        trigger: '#meet-eloise',
+        visibility: eloiseAboutIsOn,
+        element: '#eloise-about',
     },
 ]
 
