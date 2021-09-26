@@ -70,7 +70,7 @@ a {
     font-weight: 100;
     padding: 30px;
     font-size: 23px;
-    width: 90%;
+    width: 70%;
     position: relative;
     text-align: justify;
     background-color: #ff9d4d;
@@ -88,15 +88,6 @@ a {
     position: relative;
     top: 25px;
 }
-.meet-our-team:before {
-    content : "";
-    position: absolute;
-    left    : 0;
-    bottom  : 0;
-    height  : 1px;
-    width   : 250px;  /* or 100px */
-    border-bottom: 2px solid #af441a;
-  }
   
 
 .container2 {
@@ -153,8 +144,6 @@ a {
 }
 
 .arrow-container {
-    width: 100px;
-    height: 100px;
     width: 100vw;
     height: 200px;
 }
@@ -239,16 +228,16 @@ and (max-width: 398px) {
     .meet-text {
         font-size: 13px;
         line-height: 21px;
-       
+       width: 90%;
     }
 }
 @media screen
 and (min-width: 399px)
 and (max-width: 999px) {
     .meet-text {
-        font-size: 19px;
+        font-size: 16px;
         line-height: 22px;
-     
+        width: 85%;
     }
 }
 @media screen
@@ -269,9 +258,6 @@ and (max-width: 480px){
     .meet-our-team {
         font-size: 25px;
     }
-    .meet-our-team:before {
-       display: none;
-      }
 }
 
 @keyframes team-icon-rotate {

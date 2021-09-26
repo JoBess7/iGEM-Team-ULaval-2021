@@ -70,7 +70,7 @@ a {
     font-weight: 100;
     padding: 30px;
     font-size: 19px;
-    width: 90%;
+    width: 70%;
     position: relative;
     text-align: justify;
     background-color: #ff9d4d;
@@ -88,17 +88,6 @@ a {
     position: relative;
     top: 25px;
 }
-.meet-our-team:before {
-    content : "";
-    position: absolute;
-    left    : 0;
-    bottom  : 0;
-    height  : 1px;
-    width   : 250px;  /* or 100px */
-    border-bottom: 2px solid #af441a;
-  }
-  
-
 .container2 {
     width: 100vw;
     background-color: #0b2e26;
@@ -243,6 +232,9 @@ and (max-width: 500px) {
     .attr-title-flex {
         width: 95%;
     }
+    .team-icon {
+        display: none;
+    }
 }
 @media screen
 and (min-width: 0px)
@@ -257,9 +249,9 @@ and (max-width: 398px) {
 and (min-width: 399px)
 and (max-width: 999px) {
     .meet-text {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 22px;
-     
+        width: 90%;
     }
 }
 @media screen
@@ -280,9 +272,6 @@ and (max-width: 480px){
     .meet-our-team {
         font-size: 25px;
     }
-    .meet-our-team:before {
-       display: none;
-      }
 }
 
 @keyframes team-icon-rotate {

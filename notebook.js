@@ -9,7 +9,7 @@ var viewList = [
         name: '#item-view-2',
         state: false,
         icon: '#item-icon-2',
-        height: 300
+        height: 370
     },
     {
         name: '#item-view-3',
@@ -62,25 +62,49 @@ var viewList = [
 ]
 
 var index;
+var isAnimating = false;
 viewList.map((view, index) => {
     $(view.name).click(function() {
         index = view.name[view.name.length - 1];
         if(!view.state) {
-            view.state = true;
-            $(view.icon).removeClass('icon-unrotate');
-            $(view.icon).addClass('icon-rotate');
-            $(view.name).animate({
-                height: view.height}, {
-                duration: 500,
-            }) 
+            if(!isAnimating) {
+                isAnimating = true;
+                view.state = true;
+                $(view.icon).removeClass('icon-unrotate');
+                $(view.icon).addClass('icon-rotate');
+                $(view.name).animate({
+                    height: $(view.name).get(0).scrollHeight}, {
+                    duration: 500,
+                    complete: function() {
+                        isAnimating = false;
+                    }
+                }) 
+            }
         } else {
-            view.state = false;
-            $(view.icon).addClass('icon-unrotate');
-            $(view.icon).removeClass('icon-rotate');
-            $(view.name).animate({
-                height: 70}, {
-                duration: 500,
-            })     
+            if(!isAnimating) {
+                isAnimating = false;
+                view.state = false;
+                $(view.icon).addClass('icon-unrotate');
+                $(view.icon).removeClass('icon-rotate');
+                $(view.name).animate({
+                    height: 70}, {
+                    duration: 500,
+                    complete: function() {
+                        isAnimating = false;
+                    }
+                })    
+            } 
         }
     })
+})
+
+viewList.map((view, index) => {
+    index = view.name[view.name.length - 1];
+    view.state = false;
+    $(view.icon).addClass('icon-unrotate');
+    $(view.icon).removeClass('icon-rotate');
+    $(view.name).animate({
+        height: 70}, {
+        duration: 500,
+    })     
 })

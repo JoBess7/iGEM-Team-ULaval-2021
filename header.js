@@ -20,50 +20,6 @@ $( ".h-menu-team" ).mouseleave(function() {
     height: 0
   }, 300)
   });
-// HEADER PARTS
-$( "#h-menu-tparts" ).mouseenter(function() {
-  $('#h-menu-dparts').animate({
-    height: 200
-  }, 300)
-  });
-$( ".h-menu-parts" ).mouseleave(function() {
-  $('#h-menu-dparts').animate({
-    height: 0
-  }, 300)
-  });
-// HEADER AWARDS
-  $( "#h-menu-tawards" ).mouseenter(function() {
-    $('#h-menu-dawards').animate({
-      height: 200
-    }, 300)
-    });
-$( ".h-menu-awards" ).mouseleave(function() {
-  $('#h-menu-dawards').animate({
-    height: 0
-  }, 300)
-  });
-// HEADER SAFETY
-$( "#h-menu-tsafety" ).mouseenter(function() {
-  $('#h-menu-dsafety').animate({
-    height: 200
-  }, 300)
-  });
-$( ".h-menu-safety" ).mouseleave(function() {
-  $('#h-menu-dsafety').animate({
-    height: 0
-  }, 300)
-  });
-// HEADER POSTER
-$( "#h-menu-tposter" ).mouseenter(function() {
-  $('#h-menu-dposter').animate({
-    height: 200
-  }, 300)
-  });
-$( ".h-menu-poster" ).mouseleave(function() {
-  $('#h-menu-dposter').animate({
-    height: 0
-  }, 300)
-  });
 // HEADER HUMAN-PRACTICES
 $( "#h-menu-thumanpractices" ).mouseenter(function() {
   $('#h-menu-dhumanpractices').animate({
@@ -72,6 +28,17 @@ $( "#h-menu-thumanpractices" ).mouseenter(function() {
   });
 $( ".h-menu-humanpractices" ).mouseleave(function() {
   $('#h-menu-dhumanpractices').animate({
+    height: 0
+  }, 300)
+  });
+// HEADER COMMUNICATION
+$( "#h-menu-tcommunication" ).mouseenter(function() {
+  $('#h-menu-dcommunication').animate({
+    height: 200
+  }, 300)
+  });
+$( ".h-menu-communication" ).mouseleave(function() {
+  $('#h-menu-dcommunication').animate({
     height: 0
   }, 300)
   });
