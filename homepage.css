@@ -212,6 +212,7 @@
     height: 20vw;
 }
 .HIM-container2-flex {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-top: 200px;
@@ -386,7 +387,6 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-
 
 
 @keyframes scroll-arrow {
@@ -741,11 +741,15 @@ sup {
 
 
 /*
-beige en bas            XXX
-gradient                XXX
-txt en noi              XXX
-txt plus petit          
-txt sur 4 lignes
-icons vs goutte
-background-gradienttt   XXX
+WAS ADDED
 */
+.barril {
+
+    position: absolute;
+    width: auto;
+    height: calc(150%);
+
+}
+#goutte {
+    z-index: 100;
+}

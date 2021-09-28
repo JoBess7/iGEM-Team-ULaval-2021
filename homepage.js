@@ -71,22 +71,42 @@ function checkVisible(elm) {
     return !(rect.bottom < 0 || rect.top - viewHeight >= 0) 
 }
 
+var barril = document.getElementById("barril");
+var barril_pos;
 var bodyRect;
 var elementRect;
 var offset;
+var goutte = document.getElementById("goutte");
+var goutte_x;
 var goutteContainer = document.getElementById("goutte-container");
 var entaille = document.getElementById("entaille");
 var entailleHeight;
+var barril_size;
 $(window).scroll(function (e) {
     bodyRect = document.body.getBoundingClientRect();
     elemRect = entaille.getBoundingClientRect();
     offset   = elemRect.top - bodyRect.top;
     entailleHeight = entaille.clientHeight;
+
+    barril_pos = barril.getBoundingClientRect().top - bodyRect.top;
+
     var pos = entailleHeight + offset;
+    console.log("bodyRect:" + bodyRect.top);
+    console.log("elemRect:" + elemRect.top);
+    console.log("offset:" + offset);
+    console.log("barril_pos:" + barril_pos);
+    console.log("windowScroll:" + ($(window).scrollTop()));
+    console.log("-------");
     if ($(window).scrollTop() > pos - 45) {
         $("#goutte").css({
             position: 'fixed',
             top: 45,
+            height: entaille.clientHeight * 2 
+        });
+    } else if(true) {
+        $("#goutte").css({
+            position: 'absolute',
+            top: 0,
             height: entaille.clientHeight * 2 
         });
     } else {
@@ -109,14 +129,18 @@ $(window).resize(function () {
             position: 'fixed',
             top: 45,
             height: entaille.clientHeight * 2
-        });
-    } else {
+        }); } else {
         $("#goutte").css({
             position: "absolute",
             top: goutteContainer.clientHeight * 0.7 + 430,
             height: entaille.clientHeight * 2
         });
     }
+    barril_size = barril.getBoundingClientRect().width;
+    goutte_x = goutte.getBoundingClientRect().x;
+    $("#barril").css({
+        left: goutte_x - 0.64* barril_size
+    })
 })
 
 var clickables = [
@@ -142,3 +166,9 @@ clickables.map((item, index) => {
         })  
       });
   })
+
+
+
+
+
+

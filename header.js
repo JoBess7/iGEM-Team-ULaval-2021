@@ -1,48 +1,126 @@
-// HEADER PROJECT
-$( "#h-menu-tproject" ).mouseenter(function() {
-    $('#h-menu-dproject').animate({
-      height: 200
-    }, 300)
-  });
-$( ".h-menu-project" ).mouseleave(function() {
-  $('#h-menu-dproject').animate({
-    height: 0
-  }, 300)
-  });
-// HEADER TEAM
-$( "#h-menu-tteam" ).mouseenter(function() {
-  $('#h-menu-dteam').animate({
-    height: 200
-  }, 300)
-  });
-$( ".h-menu-team" ).mouseleave(function() {
-  $('#h-menu-dteam').animate({
-    height: 0
-  }, 300)
-  });
-// HEADER HUMAN-PRACTICES
-$( "#h-menu-thumanpractices" ).mouseenter(function() {
-  $('#h-menu-dhumanpractices').animate({
-    height: 200
-  }, 300)
-  });
-$( ".h-menu-humanpractices" ).mouseleave(function() {
-  $('#h-menu-dhumanpractices').animate({
-    height: 0
-  }, 300)
-  });
-// HEADER COMMUNICATION
-$( "#h-menu-tcommunication" ).mouseenter(function() {
-  $('#h-menu-dcommunication').animate({
-    height: 200
-  }, 300)
-  });
-$( ".h-menu-communication" ).mouseleave(function() {
-  $('#h-menu-dcommunication').animate({
-    height: 0
-  }, 300)
+var ListElementText = [
+  {
+    idElement: "#element-text2",
+    idIcon: "#slide2",
+    iconAnimating: false,
+    display: "#h-display2",
+    displayMouse: false,
+    checker: "#checker2"
+  },
+  {
+    idElement: "#element-text3",
+    idIcon: "#slide3",
+    iconAnimating: false,
+    display: "#h-display3",
+    displayMouse: false,
+    checker: "#checker3"
+  },
+  {
+    idElement: "#element-text4",
+    idIcon: "#slide4",
+    iconAnimating: false,
+    display: "#h-display4",
+    displayMouse: false,
+    checker: "#checker4"
+  }
+]
+
+ListElementText.map((item) => {
+  $( item.idElement ).mouseenter(function() {
+    $( item.display ).css("display", "flex");
   });
 
+  $( item.display ).mouseenter(function() {
+    item.displayMouse = true;
+  });
+
+  $( item.display ).mouseleave(function() {
+    item.displayMouse = false;
+  });
+
+  $( item.checker ).mouseleave(function() {
+    if(item.displayMouse == false) {
+      $( item.display ).css("display", "none");
+    }
+  });
+})
+
+var ListProject = [
+  {
+    idElement: "#element-text1",
+    idIcon: "#slide1",
+    iconAnimating: false,
+    display: "#h-display1",
+    displayMouse: false,
+    checker: "#checker1",
+    sub1: "#h-sub1",
+    sub2: "#h-sub2",
+    displaySub1: false,
+    displaySub2: false,  
+    ham1: "#ham-flex1",
+    ham2: "#ham-flex2",
+    checkBasic: false,
+    checkGreat: false
+  }
+]
+
+ListProject.map((item) => {
+  $( item.idElement ).mouseenter(function() {
+    $( item.display ).css("display", "flex");
+  });
+
+  $( item.display ).mouseenter(function() {
+    item.displayMouse = true;
+  });
+
+  $( item.display ).mouseleave(function() {
+    item.displayMouse = false;
+  });
+
+  $( item.checker ).mouseleave(function() {
+    if(item.displayMouse == false) {
+      $( item.display ).css("display", "none");
+    }
+  });
+
+  $( item.ham1 ).mouseenter(function() {
+    $( item.sub1 ).css("display", "flex");
+    item.checkBasic = true;
+  })
+
+  $( item.ham2 ).mouseenter(function() {
+    $( item.sub2 ).css("display", "flex");
+    item.checkGreat = true;
+  })
+
+  $( item.ham1 ).mouseleave(function() {
+    if(item.displaySub1 == false) {
+      $( item.sub1 ).css("display", "none");
+    }
+  })
+
+  $( item.ham2 ).mouseleave(function() {
+    if(item.displaySub2 == false) {
+      $( item.sub2 ).css("display", "none");
+    }
+  })
+
+  $( item.sub1 ).mouseenter(function() {
+    item.displaySub1 = true;
+  })
+
+  $( item.sub2 ).mouseenter(function() {
+    item.displaySub2 = true;
+  })
+
+  $( item.sub1 ).mouseleave(function() {
+    item.displaySub1 = false;
+  })
+
+  $( item.sub2 ).mouseleave(function() {
+    item.displaySub2 = false;
+  })
+})
 
 var socials = [document.getElementById('fb'), document.getElementById('ig'), document.getElementById('mail')];
 var socialsContainer = document.getElementById("socials-container");
@@ -146,128 +224,69 @@ const burgerAnimationOnClick = () => {
     }
 }
 
-var width;
-var isAnimatingProject = false;
-var isAnimatingTeam = false;
-var main_menu = [
-          '#burger-project', 
-          '#burger-team',
-          '#burger-parts',
-          '#burger-awards',
-          '#burger-safety',
-          '#burger-poster',
-          '#burger-humanpractices'
-  ]
-
-var project_menu = [
-        '#BM-project-back',
-        '#BM-project-desc',
-        '#BM-project-cont',
-        '#BM-project-mod',
-        '#BM-project-eng',
-        '#BM-project-hp'
-]  
-$('#burger-project').click(function() {
-  if(!isAnimatingProject) {
-    isAnimatingProject = true;
-    $('.BM-project').css('zIndex', '10');
-    width = $(window).width();
-    main_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: width, opacity: 0}, {
-          duration: 800,
-      })
-    })
-
-    project_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: 0, opacity: 1}, {
-          duration: 800,
-      })
-    })
-    setTimeout(() => {
-      isAnimatingProject = false;
-    }, 800);
-  }
-})
-
-$('#BM-project-back').click(function() {
-  if(!isAnimatingProject) {
-    isAnimatingProject = true;
-    $('.BM-project').css('zIndex', '0');
-    width = $(window).width();
-    main_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: 0, opacity: 1}, {
-          duration: 800,
-      })
-    })
-
-    project_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: -width, opacity: 0}, {
-          duration: 800,
-      })
-    })
-  }
-  setTimeout(() => {
-    isAnimatingProject = false;
-  }, 800);
-})
-
-
-var team_menu = [
-  '#BM-team-back',
-  '#BM-team-teammembers',
-  '#BM-team-attributions',
-  '#BM-team-collaborations',
-  '#BM-team-sciencecoms'
+var expandComponents = [
+  {
+    id: "#clickable1",
+    state: "0",
+    animating: false,
+    toModif: "#modifyHeight1",
+    desiredHeight: 273,
+    speed: 400,
+    icon: "#iconslide1"
+  },
+  {
+    id: "#clickable2",
+    state: "0",
+    animating: false,
+    toModif: "#modifyHeight2",
+    desiredHeight: 109,
+    speed: 250,
+    icon: "#iconslide2"
+  },
+  {
+    id: "#clickable3",
+    state: "0",
+    animating: false,
+    toModif: "#modifyHeight3",
+    desiredHeight: 135,
+    speed: 250,
+    icon: "#iconslide3"
+  },
+  {
+    id: "#clickable4",
+    state: "0",
+    animating: false,
+    toModif: "#modifyHeight4",
+    desiredHeight: 167,
+    speed: 250,
+    icon: "#iconslide4"
+  },
 ]
 
-$('#burger-team').click(function() {
-  if(!isAnimatingTeam) {
-    $('.BM-team').css('zIndex', '10');
-    isAnimatingTeam = true;
-    width = $(window).width();
-    main_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: width, opacity: 0}, {
-          duration: 800,
+expandComponents.map((item) => {
+  $( item.id ).click(() => {
+    if( item.state == 0 ) {
+      if( item.animating == false ) {
+        $( item.icon ).addClass("rotateUp");
+        $( item.icon ).removeClass("rotateDown");
+        item.animating = true;
+        item.state = 1;
+        $( item.toModif ).animate({
+          height: item.desiredHeight
+        }, item.speed, function() {
+          item.animating = false;
+        })
+      }
+    } else if ( item.animating == false) {
+      $( item.icon ).addClass("rotateDown");
+      $( item.icon ).removeClass("rotateUp");
+      item.animating = true;
+      item.state = 0;
+      $( item.toModif ).animate({
+        height: 48
+      }, item.speed, function() {
+        item.animating = false;
       })
-    })
-
-    team_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: 0, opacity: 1}, {
-          duration: 800,
-      })
-    })
-    setTimeout(() => {
-      isAnimatingTeam = false;
-    }, 800);
-  }
-})
-
-$('#BM-team-back').click(function() {
-  if(!isAnimatingTeam) {
-    isAnimatingTeam = true;
-    $('.BM-team').css('zIndex', '0');
-    width = $(window).width();
-    main_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: 0, opacity: 1}, {
-          duration: 800,
-      })
-    })
-
-    team_menu.map((item, index) => {
-      $(item).delay(index * 40).animate({
-        left: -width, opacity: 0}, {
-          duration: 800,
-      })
-    })
-  }
-  setTimeout(() => {
-    isAnimatingTeam = false;
-  }, 800);
+    }
+  })
 })

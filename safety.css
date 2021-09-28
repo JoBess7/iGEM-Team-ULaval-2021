@@ -46,6 +46,19 @@ a {
     margin-bottom: 50px;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.h-menuD::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .h-menuD{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+
 .grid-pics {
     width: 100%;
     display: flex;
@@ -67,6 +80,7 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    margin-bottom: 100px;
 }
 .txt-safety {
     background-color: #0b2e26;
@@ -104,6 +118,23 @@ and (max-width: 700px) {
         border-radius: 0;
         font-size: 15px;
         padding: 30px;
+        padding-right: 45px;
         box-shadow: none;
     }
+}
+
+.reference-container {
+    width: 98%;
+    float: right;
+    overflow-wrap: break-word;
+    font-size: 14px;
+}
+
+.reference-container > a, .reference-container > a:link, .reference-container > a:visited {
+    font-style: italic;
+    color: rgb(235, 144, 39);
+}
+
+.invis {
+    opacity: 0;
 }
