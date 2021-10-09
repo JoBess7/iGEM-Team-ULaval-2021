@@ -28,6 +28,7 @@ var ListElementText = [
 ListElementText.map((item) => {
   $( item.idElement ).mouseenter(function() {
     $( item.display ).css("display", "flex");
+    $( item.checker ).css('background-color', '#b85933;');
   });
 
   $( item.display ).mouseenter(function() {

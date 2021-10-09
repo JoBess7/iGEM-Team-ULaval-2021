@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./safety.css">
+    <link rel="stylesheet" href="./parts.css">
     <link rel="stylesheet" href="./header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
@@ -172,38 +172,23 @@
         <div class="containers">
             <div class="container1">
                 <div class="title-flex">
-                    Safety
+                    Parts
                 </div>
                 <div class="txt-container">
                     <div class="txt-safety">
-                        Since our project aims to be a solution in the maple syrup industry, it was designed to be safe both for the lab and for the environment. Ideally, our product would transform the ropy maple syrup into regular maple syrup, we are discussing with the MAPAQ to figure out if the product could still be called maple syrup. The final decision on whether the final product is safe for consumption will be made by the different institutions regulating the food industry here in Canada like the ACIA and the MAPAQ. We contacted them and will be working on making our solution something into something edible. 
+                        <img src="https://2021.igem.org/wiki/images/7/71/T--ULaval--G_algens_opt.png" alt="" class="algens-opt float">
+                        <img src="https://2021.igem.org/wiki/images/0/0c/T--ULaval--G_algens_purif.png" alt="" class="algens-purif">
+                        <span class='title'>BBa_K3493000</span>
                         <br><br>
-                        Even though our dextranases comes from risk group 1 microorganisms, Streptococcus mutans and Gelidibacter algens, we are not using these organisms directly, only their sequences. The sequences for the dextranases recombined into a pET28a expression vector and then expressed in Escherichia coli DH5alpha and BL21. The pET28a vector contains a kanamycin resistance gene as a selection parameter. This represents a risk as if it escapes, it could propagate the resistance to kanamycin. Therefore, this would contribute to the phenomenon of acquired antibiotics resistance. Rigorous waste management is applied to prevent the contamination of the environnement.
+                        <span class='subtitle'>Description</span>
+                        <br>
+                        This part is the CDS of a dextranase from a psychrophile organism (Gelidibacter algens) codon optimized for expression in Escherichia coli. Following reports that the Streptococcus mutans homologous dextranase has a higher activity when its N terminal (residues 1-99) and C-terminal (residues 733-850) are deleted (Kim et al., 2011), we removed them from the CDS submitted to the registry. Accordingly, our final CDS contains the region of the G. algens dextranase sequence that aligns to residues 104 - 734 of the PDB structure of the S. mutans dextranase (Suzuki et al., 2012). The dextranase of G. algens was successfully expressed in E. coli using the pET28a expression vector. 
                         <br><br>
-                        <div class="grid-pics">
-                            <div class="picture-element hidden-pic">
-                                <img src="https://2021.igem.org/wiki/images/e/e9/T--ULaval--safetyLabo1.jpg" alt="" class="picture-lab" srcset="">
-                            </div>
-                            <div class="controller">
-                                <div class="dot1 dot" id='dot1'></div>
-                                <div class="dot2 dot toWhite" id='dot2'></div>
-                                <div class="dot3 dot toWhite" id='dot3'></div>
-                                <div class="dot4 dot toWhite" id='dot4'></div>
-                            </div>
-                            <div class="picture-element" id='pic1'>
-                                <img src="https://2021.igem.org/wiki/images/e/e9/T--ULaval--safetyLabo1.jpg" alt="" class="picture-lab" srcset="">
-                            </div>
-                            <div class="picture-element" id='pic2'>
-                                <img src="https://2021.igem.org/wiki/images/5/5c/T--ULaval--safetyLabo2.jpg" alt="" class="picture-lab" srcset="">
-                            </div>
-                            <div class="picture-element" id='pic3'>
-                                <img src="https://2021.igem.org/wiki/images/4/4a/T--ULaval--safetyLabo3.jpg" alt="" class="picture-lab" srcset="">
-                            </div>
-                            <div class="picture-element" id='pic4'>
-                                <img src="https://2021.igem.org/wiki/images/3/3c/T--ULaval--safetyLabo4.jpg" alt="" class="picture-lab" srcset="">
-                            </div>
-                        </div>
-                        All the experiments performed are standard, bacterial cloning and DNA extraction, kinetic experiments on our enzyme and rheology analysis. Among the protocols applied, ethidium bromide is used. Ethidium bromide is a known carcinogenic and mutagenic chemical. The members of the team received proper training to limit the risks. 
+                        <span class="subtitle">Characterization</span>
+                        <br>
+                        We determined that the optimal conditions for the expression of this protein with this expression system is induction with 1mM IPTG at 18°C for 18 hours. Afterward, we were able to purify the protein with IMACS chromatography.
+                        <br><br>
+                        We performed the Somogyi-Nelson enzymatic assays (Borkowska et al., 2019) to assess the reducing sugars resulting from the degradation of dextran by the dextranase. Those tests allowed us to conclude that the optimal conditions for the activity of this enzyme is pH 6.5 at 40°C and that its stability is not significantly affected in the pH range we tested, but that it is optimal at 15°C.
                         <br><br>
                         During the project, we had the help of experts to oversee the safety of our work area so it conforms to the norms of our country and university. All of the experiments done in a lab were done in the presence of a professional working in the lab. Furthermore, we had many risk management tools at our disposal. We had access to accident reports, personal protection equipment, a locked and secured place for our lab equipment and a well established waste management system. 
                         <br><br>
@@ -233,7 +218,7 @@
 
     </div>
 
-    <script src="safety.js"></script>
+    <script src="parts.js"></script>
     <script src="header.js"></script>
     <script src="footer.js"></script>
 </body>
