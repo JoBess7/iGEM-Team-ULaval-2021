@@ -28,21 +28,11 @@ a {
 
 
 .container1 {
-    height: 100vh;
     width: 100vw;
     background-color: #f3decb;
     position: relative;
-    top: 0;
 }
 
-.team-icon {
-    position: absolute;
-    width: 140px;
-    border-radius: 50%;
-    top: -40px;
-    right: -130px;
-    animation: team-icon-rotate 2.5s linear infinite;
-}
 
 .meet-container {
     position: relative;
@@ -54,15 +44,15 @@ a {
 }
 
 .meet-text-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 100vw;
-    position: absolute;
     bottom: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 40px;
     top: 110px;
-    height: calc(100% - 110px);
 }
 
 .meet-text {
@@ -83,14 +73,16 @@ a {
 
 
 .meet-our-team {
-    margin-bottom: 50px;
-    font-size: 40px;
+    margin-bottom: 70px;
+    font-size: 45px;
     position: relative;
     top: 25px;
+font-weight: bolder;
 }
 
 .container2 {
     width: 100vw;
+    position: relative;
     background-color: #0b2e26;
     display: flex;
     flex-direction: column;
@@ -107,7 +99,7 @@ a {
     animation-name: toWhite;
     animation-duration: .6s;
     animation-fill-mode: forwards;
-    width: 90%;
+    width: 70%;
     background-color: #ccd3d1;
     margin-bottom: 60px;
     border-radius: 10px;

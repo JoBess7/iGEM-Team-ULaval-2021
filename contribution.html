@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./results.css">
+    <link rel="stylesheet" href="./contribution.css">
     <link rel="stylesheet" href="./header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
@@ -172,10 +172,25 @@
         <div class="containers">
             <div class="container1">
                 <div class="title-flex">
-                    Results
+                    Contribution
                 </div>
-                <div class="scrollables-container">
-                    <div class="scrollable"></div>
+                <div class="txt-container">
+                    <div class="txt-safety">
+                        <div class="mutans-flex">
+                            <img src="https://2021.igem.org/wiki/images/e/e0/T--ULaval--smutans_opt.png" alt="" srcset="">
+                            <div class="description-mutans">
+                                Figure 1. SDS-PAGE gels of the expression of the S. mutans dextranase in multiple conditions of induction, incubation time and temperature. We observe a band at the expected MW (95.4 kDa), but also at lower weights. The degradation pattern seems to vary depending on the induction temperature.
+                            </div>
+                        </div>
+                        For our contribution, we chose to express in E. coli the part BBa_K2551002 from the Shenzhen 2018 iGEM team. It is a dextranase from Streptococcus mutans, a prokaryotic organism.  The part was not characterised in any way by the team on the registry.
+                        <br><br>
+                        We ordered the coding sequence in a pET28a vector from Twist Bioscience and tested multiple conditions of protein expression in the E. coli BL21 strain..This allowed us to find the optimal condition for the expression of the part: 1mM IPTG, 37°C for 3.5h or at 0.4/1mM IPTG at 18°C for 18h(Figure 1). As expected, we observe a protein band at the expected molecular weight for this protein(95,4 kDa). However, we also see a lower weight band appear with the induction which could indicate protein degradation. The degradation is more important at 18°C and the pattern of degradation is not the same for both temperatures. To investigate this result, we looked into the literature, because this protein had already been expressed and purified prior to our experiments. In fact, this degradation was also observed by Kim et al., 20113. They also report that the catalytic activity of both fragments is still active. 
+                        <br><br>
+                        As Kim et al., 2011 demonstrated, the amino residue fragment from 100 to 731(lower band at 69.4kDa) is sufficient to perform the dextranase activity of the enzyme. For a future expression and purification experiment, we would suggest to the next team to use this part to modify its sequence slightly by conserving only those residues. This truncation of the protein will provide an homogeneous protein extract and allow the team to use the dextranase without worrying about its different forms. 
+                        <br><br>
+                        Our contribution to the registry has provided knowledge about an existing part by experiments and by litterature. We hope that those results will be useful for other teams in the future.
+                        <br><br><br>
+                    </div>
                 </div>
             </div>
             <footer>
@@ -185,7 +200,7 @@
 
     </div>
 
-    <script src="results.js"></script>
+    <script src="contribution.js"></script>
     <script src="header.js"></script>
 </body>
 </html>
