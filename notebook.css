@@ -259,3 +259,15 @@ and (max-width: 480px){
         transform: rotate(0deg);
     }
 }
+@media screen
+and (max-width: 500px) {
+    .item-title {
+        font-size: 25px;
+    }
+    .timeline-text {
+        font-size: 12px;
+    }
+    .timeline-text > span{
+        font-size: 15px;
+    }
+}
