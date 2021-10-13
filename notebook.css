@@ -157,6 +157,7 @@ font-weight: bolder;
 .icon-unrotate {
     animation: unrotate .6s ease-out forwards 1;
 }
+
 .timeline {
     top: 70px;
 
