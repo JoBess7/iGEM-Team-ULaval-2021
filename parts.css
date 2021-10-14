@@ -217,19 +217,21 @@ and (max-width: 1500px) {
         flex-direction: column;
     }
     .algens-opt {
-        width: 70%;
-        left: 15%;
+        width: 40%;
+        left: 30%;
         position: relative;
         height: auto;
         margin-bottom: 30px;
     }
     .algens-purif {
-        width: 100%;
+        width: 70%;
+        position: relative;
+        left: 15%;
         height: auto;
     }
     .rect6, .rheotot {
-        width: 70%;
-        left: 15%;
+        width: 50%;
+        left: 25%;
         position: relative;
     }
 

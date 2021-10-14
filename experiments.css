@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+body {
+    overflow-x: hidden;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.container1 {
+    width: 100vw;
+    background-color: #f3decb;
+    position: relative;
+    top: 0;
+    padding-bottom: 100px;
+}
+
+.title-flex {
+    height: 250px;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3.2000000476837px;
+}
+
+.container2 {
+    width: 100vw;
+    background-color: #f3decb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bsection {
+    width: 60%;
+}
+.bsection-title {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.bordered {
+    border-bottom: 1px solid black;
+}
+.expandable {
+    cursor: pointer;
+    color: #fdf8f5;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.expand1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.separator {
+    width: 60%;
+    margin: 60px 0 60px 0;
+    height: 1px;
+    background-color: black;
+}
+.expandn {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.displaynone {
+    opacity: 0;
+}
+.italic {
+    font-style: italic;
+}
+.expandable-title-flex {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 20px;
+    background-color: #1c6d87;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.expandable-embed-flex {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.expandable-title {
+    padding-left: 30px;
+    font-size: 20px;
+}
+.expandable-flex2 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+}
+
+.expandable-link:visited, .expandable-link:link, .expandable-link {
+    color: #ff9a47;
+    font-style: italic;
+    cursor: pointer;
+    padding-right: 40px;
+}
+.iconx {
+    cursor: pointer;
+    top: -2px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+.vertical-line {
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+    width: 5px;
+    background-color: rgb(255, 255, 255);
+    left: calc(50% - 2.5px);
+}
+.horizontal-line {
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    height: 5px;
+    top: calc(50% - 2.5px);
+    background-color: rgb(255, 255, 255);
+}
+
+.expandable-title-flex:hover {
+    animation: darker .2s linear forwards;
+}
+.lighter {
+    animation: lighterr .2s linear forwards;
+}
+@keyframes darker {
+    from {
+        background-color: #1c6d87;
+    }
+    to {
+        background-color: #003d52
+    }
+}
+@keyframes lighterr {
+    from {
+        background-color: #003d52;
+    }
+    to {
+        background-color: #1c6d87;
+    }
+}
+iframe {
+    width: 100%;
+  }
+.icon-rotate {
+    animation: rotate .5s ease-out forwards 1;
+}
+.icon-unrotate {
+    animation: unrotate .5s ease-out forwards 1;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(225deg);
+    }
+}
+@keyframes unrotate {
+    from {
+        transform: rotate(225deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+@media screen 
+and (max-width: 1500px) {
+    .bsection {
+        width: 90%;
+    }
+    .expandable {
+        width: 90%;
+    }
+    .separator {
+        width: 90%;
+    }
+}
+@media screen 
+and (max-width: 600px) {
+    .bsection-title {
+        font-size: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    .expandable-title {
+        padding-left: 15px;
+        font-size: 13px;
+    }
+    .expandable-flex2 {
+        display: flex;
+        flex-direction: row;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+    .title-flex {
+        font-size: 30px;
+    }
+}

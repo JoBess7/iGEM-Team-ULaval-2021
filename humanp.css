@@ -44,6 +44,9 @@ a {
 }
 .title-flex {
     font-size: 47px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3.2000000476837px;
 }
 .container2 {
     padding-top: 50px;
@@ -57,6 +60,9 @@ a {
     padding: 15px;
     width: 70%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative; /*
     background-color: #0b2e26;
     box-shadow: 0px 1px #284f45,
@@ -70,6 +76,7 @@ a {
     8px 9px #284f45; */
 }
 .welcome-text {
+    font-size: 25px;
     width: 100%;
     border-radius: 10px;
     text-align: justify;
@@ -78,8 +85,7 @@ a {
                 3px 6px rgb(243, 184, 107),
                 5px 10px rgb(243, 184, 107),
                 7px 12px rgb(243, 184, 107);
-    padding: 10px;
-    margin-bottom: 50px;
+    padding: 20px;
 }
 .review1 {
     width: 100%;
@@ -93,6 +99,7 @@ a {
 .review-text1-flex {
     display: flex;
     flex-direction: row;
+
 }
 .review-text1 > .barril_pic {
     width: 200px;
@@ -105,13 +112,7 @@ a {
     width: 100%;
     text-align: justify;
 }
-.tb-title {
-    font-size: 25px;
-}
-.tb-subtitle {
-    font-size: 20px;
-    color: #852600;
-}
+
 .separator {
     height: 1px;
     width: calc(100% - 200px - 50px);
@@ -160,15 +161,11 @@ a {
 }
 .lighter {
     background-color: #003D52;
-    box-shadow: 1px 2px #1C6D87,
-    2px 3px #1C6D87,
-    3px 4px #1C6D87,
-    4px 5px #1C6D87;
     color: #fdf8f5;
 }
 .expandable {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 25px 10px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -186,6 +183,16 @@ a {
     3px 4px #ffc290,
     4px 5px #ffc290;
 }
+.e-padding-modif {
+    color: #fdf8f5 !important;
+    cursor: pointer;
+    margin-bottom: 25px;
+    background-color: #8f2800;
+    box-shadow: 1px 2px #bd3600,
+    2px 3px #bd3600,
+    3px 4px #bd3600,
+    4px 5px #bd3600;
+}
 .expandable-title-flex {
     width: 95%;
     display: flex;
@@ -193,7 +200,7 @@ a {
     justify-content: space-between;
 }
 .expandable-title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bolder;
 }
 .item-icon {
@@ -203,10 +210,10 @@ a {
 }
 .horizontal-line {
     border-radius: 5px;
-    top: 8px;
+    top: 7px;
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 5px;
     background-color: #fdf8f5;
 }
 .vertical-line {
@@ -214,8 +221,12 @@ a {
     left: 8px;
     position: absolute;
     height: 100%;
-    width: 4px;
+    width: 5px;
     background-color: #fdf8f5;
+}
+.xer {
+    width: 100%;
+    height: auto;
 }
 .survey-text {
     width: 95%;
@@ -279,3 +290,154 @@ a {
     font-size: 15px;
     text-align: justify;
 }
+.review1-text {
+    background-color: #003D52;
+    color: #fdf8f5;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 39px;
+    margin-bottom: 30px;
+}
+.separator3 {
+    width: 40%;
+    height: 2px;
+    background-color: black;
+    margin: 60px 0 40px 0;
+}
+.uler2, .biggerul {
+    font-size: 18px;
+}
+.review-text1 {
+    font-size: 21px;
+}
+.tb-title {
+    font-size: 35px;
+}
+.tb-subtitle {
+    font-size: 25px;
+    color: #852600;
+}
+
+@media screen
+and (max-width: 800px) {
+    .separator {
+        width: 100%;
+    }
+    .uler2, .biggerul {
+        font-size: 12px;
+    }
+    .review-text1 {
+        font-size: 13px;
+
+    }
+    .tb-title {
+        font-size: 18px;
+    }
+    .tb-subtitle {
+        font-size: 16px;
+    }
+    .review-text1 > .barril_pic {
+        width: 70px;
+        margin-left: 40px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    .welcome-text {
+        font-size: 15px;
+    }
+    .review1-text {
+        font-size: 20px;
+    }
+    .title-flex {
+        font-size: 24px;
+    }
+    .review-text1-flex {
+        width: 95%;
+    }
+    .subcontainer {
+        width: 90%;
+    }
+    .expandable {
+        padding-top: 13px;
+    }
+    .expandable-title {
+        font-size: 13px;
+    }
+    .integrated-title {
+        font-size: 18px;
+    }
+    .reference {
+        font-size: 12px;
+    }
+    .story {
+        font-size: 10px !important;
+    }
+    .horizontal-line {
+        top: 8px;
+    }
+    .vertical-line {
+        left: 8px;
+    }
+}
+
+@media screen
+and (min-width: 801px)
+and (max-width: 1300px) {
+    .horizontal-line {
+        top: 8px;
+    }
+    .vertical-line {
+        left: 8px;
+    }
+    .separator {
+        width: 100%;
+    }
+    .uler2, .biggerul {
+        font-size: 18px;
+    }
+    .review-text1 {
+        font-size: 22px;
+
+    }
+    .tb-title {
+        font-size: 30px;
+    }
+    .tb-subtitle {
+        font-size: 23px;
+    }
+    .review-text1 > .barril_pic {
+        width: 120px;
+        margin-left: 40px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    .welcome-text {
+        font-size: 20px;
+    }
+    .review1-text {
+        font-size: 28px;
+    }
+    .review-text1-flex {
+        width: 95%;
+    }
+    .subcontainer {
+        width: 90%;
+    }
+    .expandable {
+        padding-top: 13px;
+    }
+    .expandable-title {
+        font-size: 19px;
+    }
+    .integrated-title {
+        font-size: 27px;
+    }
+    .reference {
+        font-size: 15px;
+    }
+}
+.survey-title {
+    font-size: 24px;
+}
+
