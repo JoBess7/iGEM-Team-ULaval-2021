@@ -218,6 +218,9 @@ a {
     height: 5px;
     background-color: #fdf8f5;
 }
+.darkline {
+    background-color: black !important;
+}
 .vertical-line {
     border-radius: 5px;
     left: 8px;
