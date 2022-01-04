@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./results.css">
+    <link rel="stylesheet" href="./header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="header-top-container" id="header">
+                <div class="h-menuD" id="h-menuD">
+                    <div class="h-menuD-container">
+                        <div class="clickablee" id="modifyHeight1">
+                            <div class="clickable-title" id="clickable1">
+                                <span>Project</span>
+                                <img id="iconslide1"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Experiments</a>
+                                <a href="" class="e-a">Parts</a>
+                                <a href="" class="e-a">Results</a>
+                                <a href="" class="e-a">Safety</a>
+                                <a href="" class="e-a">Project Modelling</a>
+                                <a href="" class="e-a">Engineering Success</a>
+                                <a href="" class="e-a">Proof of Concept</a>
+                                <a href="" class="e-a">Going Above and Beyond</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee" id="modifyHeight2">
+                            <div class="clickable-title" id="clickable2">
+                                <span>Human Practices</span>
+                                <img id="iconslide2"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Human Practices</a>
+                                <a href="" class="e-a">Implementation</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee" id="modifyHeight3">
+                            <div class="clickable-title" id="clickable3">
+                                <span>Team</span>
+                                <img id="iconslide3"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Team</a>
+                                <a href="" class="e-a">Attributions</a>
+                                <a href="" class="e-a">Notebook</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee border-bottom" id="modifyHeight4">
+                            <div class="clickable-title" id="clickable4">
+                                <span>Education & Communication</span>
+                                <img id="iconslide4"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Education & Communication</a>
+                                <a href="" class="e-a">Poster</a>
+                                <a href="" class="e-a">Collaboration</a>
+                                <a href="" class="e-a">Contribution</a>
+                            </div>
+                        </div>
+
+                        <div class="clickable displayNone" id="modifyHeight4">
+                            <div class="clickable-title" id="clickable4">
+                                <span>Education & Communication</span>
+                                <img src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Education & Communication</a>
+                                <a href="" class="e-a">Poster</a>
+                                <a href="" class="e-a">Collaboration</a>
+                                <a href="" class="e-a">Contribution</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-flex">
+                    <div class="socials-container" id="socials-container">
+                        <a href="https://www.facebook.com/equipeiGEMULaval/">
+                            <img src="./assets/header-fb-icon.png" id="fb" class="fb-icon" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/igem_ulaval/">
+                            <img src="./assets/header-ig-icon.png" id="ig" class="ig-icon" alt="">
+                        </a>
+                        <a href="mailto:igem@bcm.ulaval.ca">
+                            <img src="./assets/header-mail-icon.png" id="mail" class="mail-icon" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="logo-container" id="header-logo"><img class="h-logo"
+                            src="./assets/SVG logo barre menus.svg" alt="" srcset=""></a>
+
+                    <div class="h-menus">
+                        <div class="h-element-s" id="checker1">
+                            <div class="h-element-text" id="element-text1">
+                                <span>Project</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide1" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display1">
+                                <a href="https://2021.igem.org/Team:ULaval/Description" class="h-a">Project
+                                    Description</a>
+                                <div class="h-a-m-flex" id="ham-flex1">
+                                    <span class="h-a-m">The Basics</span>
+                                    <img src="./assets/header-itemslide-icon.png" alt="" class="">
+                                    <div class="h-sub" id="h-sub1">
+                                        <a href="https://2021.igem.org/Team:ULaval/Experiments"
+                                            class="h-a">Experiments</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Parts" class="h-a">Parts</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Results" class="h-a">Results</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Safety" class="h-a">Safety</a>
+                                    </div>
+                                </div>
+                                <div class="h-a-m-flex" id="ham-flex2">
+                                    <span class="h-a-m">What Makes It Great</span>
+                                    <img src="./assets/header-itemslide-icon.png" alt="" class="">
+                                    <div class="h-sub" id="h-sub2">
+                                        <a href="https://2021.igem.org/Team:ULaval/Model" class="h-a">Project
+                                            Modelling</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Engineering" class="h-a">Engineering
+                                            Success</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Proof_Of_Concept" class="h-a">Proof
+                                            of Concept</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/X" class="h-a">Going Above and
+                                            Beyond</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker2">
+                            <div class="h-element-text" id="element-text2">
+                                <span>Human Practices</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide2" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display2">
+                                <a href="https://2021.igem.org/Team:ULaval/Human_Practices" class="h-a">Human
+                                    Practices</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Implementation"
+                                    class="h-a">Implementation</a>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker3">
+                            <div class="h-element-text" id="element-text3">
+                                <span>Team</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide3" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display3">
+                                <a href="https://2021.igem.org/Team:ULaval/Team" class="h-a">Team</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Attributions" class="h-a">Attributions</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Notebook" class="h-a">Notebook</a>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker4">
+                            <div class="h-element-text" id="element-text4">
+                                <span>Education & Communication</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide4" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display4">
+                                <a href="https://2021.igem.org/Team:ULaval/Communication" class="h-a">Education &
+                                    Communication</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Poster" class="h-a">Poster</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Collaborations" class="h-a">Collaboration</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Contribution" class="h-a">Contribution</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-burger" id="header-burger">
+                        <div class="line1 line" id="line1"></div>
+                        <div class="line2 line" id="line2"></div>
+                        <div class="line3 line" id="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="containers">
+            <div class="container1">
+                <div class="title-flex">
+                    Results
+                </div>
+                <div class="txt-container">
+                    <div class="txt-safety">
+                        <div class="welcome-text-flex">
+                            <div class="welcome-title">Overview</div>
+                            <div class="welcome-text">The experiments we have done during this year can be separated
+                                into four main steps: The first step was the cloning and the confirmation of the <span
+                                    class="italic2">E. coli</span> strains for the <span class="italic2">G. algens</span>
+                                dextranase's expression
+                                (BBa_K3493000). Secondly, we have optimized the proteic expression of our dextranase by
+                                testing multiple conditions and thus purified the protein. Thirdly, we realized
+                                micro-SNT enzymatic assays with the previously purified dextranase to characterize its
+                                main properties as pH and temperature for optimal activity. Finally, rheological assays
+                                allowed us to quantify the activity of our dextranase in ropy syrup, an essential test
+                                for the proof of concept for this project. As a part of our contribution to a registry
+                                part, experiments were also performed for the <span class="italic2  ">S. mutans</span>
+                                dextranase (BBa_K2551003).</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="expandables">
+                    <div class="expandable cloning-e" id="exp1">
+                        <div class="e-title-flex">
+                            <div class="e-title">1. Cloning and strains’ confirmation</div>
+                            <div class="item-icon" id="icon1">
+                                <div class="horizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="e-text">
+                            <div class="e-pic-flex hidesecond">
+                                <img class="e-pic query1"
+                                    src="https://2021.igem.org/wiki/images/e/e5/T--ULaval--confirm_pET28.png" alt=""
+                                    srcset="">
+                                <div class="img-desc"><span class="bold">Figure 1: </span>Agarose 1% gel with the
+                                    diagnostic PCR products for three DH5alpha colonies from the transformation plate.
+                                    The transformed plasmid was pET28a-S.mutans. The PCR amplified the full length of
+                                    the coding sequence. The expected length was 2900pb. However, we observe that a
+                                    colonie expressed a truncated version of the plasmid.</div>
+                            </div>
+                            <span class="line-height">The expression vector pET28a with the cloned sequence of the <span
+                                    class="italic">G. algens</span> and <span class="italic">S. mutans</span>
+                                dextranases were ordered from Twist Bioscience. The plasmids were then transformed in
+                                <span class="italic">E. coli</span> DH5ɑ competent cells. Clones were used to start
+                                cultures for plasmid purification. One of each purified plasmids was sent to sequencing
+                                to confirm that the sequence on the plasmid was the exact sequence we ordered from Twist
+                                Bioscience. The coding sequence of the <span class="italic">G. algens</span> dextranase
+                                corresponded perfectly to
+                                our design, but, surprisingly, the sequencing revealed that the plasmid pET28a-S.mutans
+                                sent had a gap in the coding sequence of our dextranase. To move forward with the
+                                experiments with the <span class="italic">S. mutans</span>’s dextranase, we had to
+                                confirm its sequence. So to limit
+                                the expenses related to sequencing the plasmid, we performed PCR on plasmids purified
+                                from three different isolated colonies to identify the ones that contained the full
+                                length coding sequence. The PCR products showed that some of the clones could express a
+                                truncated version of the expression vector. Regarding those results, we selected a
+                                purified plasmid with the full length coding sequence to send to sequencing. The
+                                sequence was then corresponding to our design. Finally, a confirmed plasmid for each
+                                dextranase was transformed in <span class="italic">E. coli BL21</span> competent cells,
+                                which was the strain chosen to perform the expression of the proteins.</span>
+                            <br><br><br>
+                            <div class="e-pic-flex2 hidefirst bla">
+                                <img class="e-pic"
+                                    src="https://2021.igem.org/wiki/images/e/e5/T--ULaval--confirm_pET28.png" alt=""
+                                    srcset="">
+                                <div class="img-desc"><span class="bold">Figure 1: </span>Agarose 1% gel with the
+                                    diagnostic PCR products for three DH5alpha colonies from the transformation plate.
+                                    The transformed plasmid was pET28a-S.mutans. The PCR amplified the full length of
+                                    the coding sequence. The expected length was 2900pb. However, we observe that a
+                                    colonie expressed a truncated version of the plasmid.</div>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <div class="expandable cloning-e" id="exp2">
+                        <div class="e-title-flex">
+                            <div class="e-title">2. Proteins’ expression and purification</div>
+                            <div class="item-icon" id="icon2">
+                                <div class="horizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="e-text">
+                            <span class="line-height">For both dextranase, <span class="italic">G. algens</span> and
+                                <span class="italic">S. mutans</span>, expression’s
+                                optimization experiments were performed to identify the optimal expression condition in
+                                the BL21 strains. The parameters tested were the concentration of the inductor (IPTG),
+                                the induction time and incubation temperature. For each condition and each dextranase,
+                                an aliquot of the induced cultures was collected at different time points: at induction,
+                                after 3h30 of induction and after 18h of induction. Those aliquots were used to estimate
+                                the proteins’ expression by migration of the total extracts on SDS-PAGE gels .</span>
+                            <br><br><br>
+                            <div class="e-pic-flex3">
+                                <div class="img-flex">
+                                    <img class="e-pic2 tl"
+                                        src="https://2021.igem.org/wiki/images/f/f2/T--ULaval--confirm_OPT1.png" alt=""
+                                        srcset="">
+                                    <img class="e-pic2 tr"
+                                        src="https://2021.igem.org/wiki/images/1/1e/T--ULaval--confirm_OPT2.png" alt=""
+                                        srcset="">
+                                </div>
+                                <div class="img-desc"><span class="bold">Figure 2: </span>SDS-PAGE 12% gels with full
+                                    extract aliquots from the expression optimization experiment of the <span
+                                        class="italic">G. algens</span>
+                                    dextranase. The expected MW was 63.5kDa for the G.algens dextranase. We see the
+                                    increase in expression through induction time and the effect of temperature and IPTG
+                                    concentration on expression. The induction conditions in which the expression was
+                                    the best were 0.</div>
+                            </div>
+
+                            <span class="line-height">First, the optimal expression’s condition for the dextranase from
+                                G. algens is at a concentration of 0.4 mM or 1mM of IPTG and at an incubation
+                                temperature of 18 °C for 18 hours of induction. The increase of expression over
+                                induction time is revealed by the increase of the protein band corresponding to the
+                                expected weight of the G.algens’ dextranase of 63,5 kDa. We observe that the expression
+                                of the protein is similar in every condition at 37°C, even if there is no inductor in
+                                the medium. This can be explained by the basal rate of expression of the BL21
+                                strain<sup>1</sup>.
+                                Indeed, the bacteria can express the protein on the expression vector without the
+                                inductor agent but at a low rate. Therefore, we can deduce that 37°C with IPTG is not
+                                optimal conditions for the surexpression because the expression rate is similar to the
+                                basal rate of the strain. The maximal expression observed in our experiment is at an
+                                incubation temperature of 18°C. The lower temperature slowed the growth of E. coli, but
+                                allowed a greater expression of the dextranase because it reduces synthesis rate thus
+                                allowing the protein time to fold properly and avoiding aggregation<sup>2</sup>.
+                                Moreover, another
+                                way to explain the increase of expression at 18°C is the nature of <span
+                                    class="italic">G. algens</span> which is a
+                                psychrophilic bacteria. The optimal growth temperature for <span class="italic">G.
+                                    algens</span> is from 10°C to
+                                12°C <sup>3</sup>, therefore the induction temperature of 18°C is closer to the native
+                                temperature
+                                in which the dextranase is naturally expressed. In order to determine which condition
+                                between 0.4mM and 1mM of IPTG is the best for induction, we performed a migration of the
+                                soluble fractions and those results will be discussed later.</span>
+                            <br><br><br>
+                            <div class="e-pic-flex3">
+                                <div class="img-flex">
+                                    <img class="e-pic2 tl bigger"
+                                        src="https://2021.igem.org/wiki/images/c/c7/T--ULaval--smutans1.png" alt=""
+                                        srcset="">
+                                    <img class="e-pic2 tr smaller"
+                                        src="https://2021.igem.org/wiki/images/e/e1/T--ULaval--smutans2.png" alt=""
+                                        srcset="">
+                                </div>
+                                <div class="img-desc"><span class="bold">Figure 3: </span>SDS-PAGE 12% gels with full
+                                    extract aliquots from the expression optimization experiment of the <span
+                                        class="italic">S. mutans</span>
+                                    dextranase. The expected MW was 95.4kDa for the full <span class="italic">S.
+                                        mutans</span> dextranase. However,
+                                    we observe multiple bands related to the induction which indicates a proteolysis of
+                                    the protein of interest. We see the increase in expression through induction time
+                                    and the effect of temperature and IPTG concentration on expression. The induction
+                                    conditions in which the expression was the best were 0.4 mM or 1mM of IPTG and at an
+                                    incubation temperature of 18 °C for 18 hours of induction.</div>
+                            </div>
+
+                            <span class="line-height">Furthermore, we were also able to express the dextranase of S.
+                                mutans with the pET28 vector in BL21 strain. It appears that the optimal expression
+                                conditions for this protein could be at 1mM IPTG, 37°C for 3.5h or at 0.4/1mM IPTG at
+                                18°C for 18h. However, the Comassi staining reaches saturation quickly, so we can not
+                                tell with certainty which condition is the best for expression, because the 3 conditions
+                                described above showed similar staining. For that reason, we have chosen to pursue the
+                                expression’s condition of 0.4mM and 1mM IPTG at 18°C for 18h. As expected, we observe a
+                                protein band at the expected molecular weight for this protein (95,4 kDa), but we also
+                                see a lower weight band appear with the induction which could indicate protein
+                                degradation. The degradation is more important at 18°C. To investigate this result, we
+                                looked into the literature, because this protein had already been expressed and purified
+                                prior to our experiments. In fact, this degradation was also observed by Kim et al.,
+                                2011 <sup>4</sup>. They also report that the catalytic activity of both fragments is
+                                still active.
+                                Thus, we moved forward with the sonication and the purification for both dextranases.
+                            </span>
+                            <br><br><br>
+                            <div class="e-pic-flex3">
+                                <div class="img-flex">
+                                    <img class="e-pic2 tl bigger1"
+                                        src="https://2021.igem.org/wiki/images/5/53/T--ULaval--algenspurif1.png" alt=""
+                                        srcset="">
+                                    <img class="e-pic2 tr smaller1"
+                                        src="https://2021.igem.org/wiki/images/7/72/T--ULaval--algenspurif2.png" alt=""
+                                        srcset="">
+                                </div>
+                                <div class="img-desc"><span class="bold">Figure 4: </span>SDS-PAGE 12% gels showing
+                                    verification of solubility and purification of <span class="italic">G. algens</span>
+                                    dextranase. A. We compare
+                                    the soluble fraction induced with 0.4mM and 1mM IPTG to verify which allows a higher
+                                    concentration of the soluble enzyme. We observed that the 1mM condition confears a
+                                    larger amount of dextranase in the soluble fraction. B. Gel showing the steps of
+                                    IMACS purification. The purified protein seems to be quite pure. However, throughout
+                                    the purification we lose a lot of dextranase.</div>
+                            </div>
+
+                            <span class="line-height">As mentioned above, we used the cell pellets collected from the
+                                optimization experiment (0.4mM & 1mM, 18°C T18) to perform sonication in order to assess
+                                the solubility of the <span class="italic">G. algens</span> dextranase for both
+                                conditions. In Figure 4A, we observe
+                                that a larger amount of protein in the soluble fraction is visible for the 1mM condition
+                                than for the 0.4mM condition. The difference between those conditions is the
+                                concentration of IPTG, so we can believe that the higher concentration induced a larger
+                                production of proteins that was not visible with the total extracts due to the Coomassie
+                                staining saturation. With the soluble fraction of the protein expressed at 1mM IPTG 18°C
+                                for 18 hours, we did a first test of purification with IMAC chromatography(Figure 4B).
+                                The SDS-PAGE revealed a high quality purification of our protein even if there is a loss
+                                of dextranase during elution and washing. After all those verification steps, we
+                                performed the expression experiment of <span class="italic">G. algens</span> dextranase
+                                with the optimal condition
+                                (Figure 3) at a larger scale in order to produce an important amount of dextranase. The
+                                purity of this purification was similar to the one shown in Figure 4B, but for a higher
+                                amount of proteins. Then, we quantified the concentration of purified protein with a
+                                Bradford assay. We obtained a concentration of 4.01ug/uL of protein which equals to a
+                                concentration of 636uM of the G.algens dextranase in our 15mL purified sample. We had
+                                enough proteins to start the enzymatic assays. To our knowledge, this is the first time
+                                the dextranase of <span class="italic">G. algens</span> is successfully expressed and
+                                purified.</span>
+                            <br><br><br>
+                        </div>
+                    </div>
+
+                    <div class="expandable cloning-e" id="exp3">
+                        <div class="e-title-flex">
+                            <div class="e-title">3. Enzymatic assays</div>
+                            <div class="item-icon" id="icon3">
+                                <div class="horizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="e-text">
+                            <span class="line-height">Even though both enzymes, our designed dextranase from <span
+                                    class="italic">G. algens</span>
+                                (BBa_K3493000) and the one from <span class="italic">S. mutans</span> (BBa_K2551003),
+                                were used for the previous
+                                experiments, only the dextranase from <span class="italic">G. algens</span> was
+                                characterised by the enzymatic
+                                assays.</span>
+                            <br><br>
+                            <span class="line-height">Prior to the micro-SNT enzymatic essays, the protocol was verified
+                                using a commercially available dextranase from Penicllium sp. (results not shown). We
+                                were able to confirm the linearity of the assay between 0.008 and 0.072 µmole of glucose
+                                equivalent as previously shown by Borkowska et al. <sup>5</sup>. With the protocol
+                                adapted and
+                                functional, we measure the number of enzymatic units of the dextranase from <span
+                                    class="italic">G. algens</span>.
+                                It revealed that for the equivalent of 0.002 µmole of dextranase, on the basis of amount
+                                of protein after purification, has 0.01 U at pH 6.5 and 18 °C. Here, the 1 U is equal to
+                                the release of 1 µmole of glucose equivalent after 1 min. This result show that the
+                                enzyme is active and retains its activity after lysis, purification and storage at 4 °C.
+                                Since this number of enzymatic units added to 0.4 % dextran leaded to the release of
+                                glucose equivalent in the linear region of the assay after 5 min of reaction at 18 °C,
+                                0.01 U was used for the later enzymatic assays.</span>
+                            <br><br><br>
+                            <div class="e-pic-flex2 enzy-flex">
+                                <img class="e-pic enzy"
+                                    src="https://2021.igem.org/wiki/images/4/47/T--ULaval--ph_enzy.png" alt=""
+                                    srcset="">
+                                <div class="img-desc"><span class="bold">Figure 5: </span> Activity and stability of the
+                                    <span class="italic">G. algens</span>’ dextranase in function of the pH at 18 °C
+                                    using micro-SNT enzymatic
+                                    assays. A. Activity of the dextranase based on the amount of released glucose
+                                    equivalent from the dextran T40 under the 0.01 U at pH ranging from 5.5 to 7.0. We
+                                    observe that the optimal for the enzyme is at pH 6.5 with 0.036 released glucose
+                                    equivalent, but followed closely at pH 6.0 and 7.0 with respective released glucose
+                                    equivalent of 0.031 and 0.032. B. Stability of the dextranase under the incubation
+                                    at pH between 5.5 and 7.0 for 15 min. The condition where the enzyme seems to be the
+                                    more stable is at pH 7.0.
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <span class="line-height">The pH optima were determined using the same method as the
+                                measurement of enzymatic units, but with variations of the pH of the dextran solution.
+                                From the activity’s results measured at pH ranging from 5.5 to 7.0 (Figure 5), the
+                                optimal pH of the <span class="italic">G. algens</span>’ dextranase is 6,5. Even though
+                                6.5 is the optimal pH based
+                                on our results, the enzyme is still very active at 6.0 which is promising knowing that
+                                ropy maple is slightly acidic <sup>6</sup>. On the other hand, the pH stability was
+                                similarly
+                                obtained with prior incubation of the dextranase at 100 µM in buffer ranging from pH 5.5
+                                to 7 for 15 min at 18 °C. The better condition for the dextranase stability was attained
+                                at pH 7.0, but there is no intense fluctuation in the dextranase’s stability at slightly
+                                acidic pH. In comparison of the amount of released equivalent of glucose, either the
+                                enzymatic activity and stability measured between pH 5.5 and 6.5 are quite stable
+                                between 0.030 and 0.040 µmole. Knowing that the <span class="italic">G. algens</span>
+                                dextranase is slightly
+                                impacted in terms of stability at slightly acidic pH where the enzyme has a maximum
+                                activity, we can confirm that the enzyme is appropriate and functional on the basis of
+                                the pH for a treatment in the ropy maple syrup.</span>
+                            <br><br><br>
+                            <div class="e-pic-flex2 enzy-flex">
+                                <img class="e-pic enzy"
+                                    src="https://2021.igem.org/wiki/images/6/6d/T--ULaval--temp_enzy.png" alt=""
+                                    srcset="">
+                                <div class="img-desc"><span class="bold">Figure 6: </span>Activity and stability of the
+                                    <span class="italic">G. algens</span>’ dextranase in function of the temperature at
+                                    pH 6.5 using micro-SNT
+                                    enzymatic assays. A. Activity of the dextranase based the amount of released glucose
+                                    equivalent from the dextran T40 under the 0.01 U at temperature ranging from 5 to 50
+                                    °C. The enzyme showed to be more active at higher temperature, reaching 0.104 µmole
+                                    of released glucose equivalent at 40 °C and slipping down over 40 °C. At 20 °C, the
+                                    activity is lowered to 0.037 µmole. B. Stability of the dextranase under the
+                                    incubation at temperature between 5 and 55 °C for 15 min. We observe that the enzyme
+                                    is more stable at lower temperature, 15 °C and below. The stability seems to
+                                    decrease when incubated below 15 °C, but those results appear to be aberrant,
+                                    considering that protein stability reaches a plateau at lower temperature than the
+                                    optimal.
+                                </div>
+                            </div>
+                            <br><br>
+                            <span class="line-height">Using the same methodology as previously to measure the optimum
+                                activity with temperatures between 5 and 50 °C instead, we were able to determine that
+                                the temperature optimum for the activity of the enzyme is at 40 °C (Figure 6A). Since
+                                the treatment that we propose would be implemented at temperature between 15 and 20 °C
+                                (see <a class="implement"
+                                    href="https://2021.igem.org/Team:ULaval/Implementation">implementation</a>), we can
+                                see that even though the activity is about one third of the
+                                activity at 40 °C, the enzyme is still very active. This suggests that, however the
+                                enzyme will not degrade the dextran at full capacity, this activity could be enough to
+                                significantly reduce the viscosity of ropy maple syrup to something comparable to maple
+                                syrup on an extended duration of treatment. After 15 min of incubation at each
+                                temperature followed by enzymatic assay at 18 °C for 5 min, we measured that the enzyme
+                                is at its highest stability at 15 °C and lower (considering the aberrant stability at 10
+                                and 5 °C) (Figure 6B). This suggests that keeping the enzyme at 4 °C is enough to
+                                conserve its stability, which is promising for further uses in industry without
+                                requiring specific and costly conservation conditions. This also shows that a treatment
+                                between 15 and 20 °C would be possible knowing that the enzyme would be close or at its
+                                peak stability but with an activity about one third of its maximum, which is not
+                                problematic if the treatment is made for an extended period of time.</span>
+                            <br><br><br>
+                            <span class="line-height">The enzymatic characterization we have made of the <span
+                                    class="italic">G. algens</span>
+                                dextranase is the first time to our knowledge that the enzymatic properties of this
+                                enzyme were evaluated. Those results are essential for the development of the knowledge
+                                and the use of this dextranase from <span class="italic">G. algens</span>. Based on our
+                                results, we are confident
+                                that our dextranase is adapted to the situation of ropy maple syrup which requires
+                                either an enzyme active and stable at pH around 6.0 and 6.5 and an enzyme active and
+                                stable at temperature between 15 and 20 °C.</span>
+                            <br><br><br>
+                        </div>
+                    </div>
+
+                    <div class="expandable cloning-e" id="exp4">
+                        <div class="e-title-flex">
+                            <div class="e-title">4. Rheological assays</div>
+                            <div class="item-icon" id="icon4">
+                                <div class="horizontal-line"></div>
+                                <div class="vertical-line"></div>
+                            </div>
+                        </div>
+                        <div class="e-text">
+                            <span class="line-height">After characterizing the enzymatic properties of <span
+                                    class="italic">G. algens</span>’
+                                dextranase, we were able to make the proof of concept of the project. Using ropy maple
+                                syrup provided by the PPAQ, the organisation in charge of the market and quality
+                                regulation of maple syrup. We measured the reduction of viscosity of ropy syrup under
+                                the action of our dextranase using rheological assays.
+                            </span>
+
+                            <div class="e-pic-flex2 rheotot">
+                                <img class="e-pic" src="https://2021.igem.org/wiki/images/2/2a/T--ULaval--rheotot.png"
+                                    alt="" srcset="">
+                                <div class="img-desc"><span class="bold">Figure 7: </span>Viscosity of ropy maple syrup
+                                    with and without added buffer and <span class="italic">G. algens</span>’ dextranase
+                                    using rheological assays.
+                                    The assays were performed at 20 °C and 10 °C with prior incubation of the ropy syrup
+                                    with the dextranase. The control of the viscosimetric measurement was done with the
+                                    same amount of buffer added to the ropy syrup. At 20 °C, the ropy syrup with buffer
+                                    and dextranase have respectively a viscosity of 0.25 Pa s and 0.22 Pa s. The ropy
+                                    syrup alone increases in viscosity with increasing fluctuations during the sampling
+                                    time. At 10 °C, the ropy syrup with buffer and dextranase have respectively a
+                                    viscosity of 0.47 Pa s and 0.42 Pa s. </div>
+                            </div>
+                            <br><br>
+                            <span class="line-height">To measure the reduction of viscosity, we incubated prior to the
+                                analyses ropy maple syrup with the dextranase at 35.5 µM for 50 minutes at ambient
+                                temperature. In comparison with the measured viscosity of ropy maple syrup with added
+                                buffer (Figure 7), we can see that the sample of ropy syrup under the action of the
+                                dextranase has a decreased viscosity when measured at 20 °C (Figure 6A). This suggests
+                                that not only the enzyme is active in ropy maple as estimated by the enzymatic assays,
+                                but the enzyme is able to significantly reduce its viscosity. To have a better view of
+                                the viscosity reduction after incubation since the relation between viscosity and
+                                temperature is exponential <sup>7</sup>, we have done the same analysis at 10 °C with a
+                                prior
+                                incubation this time for 25 min at ambient temperature (Figure 6B). Again, we observed
+                                that treated ropy maple syrup shows a reduced viscosity compared to ropy maple syrup
+                                with buffer. This makes the proof of concept of our project, which is to reduce the
+                                viscosity of ropy syrup for it to be used as a sugar base.</span>
+                            <br><br>
+                            <span class="line-height">Interestingly, when measuring the viscosity of ropy syrup alone
+                                (Figure 6A), we observed that the viscosity increases during the sampling time with more
+                                important fluctuations. We thought that the high concentration of sugar and dextran
+                                impacted the behaviour of the sample during the analysis. We think that crystallization
+                                of sugar might be responsible for this changing behaviour throughout time of the
+                                rheological assay, but no further investigation was done since this behaviour was not
+                                observed when adding buffer as a control for the experiment.</span>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="txt-container">
+                    <div class="txt-safety">
+                        <div class="welcome-text-flex">
+                            <div class="welcome-title">Conclusion</div>
+                            <div class="welcome-text">
+                                In summary, we were able to express and purify our dextranase from <span class="italic2">G. algens</span> using <span class="italic2">E.
+                                coli BL21</span>. We used the synthetic gene inserted in a conventional pET28a vector for
+                                protein expression followed by IMAC chromatography. The purified enzyme was
+                                characterized using micro-SNT enzymatic assays that revealed, in the condition of ropy
+                                maple syrup (pH 6.5 and temperature between 15 and 20 °C), that the dextranase would be
+                                adapted for the treatment. It was also confirmed using rheological assays.
+                                <br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                </div>
+
+                <div class="ref-container">
+                    <div class="ref-title">References</div><br>
+                    <ul class="ula">
+                        <li>
+                            Dubendorff, J. W. & Studier, F. W. Controlling basal expression in an inducible T7
+                            expression system by blocking the target T7 promoter with lac repressor. <span
+                                class="italic2">J. Mol. Biol.</span> <span class="bold">219</span>, 45–59 (1991).
+                        </li>
+                        <br>
+                        <li>
+                            Rosano, G. L. & Ceccarelli, E. A. Recombinant protein expression in Escherichia coli:
+                            advances and challenges. <span class="italic2">Front. Microbiol.</span> <span
+                                class="bold">5</span>, 172 (2014).
+                        </li>
+                        <br>
+                        <li>
+                            Bowman, J. P., McCammon, S. A., Brown, J. L., Nichols, P. D. & McMeekin, T. A.
+                            Psychroserpens burtonensis gen. nov., sp. nov., and Gelidibacter algens gen. nov., sp. nov.,
+                            psychrophilic bacteria isolated from antarctic lacustrine and sea ice habitats. <span>Int.
+                                J. Syst. Bacteriol.</span> <span class="bold">47</span>, 670–677 (1997).
+                        </li>
+                        <br>
+                        <li>
+                            Borkowska, M., Białas, W., Kubiak, M., & Celińska, E. (2019). Rapid micro-assays for
+                            amylolytic activities determination: customization and validation of the tests. Applied
+                            Microbiology and Biotechnology, 103(5), 2367.
+                        </li>
+                        <br>
+                        <li>
+                            Lagacé, L., Camara, M., Leclerc, S., Charron, C., & Sadiki, M. (2018). Chemical and
+                            microbial characterization of ropy maple sap and syrup. Maple Syrup Digest, 9–19.
+                        </li>
+                        <br>
+                        <li>
+                            Andrade, E. N. D. C. (1930). The viscosity of liquids. In Nature (Vol. 125, Issue 3148, pp.
+                            309–310). Nature Publishing Group.
+                        </li>
+                        <br><br><br>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <img src="https://2021.igem.org/wiki/images/f/fe/T--ULaval--sponsorBanner.svg" alt="" class="">
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="results.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>

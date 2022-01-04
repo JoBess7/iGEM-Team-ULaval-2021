@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./implementation.css">
+    <link rel="stylesheet" href="./header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="header-top-container" id="header">
+                <div class="h-menuD" id="h-menuD">
+                    <div class="h-menuD-container">
+                        <div class="clickablee" id="modifyHeight1">
+                            <div class="clickable-title" id="clickable1">
+                                <span>Project</span>
+                                <img id="iconslide1"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Experiments</a>
+                                <a href="" class="e-a">Parts</a>
+                                <a href="" class="e-a">Results</a>
+                                <a href="" class="e-a">Safety</a>
+                                <a href="" class="e-a">Project Modelling</a>
+                                <a href="" class="e-a">Engineering Success</a>
+                                <a href="" class="e-a">Proof of Concept</a>
+                                <a href="" class="e-a">Going Above and Beyond</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee" id="modifyHeight2">
+                            <div class="clickable-title" id="clickable2">
+                                <span>Human Practices</span>
+                                <img id="iconslide2"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Human Practices</a>
+                                <a href="" class="e-a">Implementation</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee" id="modifyHeight3">
+                            <div class="clickable-title" id="clickable3">
+                                <span>Team</span>
+                                <img id="iconslide3"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Team</a>
+                                <a href="" class="e-a">Attributions</a>
+                                <a href="" class="e-a">Notebook</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee border-bottom" id="modifyHeight4">
+                            <div class="clickable-title" id="clickable4">
+                                <span>Education & Communication</span>
+                                <img id="iconslide4"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Education & Communication</a>
+                                <a href="" class="e-a">Poster</a>
+                                <a href="" class="e-a">Collaboration</a>
+                                <a href="" class="e-a">Contribution</a>
+                            </div>
+                        </div>
+
+                        <div class="clickable displayNone" id="modifyHeight4">
+                            <div class="clickable-title" id="clickable4">
+                                <span>Education & Communication</span>
+                                <img src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Education & Communication</a>
+                                <a href="" class="e-a">Poster</a>
+                                <a href="" class="e-a">Collaboration</a>
+                                <a href="" class="e-a">Contribution</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-flex">
+                    <div class="socials-container" id="socials-container">
+                        <a href="https://www.facebook.com/equipeiGEMULaval/">
+                            <img src="./assets/header-fb-icon.png" id="fb" class="fb-icon" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/igem_ulaval/">
+                            <img src="./assets/header-ig-icon.png" id="ig" class="ig-icon" alt="">
+                        </a>
+                        <a href="mailto:igem@bcm.ulaval.ca">
+                            <img src="./assets/header-mail-icon.png" id="mail" class="mail-icon" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="logo-container" id="header-logo"><img class="h-logo"
+                            src="./assets/SVG logo barre menus.svg" alt="" srcset=""></a>
+
+                    <div class="h-menus">
+                        <div class="h-element-s" id="checker1">
+                            <div class="h-element-text" id="element-text1">
+                                <span>Project</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide1" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display1">
+                                <a href="https://2021.igem.org/Team:ULaval/Description" class="h-a">Project
+                                    Description</a>
+                                <div class="h-a-m-flex" id="ham-flex1">
+                                    <span class="h-a-m">The Basics</span>
+                                    <img src="./assets/header-itemslide-icon.png" alt="" class="">
+                                    <div class="h-sub" id="h-sub1">
+                                        <a href="https://2021.igem.org/Team:ULaval/Experiments"
+                                            class="h-a">Experiments</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Parts" class="h-a">Parts</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Results" class="h-a">Results</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Safety" class="h-a">Safety</a>
+                                    </div>
+                                </div>
+                                <div class="h-a-m-flex" id="ham-flex2">
+                                    <span class="h-a-m">What Makes It Great</span>
+                                    <img src="./assets/header-itemslide-icon.png" alt="" class="">
+                                    <div class="h-sub" id="h-sub2">
+                                        <a href="https://2021.igem.org/Team:ULaval/Model" class="h-a">Project
+                                            Modelling</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Engineering" class="h-a">Engineering
+                                            Success</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Proof_Of_Concept" class="h-a">Proof
+                                            of Concept</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/X" class="h-a">Going Above and
+                                            Beyond</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker2">
+                            <div class="h-element-text" id="element-text2">
+                                <span>Human Practices</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide2" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display2">
+                                <a href="https://2021.igem.org/Team:ULaval/Human_Practices" class="h-a">Human
+                                    Practices</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Implementation"
+                                    class="h-a">Implementation</a>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker3">
+                            <div class="h-element-text" id="element-text3">
+                                <span>Team</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide3" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display3">
+                                <a href="https://2021.igem.org/Team:ULaval/Team" class="h-a">Team</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Attributions" class="h-a">Attributions</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Notebook" class="h-a">Notebook</a>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker4">
+                            <div class="h-element-text" id="element-text4">
+                                <span>Education & Communication</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide4" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display4">
+                                <a href="https://2021.igem.org/Team:ULaval/Communication" class="h-a">Education &
+                                    Communication</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Poster" class="h-a">Poster</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Collaborations" class="h-a">Collaboration</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Contribution" class="h-a">Contribution</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-burger" id="header-burger">
+                        <div class="line1 line" id="line1"></div>
+                        <div class="line2 line" id="line2"></div>
+                        <div class="line3 line" id="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="containers">
+            <div class="container1">
+                <div class="title-flex">
+                    Implementation
+                </div>
+                <div class="txt-container">
+                    <div class="txt-safety">
+                        In Quebec, maple syrup production is regulated by government agencies like the Ministère de
+                        l’Agriculture, des Pêcheries et de l’Alimentation (in french, meaning Ministry of Agriculture,
+                        Fishing and Food, aka MAPAQ). Quality testing and distribution of maple syrup, on the other
+                        hand, is defined and organised by a large private association of maple producers, the
+                        Producteurs et Productrices acéricoles du Québec (in french, meaning Maple Producers of Quebec,
+                        aka PPAQ). Throughout the project, we collaborated with those organizations to ensure that our
+                        enzymatic treatment could be easily incorporated into the maple syrup production process. It was
+                        also to make sure that we created a solution that respected all the necessary regulations.
+                        <br><br><br>
+                        <div class="separator"></div><br><br>
+                        <div class="titler">Where does aSAP fit in the production process?</div>
+                        <br>
+                        In Quebec, the PPAQ take care of acquiring every maple syrup barrel produced so they can test it
+                        to ensure its quality. This barrel can have one of two fates: the PPAQ can either destroy it (if
+                        it doesn’t fit the quality criteria) or sell it (if its quality is verified). Ropy maple syrup
+                        doesn’t pass their viscosity test.
+                        <br><br>
+                        When the PPAQ tests viscosity, they check the “filament” that maple syrup makes. When this
+                        filament is over 10 cm, the maple syrup is considered ropy and is stored in warehouses until it
+                        is eventually destroyed, causing economic losses to maple syrup producers who have to pay for
+                        this storage and destruction.
+                        <br><br>
+                        After some discussions with the PPAQ, <span class="bold">we found out there is currently no test
+                            that shows which
+                            maple sap will turn into ropy maple syrup</span> at the end of the transformation process.
+                        On top of
+                        that, maple syrup, as it is defined by the PPAQ, needs to be 100% pure, without any
+                        adulteration<sup>1</sup>. The addition of our enzymatic treatment to the ropy syrup is
+                        considered an
+                        adulteration, so treated ropy syrup can only be considered and sold as a derivative maple
+                        product.
+                        <br><br>
+                        Without being able to detect future ropiness from the sap, and with this strict definition of
+                        maple syrup, we knew that we had to design our treatment to target the barrels, to avoid extra
+                        losses from wrongly targeting sap. We decided to create our treatment for it to only be applied
+                        to the ropy syrup that has already been produced, and that is therefore already stored by the
+                        <span class="bold">PPAQ, our proposed end user for aSAP itself.</span>
+                        <br><br><br><br>
+                        <div class="img-flex">
+                            <img class="img-prod"
+                                src="https://2021.igem.org/wiki/images/9/94/T--ULaval--processprod.png" alt=""
+                                srcset="">
+                            <div class="caption-prod">Our treatment will be introduced after the last stage of the
+                                production process, directly in the defective syrup.</div>
+                        </div>
+                        <br><br><br>
+                        <div class="separator"></div><br><br>
+                        <div class="titler">Adapting aSAP to Warehouse Conditions</div>
+                        <br>
+                        Our enzymatic treatment has been designed on purpose so the enzyme would be active at the
+                        storage condition of these warehouses. The solution containing the enzyme (dextranase) can
+                        easily be produced (see <a href="" class="linker">Results</a>) and be added to the barrel to
+                        break down the dextrans and lower
+                        the viscosity of the syrup. Since ropy syrup is very viscous, we tried to make our solution as
+                        effective as possible: our enzyme solution should be homogeneous in the ropy syrup. To answer
+                        this problem, we simulated how we will administer our enzyme solution to the barrel (see <a
+                            href="" class="linker">Modeling</a>).
+                            <br><br><br>
+                            <div class="separator"></div><br><br>
+                        <div class="titler">Uses for Our Final Derivative Maple Product</div>
+                        <br>
+                        While the PPAQ would be the proposed end users of our enzymatic treatment itself, we also looked
+                        into potential end users of the product it created. That is why, during our project, we also
+                        kept contact with the MAPAQ to know more about food regulation and how we can market our
+                        derivative maple product.
+                        <br><br>
+                        For our treated syrup to be considered edible, the dextranase has to be authorized by Canada
+                        Health as a food additive. As of now, many enzymes are already authorized in various food
+                        products. For example, lysozymes are accepted in cheese and amylase are accepted in beer, wine
+                        and even chocolate syrup<sup>2</sup>. We also looked if dextranase is already used in food. We
+                        found that
+                        there was dextranase used in toothpaste to prevent dental caries<sup>3</sup> and used in the
+                        sugar cane
+                        industry<sup>4</sup>.
+                        <br><br>
+                        We are confident that our enzyme could be accepted as a food additive by the MAPAQ. Even if it
+                        cannot be accepted as a food product, we also thought about alternative industries, like
+                        cosmetic products or food for animals, etc.
+                        <br><br>
+                        <a href="https://2021.igem.org/Team:ULaval/Syrup_Microbiology" class="button-flex">
+                            <div class="button">Excellence in another area</div>
+                        </a>
+                        Another aspect to consider when looking into whether or not our end product is edible is the
+                        fact that dextrans are produced by bacteria. Ropy syrup is currently considered as being
+                        contaminated by bacteria by the MAPAQ regulations. That’s why we also decided to characterize
+                        the microbiota of the ropy syrup. Even though we couldn’t identify toxin producing
+                        microorganisms, we hope that our research could help futur experts.
+                        <br><br><br>
+                        <div class="separator"></div><br><br>
+                        <div class="titler">Will People Even Be Interested? </div>
+                        <br>
+                        When dealing with synthetic biology and food, an extra challenge lies in people’s acceptance of
+                        it, both producers and consumers. To ensure an easy implementation, we also wanted to know if
+                        our solution would be accepted and used by the community of maple syrup producers.
+                        <br><br>
+                        To this end, in 2020, we conducted a <a href="https://2020.igem.org/Team:ULaval/Human_Practices" class="linker">survey</a> to know if maple syrup
+                        producers would be interested
+                        in this treatment being used on ropy syrup. The results of the survey suggested that producers
+                        mostly sought alternatives for flavor defects, and that they were particularly open to the idea
+                        of an enzymatic treatment for ropy syrup.
+                        <br><br>
+                        <ul class="uler">
+                            <li>73.5% of the 52 respondents would agree to add them to maple syrup to improve its
+                                quality or to elevate their revenu. </li>
+                            <br>
+                            <li>Ropy syrup, although it’s a minor problem, is a significant problem for producers.</li>
+                            <br>
+                            <li>The majority of producers are asking for more investment in research to solve the
+                                problem of poor quality syrup.</li>
+                        </ul>
+                        <br><br>
+                        This year, we surveyed consumers. The results of this survey were mixed, but we remain
+                        optimistic: while consumers would accept the final product more if there was no trace left of
+                        the dextranase used to thin it out, they still think that solving this issue for maple producers
+                        is an important endeavour.
+                        <br><br>
+                        <div class="button-flex2">
+                            Check out our <a href="https://2021.igem.org/Team:ULaval/Human_Practices" class="linker">Human Practices</a> page to find out more about the
+                            survey!
+                        </div>
+                        <br><br><br>
+                        <div class="separator"></div>
+                        <br><br>
+                        <span class="references">References</span>
+                        <span class="reference-container">
+                            1. PPAQ. (2021, July 21). <span class="italic">La classification du Sirop d'érable, Gage de
+                                Qualité.</span> Producteurs
+                            et productrices acéricoles du Québec. Retrieved October 10, 2021, from: <a
+                                href="https://ppaq.ca/fr/production-acericole/classification-du-sirop-erable-qualite/"
+                                class=""><br>https://ppaq.ca/fr/production-acericole/classification-du-sirop-erable-qualite/</a>
+                        </span>
+                        <br>
+                        <br><br>
+                        <span class="reference-container">
+                            2. Canada Health. (2021, October 5). Liste des enzymes alimentaires autorisées (Listes des
+                            additifs alimentaires autorisés). Retrieved October 10, 2021, from:
+                            <br><a
+                                href="https://www.canada.ca/fr/sante-canada/services/aliments-nutrition/salubrite-aliments/additifs-alimentaires/listes-autorises/5-enzymes.html"
+                                class="">https://www.canada.ca/fr/sante-canada/services/aliments-nutrition/salubrite-aliments/additifs-alimentaires/listes-autorises/5-enzymes.html</a>.
+                        </span>
+                        <br>
+                        <br>
+                        <span class="reference-container">
+                            3. Juntarachot, N., Kantachote, D., Peerajan, S., Sirilun, S., & Chaiyasut, C. (2020).
+                            Optimization of fungal dextranase production and its antibiofilm activity, encapsulation and
+                            stability in toothpaste. <span class="italic">Molecules</span>, 25(20), 4784.
+                        </span>
+                        <br>
+                        
+                        <span class="reference-container">
+                            4. Khalikova, E., Susi, P., & Korpela, T. (2005). Microbial dextran-hydrolyzing enzymes:
+                            fundamentals and applications. <span class="italic">Microbiology and Molecular Biology Reviews</span>., 69(2), 306-325.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <img src="https://2021.igem.org/wiki/images/f/fe/T--ULaval--sponsorBanner.svg" alt="" class="">
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="implementation.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>

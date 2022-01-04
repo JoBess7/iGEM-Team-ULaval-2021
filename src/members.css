@@ -92,6 +92,56 @@ a {
     background-color: rgb(223, 55, 55);
     border-radius: 5px;
 }
+.boo1 {
+    width: 5px;
+    height: 100%;
+    background-color: #3c3c3c;
+    position: absolute;
+    left: 0;
+}
+.boo2 {
+    width: 5px;
+    height: 100%;
+    background-color: #3c3c3c;
+    position: absolute;
+    right: 0;
+}
+.boo3 {
+    width: 40px;
+    height: 395px;
+    background-color: #e6e7da;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.boo4 {
+    top: 5px;
+    width: 40px;
+    height: 395px;
+    background-color: #e6e7da;
+    position: absolute;
+    right: 5px;
+}
+.team-member-picture2 {
+    width: max-content;
+    height: 400px;
+    margin-top: 5px;
+    background-color: rgb(223, 55, 55);
+    border-radius: 5px;
+}
+.team-member-picture3 {
+    width: max-content;
+    height: 400px;
+    margin-top: 5px;
+    background-color: rgb(223, 55, 55);
+    border-radius: 5px;
+}
+.team-member-picture4 {
+    width: max-content;
+    height: 400px;
+    margin-top: 5px;
+    background-color: rgb(223, 55, 55);
+}
 .meet-icon {
     display: flex;
     flex-direction: column;
@@ -257,7 +307,7 @@ and (min-width: 700px) {
 @media screen
 and (min-width: 1000px) {
     .grid-container2 {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
 }
 

@@ -1,0 +1,683 @@
+
+{{ULaval}}
+<html>
+
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@700&display=swap');
+
+* {
+    font-weight: 500;
+}
+.containers {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.container1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f3decb;
+    position: relative;
+    top: 0;
+
+}
+
+.c1-flex {
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-around
+}
+
+.c1-flex-img{
+    width: 250px;
+    height: 250px;
+}
+.c1-flex-h1 {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+.c1-flex-scroll2 {
+    padding-top: 20px;
+    display: flex;
+    height: 70px;
+    width: 40px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: scroll-arrow 2s linear infinite;
+    opacity: 1;
+}
+.c1-flex-scroll1 {
+    display: flex;
+    height: 70px;
+    width: 40px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: scroll-arrow 2s linear infinite;
+    opacity: 1;
+}
+
+.container2 {
+    width: 100vw;
+    position: relative;
+    background-color: #f3decb;
+    z-index: 100;
+    padding-top: 200px;
+    height: 2000px;
+}
+
+.animated-line {
+    width: 40px;
+    padding-top: 20px;
+    animation: scroll-arrow 2s linear infinite;
+    position: relative;
+}
+.tree {
+    position: absolute;
+    left: 0;
+    height: 150%;
+    width: auto;
+}
+.tree-trunk {
+    left: 0;
+    width: 8.7vh;
+    background-color: rgb(55,29,18);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+
+@media screen
+and (max-height: 568px) {
+    .container1 {
+        height: 568px;
+    }
+    .tree-trunk {
+        width: 49px;
+    }
+}
+
+@media screen
+and (min-width: 700px) {
+    .c1-flex-h1 {
+        font-size: 45px;
+        width: 400px;
+    }
+    .c1-flex > img {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media screen
+and (min-width: 800px) {
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .c1-flex {
+        flex-direction: row;
+        width: 80%;
+    }
+    .c1-flex > img {
+        width: 300px;
+        height: 300px;
+    }
+    .c1-flex-h1 {
+        margin-left: 70px;
+    }
+}
+
+@media screen
+and (min-width: 1100px) {
+    .c1-flex {
+        width: 80%;
+    }
+    .c1-flex > img {
+        width: 350px;
+        height: 350px;
+    }
+    .c1-flex-h1 {
+        font-size: 47px;
+    }
+}
+
+@media screen
+and (min-width: 1250px) {
+    .c1-flex {
+        width: 80%;
+    }
+    .c1-flex > img {
+        width: 500px;
+        height: 500px;
+    }
+    .c1-flex-h1 {
+        font-size: 60px;
+    }
+}
+
+
+
+
+.b1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.b1-text {
+    border-radius: 10px;
+    color: #fdf8f5;
+    width: 80%;
+    background-color: #003D52;
+    box-shadow: 2px 5px #1c6d87, 3px 6px #1c6d87, 5px 10px #1c6d87, 7px 12px #1c6d87;
+    padding: 40px;
+    font-size: 30px;
+    padding-right: 30px;
+}
+.millions {
+    font-weight: bold;
+    border-bottom: 1px solid #ff8420;
+    color: #ff8420;
+}
+
+
+@media screen 
+and (max-width: 500px) {
+    .b1-text {
+        width: 100%;
+        box-shadow: none;
+        font-size: 17px;
+    }
+}
+.bubbles {
+    padding-bottom: 30px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bubble1, .bubble2 {
+    border-radius: 50%;
+    background-color: #FF8420;
+    box-shadow: 2px 5px #ff9d4d, 3px 6px #ff9d4d, 5px 10px #ff9d4d, 7px 12px #ff9d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bubble1 {
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 550px;
+    height: 550px;
+}
+.bubble2 {
+    width: 450px;
+    height: 450px;
+}
+.seven {
+    font-size: 100px;
+    font-weight: bolder;
+
+}
+.sixmil {
+    font-size: 100px;
+    font-weight: bolder;
+}
+.global {
+    font-size: 35px;
+}
+.cad {
+    font-size: 40px;
+}
+.b2 {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.how-text {
+    width: 50%;
+    padding-right: 30px;
+    background-color: #8F2800;
+    box-shadow: 2px 5px #BD3600,
+    3px 6px #BD3600,
+    5px 10px #BD3600,
+    7px 12px #BD3600;
+    padding: 40px;
+    border-radius: 10px;
+    color: #fdf8f5;
+}
+.how {
+    font-weight: bold;
+    font-size: 26px;
+}
+.how-so {
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen 
+and (max-width: 1600px) {
+    .bubble1 {
+        margin-top: 100px;
+        width: 300px;
+        height: 300px;
+    }
+    .bubble2 {
+        width: 270px;
+        height: 270px;
+    }
+    .seven {
+        font-size: 70px;
+    }
+    .sixmil {
+        font-size: 70px;
+    }
+    .cad {
+        font-size: 30px;
+    }
+    .global {
+        font-size: 25px;
+    }
+    .how {
+        font-size: 20px;
+    }
+    .how-so {
+        font-size: 18px;
+    }    
+}
+@media screen 
+and (max-width: 800px) {
+    .bubbles {
+        width: 100%;
+    }
+    .bubble1 {
+        margin-left: 0;
+        margin-top: 100px;
+        width: 220px;
+        height: 220px;
+    }
+    .bubble2 {
+        width: 200px;
+        height: 200px;
+    }
+    .seven {
+        font-size: 50px;
+    }
+    .sixmil {
+        font-size: 50px;
+    }
+    .cad {
+        font-size: 20px;
+    }
+    .global {
+        font-size: 20px;
+    }
+    .how {
+        font-size: 15px;
+    }
+    .how-so {
+        font-size: 13px;
+    }    
+}
+@media screen 
+and (max-width: 415px) {
+    .bubbles {
+        width: 100%;
+    }
+    .bubble1 {
+        margin-left: 20px;
+        margin-top: 100px;
+        width: 150px;
+        height: 150px;
+    }
+    .bubble2 {
+        width: 120px;
+        height: 120px;
+    }
+    .seven {
+        font-size: 25px;
+    }
+    .sixmil {
+        font-size: 25px;
+    }
+    .cad {
+        font-size: 10px;
+    }
+    .global {
+        font-size: 10px;
+    }
+    .how {
+        font-size: 13px;
+    }
+    .how-so {
+        font-size: 12px;
+    }    
+}
+</style>
+    <div class="main-container">
+        <header class="header">
+            <div class="header-top-container" id="header">
+                <div class="h-menuD" id="h-menuD">
+                    <div class="h-menuD-container">
+                        <div class="clickablee" id="modifyHeight1">
+                            <div class="clickable-title" id="clickable1">
+                                <span>Project</span>
+                                <img id="iconslide1"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Experiments</a>
+                                <a href="" class="e-a">Parts</a>
+                                <a href="" class="e-a">Results</a>
+                                <a href="" class="e-a">Safety</a>
+                                <a href="" class="e-a">Project Modelling</a>
+                                <a href="" class="e-a">Engineering Success</a>
+                                <a href="" class="e-a">Proof of Concept</a>
+                                <a href="" class="e-a">Going Above and Beyond</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee" id="modifyHeight2">
+                            <div class="clickable-title" id="clickable2">
+                                <span>Human Practices</span>
+                                <img id="iconslide2"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Human Practices</a>
+                                <a href="" class="e-a">Implementation</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee" id="modifyHeight3">
+                            <div class="clickable-title" id="clickable3">
+                                <span>Team</span>
+                                <img id="iconslide3"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Team</a>
+                                <a href="" class="e-a">Attributions</a>
+                                <a href="" class="e-a">Notebook</a>
+                            </div>
+                        </div>
+
+                        <div class="clickablee border-bottom" id="modifyHeight4">
+                            <div class="clickable-title" id="clickable4">
+                                <span>Education & Communication</span>
+                                <img id="iconslide4"
+                                    src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Education & Communication</a>
+                                <a href="" class="e-a">Poster</a>
+                                <a href="" class="e-a">Collaboration</a>
+                                <a href="" class="e-a">Contribution</a>
+                            </div>
+                        </div>
+
+                        <div class="clickable displayNone" id="modifyHeight4">
+                            <div class="clickable-title" id="clickable4">
+                                <span>Education & Communication</span>
+                                <img src="https://2021.igem.org/wiki/images/d/de/T--ULaval--Template_iconslide.png"
+                                    alt="" srcset="">
+                            </div>
+                            <div class="expand-components">
+                                <a href="" class="e-a">Education & Communication</a>
+                                <a href="" class="e-a">Poster</a>
+                                <a href="" class="e-a">Collaboration</a>
+                                <a href="" class="e-a">Contribution</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-flex">
+                    <div class="socials-container" id="socials-container">
+                        <a href="https://www.facebook.com/equipeiGEMULaval/">
+                            <img src="./assets/header-fb-icon.png" id="fb" class="fb-icon" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/igem_ulaval/">
+                            <img src="./assets/header-ig-icon.png" id="ig" class="ig-icon" alt="">
+                        </a>
+                        <a href="mailto:igem@bcm.ulaval.ca">
+                            <img src="./assets/header-mail-icon.png" id="mail" class="mail-icon" alt="">
+                        </a>
+                    </div>
+                    <a href="#" class="logo-container" id="header-logo"><img class="h-logo"
+                            src="./assets/SVG logo barre menus.svg" alt="" srcset=""></a>
+
+                    <div class="h-menus">
+                        <div class="h-element-s" id="checker1">
+                            <div class="h-element-text" id="element-text1">
+                                <span>Project</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide1" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display1">
+                                <a href="https://2021.igem.org/Team:ULaval/Description" class="h-a">Project
+                                    Description</a>
+                                <div class="h-a-m-flex" id="ham-flex1">
+                                    <span class="h-a-m">The Basics</span>
+                                    <img src="./assets/header-itemslide-icon.png" alt="" class="">
+                                    <div class="h-sub" id="h-sub1">
+                                        <a href="https://2021.igem.org/Team:ULaval/Experiments"
+                                            class="h-a">Experiments</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Parts" class="h-a">Parts</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Results" class="h-a">Results</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Safety" class="h-a">Safety</a>
+                                    </div>
+                                </div>
+                                <div class="h-a-m-flex" id="ham-flex2">
+                                    <span class="h-a-m">What Makes It Great</span>
+                                    <img src="./assets/header-itemslide-icon.png" alt="" class="">
+                                    <div class="h-sub" id="h-sub2">
+                                        <a href="https://2021.igem.org/Team:ULaval/Model" class="h-a">Project
+                                            Modelling</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Engineering" class="h-a">Engineering
+                                            Success</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/Proof_Of_Concept" class="h-a">Proof
+                                            of Concept</a>
+                                        <a href="https://2021.igem.org/Team:ULaval/X" class="h-a">Going Above and
+                                            Beyond</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker2">
+                            <div class="h-element-text" id="element-text2">
+                                <span>Human Practices</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide2" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display2">
+                                <a href="https://2021.igem.org/Team:ULaval/Human_Practices" class="h-a">Human
+                                    Practices</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Implementation"
+                                    class="h-a">Implementation</a>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker3">
+                            <div class="h-element-text" id="element-text3">
+                                <span>Team</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide3" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display3">
+                                <a href="https://2021.igem.org/Team:ULaval/Team" class="h-a">Team</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Attributions" class="h-a">Attributions</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Notebook" class="h-a">Notebook</a>
+                            </div>
+                        </div>
+                        <div class="h-element-s" id="checker4">
+                            <div class="h-element-text" id="element-text4">
+                                <span>Education & Communication</span>
+                                <img src="./assets/header-itemslide-icon.png" id="slide4" alt="" class="">
+                            </div>
+                            <div class="h-display" id="h-display4">
+                                <a href="https://2021.igem.org/Team:ULaval/Communication" class="h-a">Education &
+                                    Communication</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Poster" class="h-a">Poster</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Collaborations" class="h-a">Collaboration</a>
+                                <a href="https://2021.igem.org/Team:ULaval/Contribution" class="h-a">Contribution</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-burger" id="header-burger">
+                        <div class="line1 line" id="line1"></div>
+                        <div class="line2 line" id="line2"></div>
+                        <div class="line3 line" id="line3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="containers">
+            <div class="container1">
+                <img src="" alt="" class="tree">
+                <div class="c1-flex">
+                    <img class="c1-flex-img"
+                        src="https://2021.igem.org/wiki/images/1/10/T--ULaval--Template_project_round_logo.png" alt=""
+                        srcset="">
+                    <h1 class='c1-flex-h1'>
+                        A Solution Against maple Polymers
+                        <img class="animated-line" src="" alt="">
+                    </h1>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="tree-trunk"></div>
+                <div class="b1">
+                    <div class="b1-text">
+                        <span class="span-b1">
+                            Maple syrup. It’s one of the things Canada is globally known for. An emblem of Canadian
+                            culture.
+                            In 2021 alone, Canada produced <span class="millions">45 million liters</span> of maple
+                            syrup.
+                        </span>
+                        <span class="thatmeans" id='thatmeans'>That means </span>
+                    </div>
+                </div>
+                <div class="bubbles">
+                    <div class="bubble1">
+                        <div class="sixmil">600M</div>
+                        <div class="cad">Canadian Dollars</div>
+                    </div>
+                    <div class="bubble2">
+                        <div class="seven">73%</div>
+                        <div class="global">of global maple syrup production</div>
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="how-text">
+                        <span class="how">How It’s Made</span>
+                        <br><br>
+                        <div class="how-so">
+                            This syrup is produced with the sap of the sugar maple tree. To harvest this sap, producers have
+                            to wait for very special weather conditions that only happen in spring in Canada and the
+                            Northern United States.
+                            <br><br>
+                            After the sap is collected, it is boiled and reduced to make the sticky sweet syrup Canadians
+                            know and love.
+                        </div>
+                    </div>                            
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</html>

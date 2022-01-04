@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+body {
+    overflow-x: hidden;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+
+.container1 {
+    width: 100vw;
+    background-color: #f3decb;
+    position: relative;
+    top: 0;
+}
+
+.title-flex {
+    height: 250px;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.txt-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+.txt-safety {
+    font-size: 19px;
+    width: 65%;
+    
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.expandables {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.separator {
+    height: 1px;
+    width: 70vw;
+    background-color: black;
+}
+
+.expandable {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #003D52;
+    box-shadow: 0px 1px #1c6d87, 1px 2px #1c6d87, 2px 3px #1c6d87, 3px 4px #1c6d87, 4px 5px #1c6d87, 5px 6px #1c6d87, 6px 7px #1c6d87, 7px 8px #1c6d87, 8px 9px #1c6d87;
+    overflow: hidden;
+    cursor: pointer;
+}
+.e-title-flex {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.e-title {
+    color: #fdf8f5;
+    font-weight: bold;
+    font-size: 20px;
+}
+.e-text {
+    width: 100%;
+    padding: 0 40px 0 40px;
+    text-align: justify;
+    color: #fdf8f5;
+    padding-top: 10px;
+}
+.item-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+.horizontal-line {
+    border-radius: 5px;
+    top: 8px;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fdf8f5;
+}
+.vertical-line {
+    border-radius: 5px;
+    left: 8px;
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: #fdf8f5;
+}
+.icon-rotate {
+    animation: rotate .6s ease-out forwards 1;
+}
+.icon-unrotate {
+    animation: unrotate .6s ease-out forwards 1;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(225deg);
+    }
+}
+@keyframes unrotate {
+    from {
+        transform: rotate(225deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.bold {
+    font-weight: bold;
+}
+
+@media screen
+and (max-width: 900px) {
+    .txt-safety {
+        width: 100%;
+        padding: 30px;
+        padding-right: 45px;
+    }
+    .expandable {
+        width: 95%;
+    }
+}
+.welcome-text-flex {
+    margin-top: 20px;
+}
+.welcome-title {
+    font-weight: bolder;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+.welcome-text {
+    font-size: 22px; 
+}
+
+.implement, .implement:visited, .implement:link, a:link, a:visited, a {
+    color: #ff9a47;
+}
+
+sup {
+    font-size: 10px;
+    line-height: 0;
+}
+.italic2 {
+    font-style: italic;
+}
+.italic {
+    font-style: italic;
+    font-weight: 300;
+}
+.e-pic-flex {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: right;
+}
+.e-pic-flex2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 10px;
+    position: relative;
+    left: 10%;
+}
+.e-pic-flex3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 10px;
+    position: relative;
+    left: 10%;
+    padding-bottom: 20px;
+}
+.tr {
+    border-top-right-radius: 5px;
+}
+.tl {
+    border-top-left-radius: 5px;
+}
+.img-flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.e-pic2 {
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+}
+.e-pic {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.img-desc {
+    text-align: justify;
+    background-color: #ff9a47;
+    color: black;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 13px;
+}
+.line-height {
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.hidefirst {
+    display: none;
+}
+
+@media screen 
+and (max-width: 1500px) {
+    .hidesecond {
+        display: none;
+    }
+    .hidefirst {
+        display: flex;
+    }
+}
+@media screen 
+and (min-width: 1500px) {
+    .e-pic-flex3 {
+        width: 1000px;
+        left: calc((100% - 1000px)/2);
+    }
+}
+.bigger {
+    width: 55% !important;
+}
+.smaller {
+    width: 45% !important;
+}
+.bigger1 {
+    width: 45% !important;
+}
+.smaller1 {
+    width: 55% !important;
+}
+.rheotot {
+    width: 50%;
+    left: 0;
+    float: right;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+@media screen 
+and (min-width: 1000px) {
+    .enzy-flex {
+        width: 550px;
+        left: calc((100% - 550px)/2);
+    }
+}
+@media screen 
+and (max-width: 700px){
+    .rheotot {
+        float: unset;
+        width: 300px;
+        margin-left: 0;
+
+    }
+    .img-desc {
+        font-size: 11px;
+    }
+}
+
+@media screen
+and (max-width: 1000px) {
+    .enzy-flex {
+        width: 90%;
+        left: 0;
+        left: 5%;
+    }
+    .rheotot {
+        float: unset;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.ref-container {
+    left: 17.5vw;
+    position: relative;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+}
+.ref-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.ula {
+    padding-left: 40px;
+    list-style-type:decimal !important;
+}
+.bold {
+    font-weight: bold;
+}

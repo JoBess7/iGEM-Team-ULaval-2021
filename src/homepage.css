@@ -38,7 +38,6 @@
     height: 250px;
 }
 .c1-flex-h1 {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     display: flex;
@@ -302,14 +301,6 @@
 
 .HIM-3rd-flex > div {
     margin-left: 1.5vw;
-}
-.c2-bottom-flex {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    background-color: #bcc7c5;
-
 }
 .learn-more {
     width: 100%;
@@ -743,13 +734,50 @@ sup {
 /*
 WAS ADDED
 */
-.barril {
 
-    position: absolute;
-    width: auto;
-    height: calc(150%);
-
-}
 #goutte {
     z-index: 100;
+
+}
+
+
+
+
+
+
+
+
+
+.goutte {
+    z-index: 100;
+    position: sticky;
+    top: 110px;
+}
+
+
+
+.c2-bottom-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background-color: #bcc7c5;
+    z-index: 500;
+}
+.barril-flex {
+    left: 15vw;
+    position: absolute;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+.bt {
+    z-index: 99;
+    width: 100%;
+    height: auto;
+}
+.bb {
+    z-index: 101;
+    width: 100%;
+    height: auto;
 }

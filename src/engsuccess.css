@@ -11,6 +11,15 @@ body, html{
 body {
     overflow-x: hidden;
 }
+@media screen 
+and (max-width: 1000px) {
+    .title-flex {
+        font-size: 30px;
+    }
+}
+b {
+    font-weight: bold;
+}
 * {
     padding: 0;
     margin: 0;
@@ -57,9 +66,74 @@ a {
     font-weight: bolder;
     margin-bottom: 50px;
 }
+.ov1 {
+    width: 750px;
+    float: right;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+@media screen 
+and (max-width: 500px) {
+    .overview2-desc {
+        font-size: 9px;
+    }
+}
+.overview {
+    width: 100%;
+    height: auto;
+}
+.cc-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+
+.overview2 {
+    position: relative;
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+.dsecond {
+    display: none;
+}
+@media screen 
+and (max-width: 2000px) {
+    .dfirst {
+        display: none;
+    }
+    .dsecond {
+        display: flex
+    }
+}
+@media screen 
+and (max-width: 1000px) {
+    .overview2 {
+        width: 80%
+    }
+}
+@media screen 
+and (min-width: 2500px) {
+    .dfirst {
+        display: none;
+    }
+    .dsecond {
+        display: flex
+    }
+    .overview2 {
+        width: 800px;
+    }
+}
 .txt-container {
-    width: 90%;
+    width: 70%;
     /*background-color: #003D52;
     box-shadow: 0px 1px #1C6D87,
     1px 2px #1C6D87,
@@ -76,8 +150,11 @@ a {
     align-items: center;
     padding: 50px;
 }
-
+.DBTL {
+    border-radius: 10px;
+}
 .welcome-txt {
+    line-height: 27px;
     font-size: 22px;
     width: 100%;
     text-align: justify;
@@ -123,11 +200,13 @@ a {
     width: 20%;
     height: 80px;
     display: flex;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background-color: rgb(194, 194, 194);
+    background-color: #1c6d87;
 }
 .cat-container {
     width: 100%;
@@ -150,6 +229,8 @@ a {
     display: none;
 }
 .section {
+    font-size: 23px;
+    font-weight: 300;
     padding-left: 20px;
     padding-right: 20px;
     color:#fdf8f5;
@@ -157,20 +238,67 @@ a {
 }
 .figure1 {
     color: #fdf8f5;
+    
 }
 .figure2 {
     padding-top: 8px;
     color: black;
-    width: 100%;
+   width: 100%;
 }
-
+.separator {
+    height: 2px;
+    width: 60vw;
+    background-color: black;
+    margin-top: 75px;
+}
+.in-short {
+    padding: 20px;
+    margin-top: 75px;
+    width: 70vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff9d4d;
+    box-shadow: 2px 5px rgb(243, 184, 107),
+                3px 6px rgb(243, 184, 107),
+                5px 10px rgb(243, 184, 107),
+                7px 12px rgb(243, 184, 107);
+    font-size: 23px;
+}
+.uler {
+    padding-left: 50px;
+    font-size: 18px;
+}
+.invis {
+    opacity: 0;
+}
+.references {
+    font-size: 18px;
+    font-weight: bold;
+}
+.ref-container {
+    width: 65vw;
+    margin-top: 100px;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+.in-short-title {
+    font-size: 40px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: left;
+}
 .boxshadow-on {
     animation: boxshadow .2s ease-out forwards;
 }
 @keyframes boxshadow {
     from {
-        color: black;
-        background-color: rgb(194, 194, 194);
+        color: rgb(165, 165, 165);
+        background-color: #1c6d87;
         box-shadow: none;
     }
     to {
@@ -179,7 +307,10 @@ a {
         box-shadow: 0px 1px #1c6d87,
         1px 2px #1c6d87,
         2px 3px #1c6d87,
-        3px 4px #1c6d87;
+        3px 4px #1c6d87,
+        4px 5px #1c6d87,
+        5px 6px #1c6d87,
+        6px 7px #1c6d87;
     }
 }
 .boxshadow-off {
@@ -192,19 +323,77 @@ a {
         box-shadow: 0px 1px #1c6d87,
         1px 2px #1c6d87,
         2px 3px #1c6d87,
-        3px 4px #1c6d87;
+        3px 4px #1c6d87
+        4px 5px #1c6d87,
+        5px 6px #1c6d87,
+        6px 7px #1c6d87;
     }
     to {
-        color: black;
-        background-color: rgb(194, 194, 194);
+        color: rgb(165, 165, 165);
+        background-color: #1c6d87;
         box-shadow: none;
     }
 }
 
 @media screen 
-and (min-width: 1200px) {
+and (min-width: 1900px) {
     .DBTL-flex {
-        width: 800px;
-
+        width: 1000px;
+        position: relative;
+        left: calc((100% - 1000px)/2)
     }
+}
+
+@media screen 
+and (max-width:1200px) {
+    .txt-container {
+        width: 100%;
+        padding: 10;
+    }
+}
+@media screen 
+and (max-width: 900px) {
+    .cat {
+        width: 23%;
+        font-size: 20px;
+    }
+    .section {
+        font-size: 18px;
+    }
+    .in-short {
+        width: 85vw;
+    }
+}
+@media screen 
+and (max-width: 500px) {
+    .txt-container {
+        padding: 10px;
+    }
+    .cat {
+        width: 23%;
+        font-size: 13px;
+    }
+    .welcome-txt {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .section {
+        font-size: 16px;
+    }
+    .in-short {
+        width: 90vw;
+    }
+    .in-short-title {
+        font-size: 27px;
+    }
+    .in-short {
+        font-size: 18px;
+    }
+    .uler {
+        font-size: 16px;
+    }
+}
+.aa:link, .aa, .aa:visited {
+    color: #ff7300;
+    font-style: italic;
 }
