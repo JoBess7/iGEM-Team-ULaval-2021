@@ -4,4 +4,6 @@ iGEM is a competition taking place every year dedicated to the advancement of sy
 ## Team ULaval's Contribution
 In 2021, Laval University took part in the competition. Our team tackled a very important issue for maple syrup producers: **ropy syrup**. In short, when maple syrup comes in contact with bacteria, it creates ropy syrup, a type of maple syrup which cannot be sold. The team developped a treatment to put into the barrels of ropy syrup to make it usable again for producers.
 
+I was charged with creating the website for the team, which essentially consists of 17 different URLs. It was built under 3 weeks. Make sure to check it out here: https://2021.igem.org/Team:ULaval.
+
 ![](/src/assets/igem_main.png "")
