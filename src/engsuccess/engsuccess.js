@@ -1,4 +1,4 @@
-var categories = [
+var categories = [
     {
         num: 0,
         id: "#cat1",
@@ -29,18 +29,18 @@ var current = 0;
 
 categories.map((cat) => {
     $(cat.id).click(() => {
-        if(!isAnimatingCat) {
-            if(cat.on == false) {
+        if (!isAnimatingCat) {
+            if (cat.on == false) {
                 categories[current].on = false;
                 $(categories[current].id).addClass("boxshadow-off");
-                $(categories[current].id).removeClass("boxshadow-on"); 
+                $(categories[current].id).removeClass("boxshadow-on");
                 $(categories[current].section).addClass("undis");
-                $(categories[current].section).removeClass("displayed"); 
+                $(categories[current].section).removeClass("displayed");
                 current = cat.num;
                 cat.on = true;
                 $(cat.id).addClass("boxshadow-on");
-                $(cat.id).removeClass("boxshadow-off"); 
-                
+                $(cat.id).removeClass("boxshadow-off");
+
                 $(cat.section).addClass("displayed");
                 $(cat.section).removeClass("undis");
             }

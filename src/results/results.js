@@ -27,30 +27,32 @@ var expandables = [
 
 expandables.map((exp) => {
     $(exp.id).click(() => {
-        if(!exp.isAnim) {
+        if (!exp.isAnim) {
             exp.isAnim = true;
-            if(!exp.opened) {
+            if (!exp.opened) {
                 $(exp.icon).addClass("icon-rotate");
                 $(exp.icon).removeClass("icon-unrotate");
                 exp.opened = true;
                 $(exp.id).animate({
-                    height: $(exp.id).get(0).scrollHeight}, {
+                    height: $(exp.id).get(0).scrollHeight
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         exp.isAnim = false;
                     }
-                }) 
+                })
             } else {
                 $(exp.icon).removeClass("icon-rotate");
                 $(exp.icon).addClass("icon-unrotate");
                 exp.opened = false;
                 $(exp.id).animate({
-                    height: 50}, {
+                    height: 50
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         exp.isAnim = false
                     }
-                }) 
+                })
             }
         }
     })

@@ -64,36 +64,38 @@ var viewList = [
 var index;
 var isAnimating = false;
 viewList.map((view, index) => {
-    $(view.name).click(function() {
+    $(view.name).click(function () {
         index = view.name[view.name.length - 1];
-        if(!view.state) {
-            if(!isAnimating) {
+        if (!view.state) {
+            if (!isAnimating) {
                 isAnimating = true;
                 view.state = true;
                 $(view.icon).removeClass('icon-unrotate');
                 $(view.icon).addClass('icon-rotate');
                 $(view.name).animate({
-                    height: $(view.name).get(0).scrollHeight}, {
+                    height: $(view.name).get(0).scrollHeight
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         isAnimating = false;
                     }
-                }) 
+                })
             }
         } else {
-            if(!isAnimating) {
+            if (!isAnimating) {
                 isAnimating = false;
                 view.state = false;
                 $(view.icon).addClass('icon-unrotate');
                 $(view.icon).removeClass('icon-rotate');
                 $(view.name).animate({
-                    height: 70}, {
+                    height: 70
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         isAnimating = false;
                     }
-                })    
-            } 
+                })
+            }
         }
     })
 })
@@ -104,7 +106,8 @@ viewList.map((view, index) => {
     $(view.icon).addClass('icon-unrotate');
     $(view.icon).removeClass('icon-rotate');
     $(view.name).animate({
-        height: 70}, {
+        height: 70
+    }, {
         duration: 500,
-    })     
+    })
 })

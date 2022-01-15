@@ -1,31 +1,33 @@
 var opened = false
 var expand1IsAnimating = false;
 $('#expandable1').click(() => {
-    if(expand1IsAnimating == false) {
-        if(!opened) {
+    if (expand1IsAnimating == false) {
+        if (!opened) {
             $("#item-icon").addClass("icon-rotate");
             $("#item-icon").removeClass("icon-unrotate");
             opened = true;
             expand1IsAnimating = true;
             $('#expandable1').animate({
-                height: $("#expandable1").get(0).scrollHeight}, {
+                height: $("#expandable1").get(0).scrollHeight
+            }, {
                 duration: 500,
-                complete: function() {
+                complete: function () {
                     expand1IsAnimating = false;
                 }
-            }) 
+            })
         } else {
             $("#item-icon").addClass("icon-unrotate");
             $("#item-icon").removeClass("icon-rotate");
             opened = false;
             expand1IsAnimating = true;
             $('#expandable1').animate({
-                height: 50}, {
+                height: 50
+            }, {
                 duration: 500,
-                complete: function() {
+                complete: function () {
                     expand1IsAnimating = false;
                 }
-            }) 
+            })
         }
     }
 })
@@ -77,27 +79,29 @@ var sequences = [
 var seqAnim = false;
 sequences.map((seq) => {
     $(seq.seq).click(() => {
-        if(seqAnim == false) {
-            if(!seq.opened) {
+        if (seqAnim == false) {
+            if (!seq.opened) {
                 seq.opened = true;
                 seqAnim = true;
                 $(seq.row).animate({
-                    height: $(seq.seq).get(0).scrollHeight}, {
+                    height: $(seq.seq).get(0).scrollHeight
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         seqAnim = false;
                     }
-                }) 
+                })
             } else {
                 seq.opened = false;
                 seqAnim = true;
                 $(seq.row).animate({
-                    height: 80}, {
+                    height: 80
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         seqAnim = false;
                     }
-                }) 
+                })
             }
         }
     })

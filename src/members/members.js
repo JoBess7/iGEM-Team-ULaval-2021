@@ -95,23 +95,23 @@ var god = [
 ]
 
 god.map((member) => {
-    $(member.trigger).click(function() {
-        if(isAnimating === false) {
+    $(member.trigger).click(function () {
+        if (isAnimating === false) {
             isAnimating = true;
             setTimeout(() => {
                 isAnimating = false;
             }, 300);
-            switch(member.visibility) {
-                case(false):
+            switch (member.visibility) {
+                case (false):
                     member.visibility = true;
                     $(member.element).removeClass('ASRotateBack');
-                
+
                     $(member.element).addClass('ASRotate');
                     break;
-                case(true):
+                case (true):
                     member.visibility = false;
                     $(member.element).addClass('ASRotateBack');
-                
+
                     $(member.element).removeClass('ASRotate');
                     break;
             }

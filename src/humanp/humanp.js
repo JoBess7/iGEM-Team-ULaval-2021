@@ -9,7 +9,7 @@ setInterval(() => {
     gathering2.innerHTML += '.';
     priorities1.innerHTML += ".";
     priorities2.innerHTML += ".";
-    if(priorities1DotCounter === 4) {
+    if (priorities1DotCounter === 4) {
         priorities1.innerHTML = "Our priorities ";
         priorities2.innerHTML = "Our priorities ";
         gathering1.innerHTML = "Gathering knowledge ";
@@ -21,31 +21,33 @@ setInterval(() => {
 var opened = false
 var expand1IsAnimating = false;
 $('#expandable1').click(() => {
-    if(expand1IsAnimating == false) {
-        if(!opened) {
+    if (expand1IsAnimating == false) {
+        if (!opened) {
             $("#item-icon").addClass("icon-rotate");
             $("#item-icon").removeClass("icon-unrotate");
             opened = true;
             expand1IsAnimating = true;
             $('#expandable1').animate({
-                height: $("#expandable1").get(0).scrollHeight}, {
+                height: $("#expandable1").get(0).scrollHeight
+            }, {
                 duration: 500,
-                complete: function() {
+                complete: function () {
                     expand1IsAnimating = false;
                 }
-            }) 
+            })
         } else {
             $("#item-icon").addClass("icon-unrotate");
             $("#item-icon").removeClass("icon-rotate");
             opened = false;
             expand1IsAnimating = true;
             $('#expandable1').animate({
-                height: 45}, {
+                height: 45
+            }, {
                 duration: 500,
-                complete: function() {
+                complete: function () {
                     expand1IsAnimating = false;
                 }
-            }) 
+            })
         }
     }
 })
@@ -71,33 +73,35 @@ var expandables = [
     }
 ]
 
-expandables.map((expandable) => {
+expandables.map((expandable) => {
     $(expandable.name).click(() => {
-        if(expandable.isAnimating == false) {
-            if(!expandable.opened) {
+        if (expandable.isAnimating == false) {
+            if (!expandable.opened) {
                 $(expandable.icon).addClass("icon-rotate");
                 $(expandable.icon).removeClass("icon-unrotate");
                 expandable.opened = true;
                 expandable.isAnimating = true;
                 $(expandable.name).animate({
-                    height: $(expandable.name).get(0).scrollHeight}, {
+                    height: $(expandable.name).get(0).scrollHeight
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         expandable.isAnimating = false;
                     }
-                }) 
+                })
             } else {
                 $(expandable.icon).addClass("icon-unrotate");
                 $(expandable.icon).removeClass("icon-rotate");
                 expandable.opened = false;
                 expandable.isAnimating = true;
                 $(expandable.name).animate({
-                    height: 45}, {
+                    height: 45
+                }, {
                     duration: 500,
-                    complete: function() {
+                    complete: function () {
                         expandable.isAnimating = false;
                     }
-                }) 
+                })
             }
         }
     })

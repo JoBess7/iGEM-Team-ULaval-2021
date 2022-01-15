@@ -3,7 +3,7 @@ var thatMeansDotCounter = 0;
 setInterval(() => {
     thatMeansDotCounter += 1;
     thatMeans.innerHTML += ".";
-    if(thatMeansDotCounter === 4) {
+    if (thatMeansDotCounter === 4) {
         thatMeans.innerHTML = "That means ";
         thatMeansDotCounter = 0;
     }
@@ -11,18 +11,17 @@ setInterval(() => {
 
 
 var didScrollHomepage;
-$(window).scroll(function() {
+$(window).scroll(function () {
     didScrollHomepage = true;
 })
 
 const scrollInterval = setInterval(() => {
-    if(didScrollHomepage) {
+    if (didScrollHomepage) {
         checkPagePosition();
         didScrollHomepage = false;
     }
-    if(Text1OpacityHasLaunched === true) 
-    {
-        if(PourcentageHasLaunched === true) {
+    if (Text1OpacityHasLaunched === true) {
+        if (PourcentageHasLaunched === true) {
             clearInterval(scrollInterval);
         }
     }
@@ -35,17 +34,17 @@ var Text1OpacityHasLaunched = false;
 var ST;
 const checkPagePosition = () => {
     ST = window.pageYOffset;
-    if(Text1OpacityHasLaunched === false) {
-        if(window.pageYOffset + 500 > window.innerHeight) {
+    if (Text1OpacityHasLaunched === false) {
+        if (window.pageYOffset + 500 > window.innerHeight) {
             $("#info-text1").fadeTo("slow", 1);
             Text1OpacityHasLaunched = true;
         }
     }
-    if(PourcentageHasLaunched === false) {
-        if(checkVisible(pourcentage)) {
+    if (PourcentageHasLaunched === false) {
+        if (checkVisible(pourcentage)) {
             setTimeout(() => {
                 PourcentageHasLaunched = true;
-                pourcentageCounterUp(); 
+                pourcentageCounterUp();
             }, 2000);
         }
     }
@@ -53,8 +52,8 @@ const checkPagePosition = () => {
 
 const pourcentageCounterUp = () => {
     currentPourcentage++;
-    pourcentage.innerHTML = currentPourcentage + "%";  
-    if(currentPourcentage < 73) {
+    pourcentage.innerHTML = currentPourcentage + "%";
+    if (currentPourcentage < 73) {
         setTimeout(() => {
             requestAnimationFrame(pourcentageCounterUp);
         }, 40);
@@ -68,7 +67,7 @@ const pourcentageCounterUp = () => {
 function checkVisible(elm) {
     var rect = elm.getBoundingClientRect();
     var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0) 
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0)
 }
 
 
@@ -86,8 +85,8 @@ var entailleHeight;
 
 $(window).resize(function () {
     bodyRect = document.body.getBoundingClientRect(),
-    elemRect = entaille.getBoundingClientRect(),
-    offset   = elemRect.top - bodyRect.top;
+        elemRect = entaille.getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
     entailleHeight = entaille.clientHeight;
     var pos = entailleHeight + offset;
     if ($(window).scrollTop() > pos - 45) {
@@ -95,7 +94,8 @@ $(window).resize(function () {
             position: 'fixed',
             top: 45,
             height: entaille.clientHeight * 2
-        }); } else {
+        });
+    } else {
         $("#goutte").css({
             position: "absolute",
             top: goutteContainer.clientHeight * 0.7 + 430,
@@ -117,19 +117,21 @@ var clickables = [
 ]
 
 clickables.map((item, index) => {
-    $( item ).mouseenter(function() {
+    $(item).mouseenter(function () {
         $(item).animate({
-            width: 250, height: 310}, {
+            width: 250, height: 310
+        }, {
             duration: 100
-        })  
-      });
-    $( item ).mouseleave(function() {
+        })
+    });
+    $(item).mouseleave(function () {
         $(item).animate({
-            width: 240, height: 300}, {
+            width: 240, height: 300
+        }, {
             duration: 100
-        })  
-      });
-  })
+        })
+    });
+})
 
 
 

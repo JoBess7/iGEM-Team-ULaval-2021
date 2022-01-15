@@ -1,7 +1,7 @@
 var currentFolder = "organized";
 
-$("#cut-left").click(function() {
-    if(currentFolder == "participated") {
+$("#cut-left").click(function () {
+    if (currentFolder == "participated") {
 
         $("#org-invis").addClass("vis");
         $("#org-invis").removeClass("invis");
@@ -9,24 +9,24 @@ $("#cut-left").click(function() {
         $("#part-invis").addClass("invis");
         $("#part-invis").removeClass("vis");
         currentFolder = "organized";
-        $("#separator-right").css({"opacity": 0});
-        $("#separator-left").css({"opacity": 1});
-        $("#folder-participated").css({"display": "none"});
-        $("#folder-organized").css({"display": "flex"});
+        $("#separator-right").css({ "opacity": 0 });
+        $("#separator-left").css({ "opacity": 1 });
+        $("#folder-participated").css({ "display": "none" });
+        $("#folder-organized").css({ "display": "flex" });
     }
 })
-$("#cut-right").click(function() {
-    if(currentFolder == "organized") {
+$("#cut-right").click(function () {
+    if (currentFolder == "organized") {
         $("#org-invis").addClass("invis");
         $("#org-invis").removeClass("vis");
 
         $("#part-invis").addClass("vis");
         $("#part-invis").removeClass("invis");
         currentFolder = "participated";
-        $("#separator-left").css({"opacity": 0});
-        $("#separator-right").css({"opacity": 1});
-        $("#folder-organized").css({"display": "none"});
-        $("#folder-participated").css({"display": "flex"});
+        $("#separator-left").css({ "opacity": 0 });
+        $("#separator-right").css({ "opacity": 1 });
+        $("#folder-organized").css({ "display": "none" });
+        $("#folder-participated").css({ "display": "flex" });
     }
 })
 
@@ -48,9 +48,9 @@ var dots = [
 var current = 0;
 dots.map((dot) => {
     $(dot.dot).click(() => {
-        if(!dot.on) {
+        if (!dot.on) {
             dot.on = true;
-            
+
             dots[current].on = false;
             $(dots[current].dot).removeClass("toOp1");
             $(dots[current].dot).addClass("toOp0");
@@ -97,9 +97,9 @@ var dots2 = [
 var currentImg = 0;
 dots2.map((dot) => {
     $(dot.dot).click(() => {
-        if(!dot.on) {
+        if (!dot.on) {
             dot.on = true;
-            
+
             dots2[currentImg].on = false;
             $(dots2[currentImg].dot).removeClass("toOp1");
             $(dots2[currentImg].dot).addClass("toOp0");
